@@ -28,6 +28,14 @@ All exclusive documents, you can try search for yourself on over the Internet.
 
 ## Getting started
 
+### Pre-building
+
+You may need to install these packages before installing. Recommend to build and install on Ubuntu 22.04
+
+```shell
+sudo apt install -y build-essential curl libgmp-dev libmpc-dev libmpfr-dev m4 zip wget
+```
+
 ### Build from source (GitHub)
 
 You must run the configuration within Linux configuration. Once it's done, the folder `.gnu-windows/bootstrap` is your binaries. You can use it.
