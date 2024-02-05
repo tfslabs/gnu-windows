@@ -1,14 +1,19 @@
 ```text
-This directory contains various GNU tools for Windows, including binutils , busybox, cppcheck, ctags, expat, gcc/g++, gdb, libiconv, make, mingw-64, mpc, mpfr, nasm, PDCurses, vim.
+This directory contains various GNU tools for Windows, including 
+binutils , busybox, cppcheck, ctags, expat, gcc/g++, gdb, libiconv, 
+make, mingw-64, mpc, mpfr, nasm, PDCurses, vim.
 
-Each directory (except the one started with dot(.) - these folders are main and admin folder) contains tools, with its own COPYRIGHT, assigned with various developers. These folder must be reserved, except in maintaince, for building the binaries.
+Each directory (except the one started with dot(.) - these folders 
+are main and admin folder) contains tools, with its own COPYRIGHT, 
+assigned with various developers. These folder must be reserved, 
+except in maintaince, for building the binaries.
 
-See https://github.com/tfsmetadata/gnu-windows/issues for reporting issues. Note please describe your issue as much detail as possible.
+See https://github.com/tfsmetadata/gnu-windows/issues for reporting 
+issues. Note please describe your issue as much detail as possible.
 
-Copyright years on source files may be listed using range
-notation, e.g., 1987-2012, indicating that every year in the range,
-inclusive, is a copyrightable year that could otherwise be listed
-individually.
+Copyright years on source files may be listed using range notation, 
+e.g., 1987-2012, indicating that every year in the range, inclusive, 
+is a copyrightable year that could otherwise be listed individually.
 ```
 
 # GNU Windows
