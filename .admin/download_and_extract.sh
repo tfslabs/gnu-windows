@@ -2,14 +2,7 @@
 
 ARCH=x86_64-w64-mingw32
 
-#WORKDIR="$(cd "$(dirname "$0")" && pwd)"
-WORKDIR="~/Documents/gnu-windows/.gnu-windows"
-BOOTSTRAP="$WORKDIR/bootstrap"
-MAKE_FOLDER="$WORKDIR/make"
-SOURCE_CODE="$WORKDIR/src"
-GNU_FOLDER="$WORKDIR/.."
-
-PATH="$BOOTSTRAP/bin:${PATH}"
+WORKDIR="$(cd "$(dirname "$0")" && pwd)"
 
 BINUTILS_VERSION=2.41
 BUSYBOX_VERSION=FRP-5236-g7dff7f376
@@ -28,6 +21,8 @@ NASM_VERSION=2.15.05
 PDCURSES_VERSION=3.9
 VERSION=1.21.0
 VIM_VERSION=9.0
+
+cd $WORKDIR
 
 apt update && \
  apt upgrade -y && \
