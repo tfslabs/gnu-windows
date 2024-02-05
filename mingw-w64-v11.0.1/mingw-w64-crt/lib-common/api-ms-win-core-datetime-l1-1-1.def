@@ -1,0 +1,10 @@
+LIBRARY api-ms-win-core-datetime-l1-1-1
+
+EXPORTS
+
+GetDateFormatA
+GetDateFormatEx
+GetDateFormatW
+GetTimeFormatA
+GetTimeFormatEx
+GetTimeFormatW

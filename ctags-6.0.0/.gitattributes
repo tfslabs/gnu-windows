@@ -1,0 +1,6 @@
+*	text=auto
+
+/win32/*.bat	text eol=crlf
+/win32/*.sln	text eol=crlf
+/win32/*.vcxproj	text eol=crlf
+/win32/*.vcxproj.filters	text eol=crlf

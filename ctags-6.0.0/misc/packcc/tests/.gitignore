@@ -1,0 +1,10 @@
+packcc
+packcc.exe
+*.gcda
+*.gcno
+*.gcov
+*/parser.c
+*/parser.h
+*/parser
+*/parser.exe
+*/test.bats

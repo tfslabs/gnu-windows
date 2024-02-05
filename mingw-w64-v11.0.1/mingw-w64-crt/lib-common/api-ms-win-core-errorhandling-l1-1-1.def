@@ -1,0 +1,12 @@
+LIBRARY api-ms-win-core-errorhandling-l1-1-1
+
+EXPORTS
+
+AddVectoredExceptionHandler
+GetLastError
+RaiseException
+RemoveVectoredExceptionHandler
+SetErrorMode
+SetLastError
+SetUnhandledExceptionFilter
+UnhandledExceptionFilter

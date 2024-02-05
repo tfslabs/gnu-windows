@@ -1,0 +1,10 @@
+LIBRARY api-ms-win-core-interlocked-l1-2-0
+
+EXPORTS
+
+InitializeSListHead
+InterlockedFlushSList
+InterlockedPopEntrySList
+InterlockedPushEntrySList
+InterlockedPushListSListEx
+QueryDepthSList

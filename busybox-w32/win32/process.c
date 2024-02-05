@@ -1,0 +1,852 @@
+#include "libbb.h"
+#include <tlhelp32.h>
+#include <psapi.h>
+#include "lazyload.h"
+#include "NUM_APPLETS.h"
+
+pid_t waitpid(pid_t pid, int *status, int options)
+#if ENABLE_TIME
+{
+	return mingw_wait3(pid, status, options, NULL);
+}
+#endif
+
+#if ENABLE_TIME
+pid_t mingw_wait3(pid_t pid, int *status, int options, struct rusage *rusage)
+#endif
+{
+	HANDLE proc;
+	DWORD code;
+
+	/* Windows does not understand parent-child */
+	if (pid > 0 && options == 0) {
+		if ( (proc=OpenProcess(SYNCHRONIZE|PROCESS_QUERY_INFORMATION,
+						FALSE, pid)) != NULL ) {
+			WaitForSingleObject(proc, INFINITE);
+			GetExitCodeProcess(proc, &code);
+#if ENABLE_TIME
+			if (rusage != NULL) {
+				FILETIME crTime, exTime, keTime, usTime;
+
+				memset(rusage, 0, sizeof(*rusage));
+				if (GetProcessTimes(proc, &crTime, &exTime, &keTime, &usTime)) {
+					uint64_t kernel_usec =
+						(((uint64_t)keTime.dwHighDateTime << 32)
+							| (uint64_t)keTime.dwLowDateTime)/10;
+					uint64_t user_usec =
+						(((uint64_t)usTime.dwHighDateTime << 32)
+							| (uint64_t)usTime.dwLowDateTime)/10;
+
+					rusage->ru_utime.tv_sec = user_usec / 1000000U;
+					rusage->ru_utime.tv_usec = user_usec % 1000000U;
+					rusage->ru_stime.tv_sec = kernel_usec / 1000000U;
+					rusage->ru_stime.tv_usec = kernel_usec % 1000000U;
+				}
+			}
+#endif
+			CloseHandle(proc);
+			*status = exit_code_to_wait_status(code);
+			return pid;
+		}
+	}
+	errno = pid < 0 ? ENOSYS : EINVAL;
+	return -1;
+}
+
+typedef struct {
+	char *path;
+	char *name;
+	char *opts;
+	char buf[100];
+} interp_t;
+
+static int
+parse_interpreter(const char *cmd, interp_t *interp)
+{
+	char *path, *t;
+	int n;
+
+	while (TRUE) {
+		n = open_read_close(cmd, interp->buf, sizeof(interp->buf)-1);
+		if (n < 4)	/* at least '#!/x' and not error */
+			break;
+
+		/*
+		 * See http://www.in-ulm.de/~mascheck/various/shebang/ for trivia
+		 * relating to '#!'.  See also https://lwn.net/Articles/630727/
+		 * for Linux-specific details.
+		 */
+		if (interp->buf[0] != '#' || interp->buf[1] != '!')
+			break;
+		interp->buf[n] = '\0';
+		if ((t=strchr(interp->buf, '\n')) == NULL)
+			break;
+		t[1] = '\0';
+
+		if ((path=strtok(interp->buf+2, " \t\r\n")) == NULL)
+			break;
+
+		t = (char *)bb_basename(path);
+		if (*t == '\0')
+			break;
+
+		interp->path = path;
+		interp->name = t;
+		interp->opts = strtok(NULL, "\r\n");
+		/* Trim leading and trailing whitespace from the options.
+		 * If the resulting string is empty return a NULL pointer. */
+		if (interp->opts && trim(interp->opts) == interp->opts)
+			interp->opts = NULL;
+		return 1;
+	}
+
+	if (n >= 0 && is_suffixed_with_case(cmd, ".sh")) {
+		interp->path = (char *)DEFAULT_SHELL;
+		interp->name = (char *)DEFAULT_SHELL_SHORT_NAME;
+		interp->opts = NULL;
+		return 1;
+	}
+	return 0;
+}
+
+/*
+ * See https://docs.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=vs-2019#parsing-c-command-line-arguments
+ * (Parsing C++ Command-Line Arguments)
+ */
+char *
+quote_arg(const char *arg)
+{
+	char *r = xmalloc(2 * strlen(arg) + 3);  // max-esc, enclosing DQ, \0
+	char *d = r;
+	int nbs = 0;  // n consecutive BS right before current char
+
+	/* empty arguments and those containing tab/space must be quoted */
+	if (!*arg || strpbrk(arg, " \t")) {
+		*d++ = '"';
+	}
+
+	while (*arg) {
+		switch (*arg) {
+		case '\\':
+			++nbs;
+			break;
+		case '"':  // double consecutive-BS, plus one to escape the DQ
+			for (++nbs; nbs; --nbs)
+				*d++ = '\\';
+			break;
+		default:  // reset count if followed by not-DQ
+			nbs = 0;
+		}
+		*d++ = *arg++;
+	}
+
+	if (*r == '"') {
+		while (nbs--)  // double consecutive-BS before the closing DQ
+			*d++ = '\\';
+		*d++ = '"';
+	}
+	*d++ = '\0';
+
+	return xrealloc(r, d - r);
+}
+
+char *
+find_first_executable(const char *name)
+{
+	char *path = getenv("PATH");
+	return find_executable(name, &path);
+}
+
+static intptr_t
+spawnveq(int mode, const char *path, char *const *argv, char *const *env)
+{
+	char **new_argv;
+	char *new_path = NULL;
+	int i, argc;
+	intptr_t ret;
+	struct stat st;
+	size_t len = 0;
+
+	/*
+	 * Require that the file exists, is a regular file and is executable.
+	 * It may still contain garbage but we let spawnve deal with that.
+	 */
+	if (stat(path, &st) == 0) {
+		if (!S_ISREG(st.st_mode) || !(st.st_mode&S_IXUSR)) {
+			errno = EACCES;
+			return -1;
+		}
+	}
+	else {
+		return -1;
+	}
+
+	argc = string_array_len((char **)argv);
+	new_argv = xzalloc(sizeof(*argv)*(argc+1));
+	for (i = 0; i < argc; i++) {
+		new_argv[i] = quote_arg(argv[i]);
+		len += strlen(new_argv[i]) + 1;
+	}
+
+	/* Special case:  spawnve won't execute a batch file if the first
+	 * argument is a relative path containing forward slashes.  Absolute
+	 * paths are fine but there's no harm in converting them too. */
+	if (has_bat_suffix(path)) {
+		slash_to_bs(new_argv[0]);
+
+		/* Another special case:  spawnve returns ENOEXEC when passed an
+		 * empty batch file.  Pretend it worked. */
+		if (st.st_size == 0) {
+			ret = 0;
+			goto done;
+		}
+	}
+
+	/*
+	 * Another special case:  if a file doesn't have an extension add
+	 * a '.' at the end.  This forces spawnve to use precisely the
+	 * file specified without trying to add an extension.
+	 */
+	if (!strchr(bb_basename(path), '.')) {
+		new_path = xasprintf("%s.", path);
+	}
+
+	errno = 0;
+	ret = spawnve(mode, new_path ? new_path : path, new_argv, env);
+	if (errno == EINVAL && len > bb_arg_max())
+		errno = E2BIG;
+
+ done:
+	for (i = 0;i < argc;i++)
+		free(new_argv[i]);
+	free(new_argv);
+	free(new_path);
+
+	return ret;
+}
+
+#if ENABLE_FEATURE_PREFER_APPLETS && NUM_APPLETS > 1
+static intptr_t
+mingw_spawn_applet(int mode,
+		   char *const *argv,
+		   char *const *envp)
+{
+	return spawnveq(mode, bb_busybox_exec_path, argv, envp);
+}
+#endif
+
+/* Make a copy of an argv array with n extra slots at the start */
+char ** FAST_FUNC
+grow_argv(char **argv, int n)
+{
+	char **new_argv;
+	int argc;
+
+	argc = string_array_len(argv) + 1;
+	new_argv = xmalloc(sizeof(*argv) * (argc + n));
+	memcpy(new_argv + n, argv, sizeof(*argv) * argc);
+	return new_argv;
+}
+
+static intptr_t
+mingw_spawn_interpreter(int mode, const char *prog, char *const *argv,
+			char *const *envp, int level)
+{
+	intptr_t ret = -1;
+	int nopts;
+	interp_t interp;
+	char **new_argv;
+	char *path = NULL;
+
+	if (!parse_interpreter(prog, &interp))
+		return spawnveq(mode, prog, argv, envp);
+
+	if (++level > 4) {
+		errno = ELOOP;
+		return -1;
+	}
+
+	nopts = interp.opts != NULL;
+	new_argv = grow_argv((char **)(argv + 1), nopts + 2);
+	new_argv[1] = interp.opts;
+	new_argv[nopts+1] = (char *)prog; /* pass absolute path */
+
+#if ENABLE_FEATURE_PREFER_APPLETS && NUM_APPLETS > 1
+	if (unix_path(interp.path) && find_applet_by_name(interp.name) >= 0) {
+		/* the fake path indicates the index of the script */
+		new_argv[0] = path = xasprintf("%d:/%s", nopts+1, interp.name);
+		ret = mingw_spawn_applet(mode, new_argv, envp);
+		goto done;
+	}
+#endif
+
+	path = file_is_win32_exe(interp.path);
+	if (path) {
+		new_argv[0] = path;
+		ret = mingw_spawn_interpreter(mode, path, new_argv, envp, level);
+		goto done;
+	}
+
+	if (unix_path(interp.path)) {
+		if ((path = find_first_executable(interp.name)) != NULL) {
+			new_argv[0] = path;
+			ret = mingw_spawn_interpreter(mode, path, new_argv, envp, level);
+			goto done;
+		}
+	}
+	errno = ENOENT;
+ done:
+	free(path);
+	free(new_argv);
+	return ret;
+}
+
+static intptr_t
+mingw_spawnvp(int mode, const char *cmd, char *const *argv)
+{
+	char *path;
+	intptr_t ret;
+
+#if ENABLE_FEATURE_PREFER_APPLETS && NUM_APPLETS > 1
+	if ((!has_path(cmd) || unix_path(cmd)) &&
+			find_applet_by_name(bb_basename(cmd)) >= 0)
+		return mingw_spawn_applet(mode, argv, NULL);
+#endif
+	if (has_path(cmd)) {
+		path = file_is_win32_exe(cmd);
+		if (path) {
+			ret = mingw_spawn_interpreter(mode, path, argv, NULL, 0);
+			free(path);
+			return ret;
+		}
+		if (unix_path(cmd))
+			cmd = bb_basename(cmd);
+	}
+
+	if (!has_path(cmd) && (path = find_first_executable(cmd)) != NULL) {
+		ret = mingw_spawn_interpreter(mode, path, argv, NULL, 0);
+		free(path);
+		return ret;
+	}
+
+	errno = ENOENT;
+	return -1;
+}
+
+static pid_t
+mingw_spawn_pid(int mode, char **argv)
+{
+	intptr_t ret;
+
+	ret = mingw_spawnvp(mode, argv[0], (char *const *)argv);
+
+	return ret == -1 ? (pid_t)-1 : (pid_t)GetProcessId((HANDLE)ret);
+}
+
+pid_t FAST_FUNC
+mingw_spawn(char **argv)
+{
+	return mingw_spawn_pid(P_NOWAIT, argv);
+}
+
+pid_t FAST_FUNC
+mingw_spawn_detach(char **argv)
+{
+	return mingw_spawn_pid(P_DETACH, argv);
+}
+
+intptr_t FAST_FUNC
+mingw_spawn_proc(const char **argv)
+{
+	return mingw_spawnvp(P_NOWAIT, argv[0], (char *const *)argv);
+}
+
+BOOL WINAPI kill_child_ctrl_handler(DWORD dwCtrlType)
+{
+	static pid_t child_pid = 0;
+	DWORD dummy, *procs, count, rcount, i;
+	DECLARE_PROC_ADDR(DWORD, GetConsoleProcessList, LPDWORD, DWORD);
+
+	if (child_pid == 0) {
+		// First call sets child pid
+		child_pid = dwCtrlType;
+		return FALSE;
+	}
+
+	if (dwCtrlType == CTRL_C_EVENT || dwCtrlType == CTRL_BREAK_EVENT) {
+		if (!INIT_PROC_ADDR(kernel32.dll, GetConsoleProcessList))
+			return TRUE;
+
+		count = GetConsoleProcessList(&dummy, 1) + 16;
+		procs = malloc(sizeof(DWORD) * count);
+		rcount = GetConsoleProcessList(procs, count);
+		if (rcount != 0 && rcount <= count) {
+			for (i = 0; i < rcount; i++) {
+				if (procs[i] == child_pid) {
+					// Child is attached to our console
+					break;
+				}
+			}
+			if (i == rcount) {
+				// Kill non-console child; console children can
+				// handle Ctrl-C as they see fit.
+				kill(-child_pid, SIGINT);
+			}
+		}
+		free(procs);
+		return TRUE;
+	}
+	return FALSE;
+}
+
+static NORETURN void wait_for_child(HANDLE child)
+{
+	DWORD code;
+
+	kill_child_ctrl_handler(GetProcessId(child));
+	SetConsoleCtrlHandler(kill_child_ctrl_handler, TRUE);
+	WaitForSingleObject(child, INFINITE);
+	GetExitCodeProcess(child, &code);
+	exit(exit_code_to_posix(code));
+}
+
+int
+mingw_execvp(const char *cmd, char *const *argv)
+{
+	intptr_t ret = mingw_spawnvp(P_NOWAIT, cmd, argv);
+	if (ret != -1 || errno == 0)
+		wait_for_child((HANDLE)ret);
+	return ret;
+}
+
+int
+mingw_execve(const char *cmd, char *const *argv, char *const *envp)
+{
+	intptr_t ret = mingw_spawn_interpreter(P_NOWAIT, cmd, argv, envp, 0);
+	if (ret != -1 || errno == 0)
+		wait_for_child((HANDLE)ret);
+	return ret;
+}
+
+int
+mingw_execv(const char *cmd, char *const *argv)
+{
+	return mingw_execve(cmd, argv, NULL);
+}
+
+static inline long long filetime_to_ticks(const FILETIME *ft)
+{
+	return (((long long)ft->dwHighDateTime << 32) + ft->dwLowDateTime)/
+				HNSEC_PER_TICK;
+}
+
+/*
+ * Attempt to get a string from another instance of busybox.exe.
+ * This will only work if the other process is using the same binary
+ * as the current process.  If anything goes wrong just give up.
+ */
+static char *get_bb_string(DWORD pid, const char *exe, char *string)
+{
+	HANDLE proc;
+	HMODULE mlist[32];
+	DWORD needed;
+	void *address;
+	char *my_base;
+	char buffer[128];
+	char exepath[PATH_MAX];
+	char *name = NULL;
+	int i;
+	DECLARE_PROC_ADDR(DWORD, GetProcessImageFileNameA, HANDLE,
+							LPSTR, DWORD);
+	DECLARE_PROC_ADDR(BOOL, EnumProcessModules, HANDLE, HMODULE *,
+							DWORD, LPDWORD);
+	DECLARE_PROC_ADDR(DWORD, GetModuleFileNameExA, HANDLE, HMODULE,
+							LPSTR, DWORD);
+
+	if (!INIT_PROC_ADDR(psapi.dll, GetProcessImageFileNameA) ||
+			!INIT_PROC_ADDR(psapi.dll, EnumProcessModules) ||
+			!INIT_PROC_ADDR(psapi.dll, GetModuleFileNameExA))
+		return NULL;
+
+	if (!(proc=OpenProcess(PROCESS_QUERY_INFORMATION|PROCESS_VM_READ,
+							FALSE, pid))) {
+		return NULL;
+	}
+
+	if (exe == NULL) {
+		if (GetProcessImageFileNameA(proc, exepath, PATH_MAX) != 0) {
+			exe = bb_basename(exepath);
+		}
+	}
+
+	/*
+	 * Search for the module that matches the name of the executable.
+	 * The values returned in mlist are actually the base address of
+	 * the module in the other process (as noted in the documentation
+	 * for the MODULEINFO structure).
+	 */
+	if (!EnumProcessModules(proc, mlist, sizeof(mlist), &needed)) {
+		goto finish;
+	}
+
+	for (i=0; exe != NULL && i<needed/sizeof(HMODULE); ++i) {
+		char modname[MAX_PATH];
+		if (GetModuleFileNameExA(proc, mlist[i], modname, sizeof(modname))) {
+			if (strcasecmp(bb_basename(modname), exe) == 0) {
+				break;
+			}
+		}
+	}
+
+	if (i == needed/sizeof(HMODULE)) {
+		goto finish;
+	}
+
+	/* attempt to read the BusyBox version string */
+	my_base = (char *)GetModuleHandle(NULL);
+	address = (char *)mlist[i] + ((char *)bb_banner - my_base);
+	if (!ReadProcessMemory(proc, address, buffer, 128, NULL)) {
+		goto finish;
+	}
+
+	if (memcmp(buffer, bb_banner, strlen(bb_banner)) != 0) {
+		/* version mismatch (or not BusyBox at all) */
+		goto finish;
+	}
+
+	/* attempt to read the required string */
+	address = (char *)mlist[i] + ((char *)string - my_base);
+	if (!ReadProcessMemory(proc, address, buffer, 128, NULL)) {
+		goto finish;
+	}
+
+	buffer[127] = '\0';
+	name = auto_string(xstrdup(buffer));
+
+ finish:
+	CloseHandle(proc);
+	return name;
+}
+
+/* POSIX version in libbb/procps.c */
+procps_status_t* FAST_FUNC procps_scan(procps_status_t* sp, int flags
+#if !ENABLE_FEATURE_PS_TIME && !ENABLE_FEATURE_PS_LONG
+UNUSED_PARAM
+#endif
+)
+{
+	PROCESSENTRY32 pe;
+	HANDLE proc;
+	const char *comm, *name;
+	BOOL ret;
+
+	pe.dwSize = sizeof(pe);
+	if (!sp) {
+		sp = xzalloc(sizeof(struct procps_status_t));
+		sp->snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+		if (sp->snapshot == INVALID_HANDLE_VALUE) {
+			free(sp);
+			return NULL;
+		}
+		ret = Process32First(sp->snapshot, &pe);
+	}
+	else {
+		ret = Process32Next(sp->snapshot, &pe);
+	}
+
+	if (!ret) {
+		CloseHandle(sp->snapshot);
+		free(sp);
+		return NULL;
+	}
+
+	memset(&sp->vsz, 0, sizeof(*sp) - offsetof(procps_status_t, vsz));
+#if !ENABLE_DESKTOP
+	strcpy(sp->state, "   ");
+#endif
+
+#if ENABLE_FEATURE_PS_TIME || ENABLE_FEATURE_PS_LONG
+	if (flags & (PSSCAN_STIME|PSSCAN_UTIME|PSSCAN_START_TIME)) {
+		FILETIME crTime, exTime, keTime, usTime;
+
+		if ((proc=OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION,
+					FALSE, pe.th32ProcessID))) {
+			if (GetProcessTimes(proc, &crTime, &exTime, &keTime, &usTime)) {
+				long long ticks_since_boot, boot_time, create_time;
+				FILETIME now;
+
+				ticks_since_boot = GetTickCount64()/MS_PER_TICK;
+				GetSystemTimeAsFileTime(&now);
+				boot_time = filetime_to_ticks(&now) - ticks_since_boot;
+				create_time = filetime_to_ticks(&crTime);
+
+				sp->start_time = (unsigned long)(create_time - boot_time);
+				sp->stime = (unsigned long)filetime_to_ticks(&keTime);
+				sp->utime = (unsigned long)filetime_to_ticks(&usTime);
+			}
+			CloseHandle(proc);
+		}
+	}
+#endif
+
+	if (flags & PSSCAN_UIDGID) {
+		/* if we can open the process it belongs to us */
+		if ((proc=OpenProcess(PROCESS_ALL_ACCESS, FALSE, pe.th32ProcessID))) {
+			sp->uid = DEFAULT_UID;
+			sp->gid = DEFAULT_GID;
+			CloseHandle(proc);
+		}
+	}
+
+	sp->pid = pe.th32ProcessID;
+	sp->ppid = pe.th32ParentProcessID;
+
+	if (sp->pid == GetProcessId(GetCurrentProcess())) {
+		comm = applet_name;
+	}
+	else if ((name=get_bb_string(sp->pid, pe.szExeFile, bb_comm)) != NULL) {
+		comm = name;
+	}
+	else {
+		comm = pe.szExeFile;
+	}
+	safe_strncpy(sp->comm, comm, COMM_LEN);
+
+	return sp;
+}
+
+void FAST_FUNC read_cmdline(char *buf, int col, unsigned pid, const char *comm)
+{
+	const char *str, *cmdline;
+
+	*buf = '\0';
+	if (pid == GetProcessId(GetCurrentProcess()))
+		cmdline = bb_command_line;
+	else if ((str=get_bb_string(pid, NULL, bb_command_line)) != NULL)
+		cmdline = str;
+	else
+		cmdline = comm;
+	safe_strncpy(buf, cmdline, col);
+}
+
+/**
+ * If the process ID is positive invoke the callback for that process
+ * only.  If negative or zero invoke the callback for all descendants
+ * of the indicated process.  Zero indicates the current process; negative
+ * indicates the process with process ID -pid.
+ */
+typedef int (*kill_callback)(pid_t pid, int sig);
+
+static int kill_pids(pid_t pid, int sig, kill_callback killer)
+{
+	DWORD pids[16384];
+	int max_len = sizeof(pids) / sizeof(*pids), i, len, ret = 0;
+
+	if(pid > 0)
+		pids[0] = (DWORD)pid;
+	else if (pid == 0)
+		pids[0] = (DWORD)getpid();
+	else
+		pids[0] = (DWORD)-pid;
+	len = 1;
+
+	/*
+	 * Even if Process32First()/Process32Next() seem to traverse the
+	 * processes in topological order (i.e. parent processes before
+	 * child processes), there is nothing in the Win32 API documentation
+	 * suggesting that this is guaranteed.
+	 *
+	 * Therefore, run through them at least twice and stop when no more
+	 * process IDs were added to the list.
+	 */
+	if (pid <= 0) {
+		HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+
+		if (snapshot == INVALID_HANDLE_VALUE) {
+			errno = err_win_to_posix();
+			return -1;
+		}
+
+		for (;;) {
+			PROCESSENTRY32 entry;
+			int orig_len = len;
+
+			memset(&entry, 0, sizeof(entry));
+			entry.dwSize = sizeof(entry);
+
+			if (!Process32First(snapshot, &entry))
+				break;
+
+			do {
+				for (i = len - 1; i >= 0; i--) {
+					if (pids[i] == entry.th32ProcessID)
+						break;
+					if (pids[i] == entry.th32ParentProcessID)
+						pids[len++] = entry.th32ProcessID;
+				}
+			} while (len < max_len && Process32Next(snapshot, &entry));
+
+			if (orig_len == len || len >= max_len)
+				break;
+		}
+
+		CloseHandle(snapshot);
+	}
+
+	for (i = len - 1; i >= 0; i--) {
+		SetLastError(0);
+		if (killer(pids[i], sig)) {
+			errno = err_win_to_posix();
+			ret = -1;
+		}
+	}
+
+	return ret;
+}
+
+/**
+ * Determine whether a process runs in the same architecture as the current
+ * one. That test is required before we assume that GetProcAddress() returns
+ * a valid address *for the target process*.
+ */
+static inline int process_architecture_matches_current(HANDLE process)
+{
+	static BOOL current_is_wow = -1;
+	BOOL is_wow;
+
+	if (current_is_wow == -1 &&
+	    !IsWow64Process (GetCurrentProcess(), &current_is_wow))
+		current_is_wow = -2;
+	if (current_is_wow == -2)
+		return 0; /* could not determine current process' WoW-ness */
+	if (!IsWow64Process (process, &is_wow))
+		return 0; /* cannot determine */
+	return is_wow == current_is_wow;
+}
+
+/**
+ * This function tries to terminate a Win32 process, as gently as possible,
+ * by injecting a thread that calls ExitProcess().
+ *
+ * Note: as kernel32.dll is loaded before any process, the other process and
+ * this process will have ExitProcess() at the same address.
+ *
+ * The idea comes from the Dr Dobb's article "A Safer Alternative to
+ * TerminateProcess()" by Andrew Tucker (July 1, 1999),
+ * http://www.drdobbs.com/a-safer-alternative-to-terminateprocess/184416547
+ *
+ */
+int kill_signal_by_handle(HANDLE process, int sig)
+{
+	DWORD code;
+	int ret = 0;
+
+	if (GetExitCodeProcess(process, &code) && code == STILL_ACTIVE) {
+		DECLARE_PROC_ADDR(DWORD, ExitProcess, LPVOID);
+		PVOID arg = (PVOID)(intptr_t)(sig << 24);
+		DWORD thread_id;
+		HANDLE thread;
+
+		if (!INIT_PROC_ADDR(kernel32, ExitProcess) ||
+				!process_architecture_matches_current(process)) {
+			SetLastError(ERROR_ACCESS_DENIED);
+			ret = -1;
+			goto finish;
+		}
+
+		if ((thread = CreateRemoteThread(process, NULL, 0,
+					    ExitProcess, arg, 0, &thread_id))) {
+			CloseHandle(thread);
+		}
+	}
+
+ finish:
+	CloseHandle(process);
+	return ret;
+}
+
+static int kill_signal(pid_t pid, int sig)
+{
+	HANDLE process;
+
+	if (!(process = OpenProcess(SYNCHRONIZE | PROCESS_CREATE_THREAD |
+			PROCESS_QUERY_INFORMATION |
+			PROCESS_VM_OPERATION | PROCESS_VM_WRITE |
+			PROCESS_VM_READ, FALSE, pid))) {
+		return -1;
+	}
+
+	return kill_signal_by_handle(process, sig);
+}
+
+/*
+ * This way of terminating processes is not gentle: they get no chance to
+ * clean up after themselves (closing file handles, removing .lock files,
+ * terminating spawned processes (if any), etc).
+ *
+ * If the signal isn't SIGKILL just check if the target process exists.
+ */
+static int kill_SIGKILL(pid_t pid, int sig)
+{
+	HANDLE process;
+	int ret = 0;
+
+	if (!(process=OpenProcess(PROCESS_TERMINATE, FALSE, pid))) {
+		return -1;
+	}
+
+	if (sig == SIGKILL)
+		ret = !TerminateProcess(process, SIGKILL << 24);
+	CloseHandle(process);
+
+	return ret;
+}
+
+int FAST_FUNC is_valid_signal(int number)
+{
+	return isalpha(*get_signame(number));
+}
+
+int exit_code_to_wait_status(DWORD exit_code)
+{
+	int sig, status;
+
+	if (exit_code == 0xc0000005)
+		return SIGSEGV;
+	else if (exit_code == 0xc000013a)
+		return SIGINT;
+
+	// When a process is terminated as if by a signal the Windows
+	// exit code is zero apart from the signal in its topmost byte.
+	// This is a busybox-w32 convention.
+	sig = exit_code >> 24;
+	if (sig != 0 && exit_code == sig << 24 && is_valid_signal(sig))
+		return sig;
+
+	// Use least significant byte as exit code, but not if it's zero
+	// and the Windows exit code as a whole is non-zero.
+	status = exit_code & 0xff;
+	if (exit_code != 0 && status == 0)
+		status = 255;
+	return status << 8;
+}
+
+int exit_code_to_posix(DWORD exit_code)
+{
+	int status = exit_code_to_wait_status(exit_code);
+
+	if (WIFSIGNALED(status))
+		return 128 + WTERMSIG(status);
+	return WEXITSTATUS(status);
+}
+
+int kill(pid_t pid, int sig)
+{
+	if (sig == SIGKILL || sig == 0)
+		return kill_pids(pid, sig, kill_SIGKILL);
+	else if (is_valid_signal(sig))
+		return kill_pids(pid, sig, kill_signal);
+
+	errno = EINVAL;
+	return -1;
+}

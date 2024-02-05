@@ -1,0 +1,90 @@
+#
+#
+#  Copyright (c) 2016, Red Hat, Inc.
+#  Copyright (c) 2016, Masatake YAMATO
+#
+#  Author: Masatake YAMATO <yamato@redhat.com>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+# USA.
+#
+# This module extracts headers of Pod file.
+#
+# References:
+# - https://perldoc.perl.org/perlpod
+# - https://perldoc.perl.org/perlpodspec
+#
+--langdef=Pod
+--map-Pod=+.pod
+
+--kinddef-Pod=c,chapter,chapters
+--kinddef-Pod=s,section,sections
+--kinddef-Pod=S,subsection,subsections
+--kinddef-Pod=t,subsubsection,subsubsections
+
+# Separator definitions must come after kind definitions.
+# This is the limitation of optlib2c.
+--_scopesep-Pod=*/*:""
+
+--_prelude-Pod={{
+    /kindTable [
+        /chapter /section /subsection /subsubsection
+    ] def
+
+    % numstr:str TOLEVEL int
+    /tolevel {
+        0 get ?1 sub
+    } def
+
+    /depthForCork {
+        :kind kindTable exch _aindex pop
+    } def
+
+    % endline:int goal:int scopePopUpTo -
+    /scopePopUpTo
+    {
+        {
+            _scopetop {
+                dup
+                % endline goal scope scope
+                depthForCork 2 index ge {
+                    % endline goal scope
+                    2 index end:
+                    _scopepop
+                } {
+                    pop
+                    exit
+                } ifelse
+            } {
+                exit
+            } ifelse
+        } loop
+        pop
+        pop
+    } def
+}}
+
+--regex-Pod=/^=head([1-4])[ \t]+(.+)//{{
+    \2
+    kindTable \1 tolevel get
+    2 /start _matchloc
+    _tag _commit
+    dup :line 1 sub \1 tolevel scopePopUpTo
+    _scopetop {
+        1 index exch scope: _scopepush
+    } {
+        _scopepush
+    } ifelse
+}}
