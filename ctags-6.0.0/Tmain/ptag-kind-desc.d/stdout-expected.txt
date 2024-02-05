@@ -1,0 +1,2 @@
+!_TAG_KIND_DESCRIPTION!C	d,macro	/macro definitions/
+!_TAG_KIND_DESCRIPTION!C	f,function	/function definitions/

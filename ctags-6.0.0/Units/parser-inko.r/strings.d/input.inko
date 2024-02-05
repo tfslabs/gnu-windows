@@ -1,0 +1,12 @@
+'foo'
+'let A = 10'
+'class B {}'
+'trait C {}'
+"trait D {}"
+
+'foo \' class AA {}'
+"foo \" class AA {}"
+
+`trait Hello {}`
+
+class Foo {}

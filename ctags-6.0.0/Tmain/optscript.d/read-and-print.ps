@@ -1,0 +1,109 @@
+/pc { pstack clear } def
+/dpc { get pstack clear } def
+(array) pc
+[/a /b] pc
+[/abc /efg] pc
+[/1 /b] pc
+[/a /2] pc
+[/123 /123] pc
+(dict) pc
+<< /a /b >>     /a dpc
+<</a /b>>       /a dpc
+<< /abc /efg >> /abc dpc
+<</abc /efg>>   /abc dpc
+<< /1 /2 >>     /1 dpc
+<</1 /2>>       /1 dpc
+<< /123 /123 >> /123 dpc
+<</123 /123>>   /123 dpc
+(cvn) pc
+(/a)    cvn pc
+% gsnd prints "//a /x" for the next code.
+(/a /x) cvn pc
+(immediate) pc
+/a 1 def
+//a pc
+(a\nb\tc\rd\fe) pc
+
+/str () def
+str 0 ?a put
+str 1 ?b put
+str 2 ?c put
+str 3 ?d put
+str 4 ?\n put
+str 5 ?\f put
+str 6 ?\r put
+str 7 ?\v put
+str 8 ?\t put
+str 9 ?\  put
+str 10 ?z put
+str ==
+/-a { add } def
+-500 500 -a ==
+[0] ==
+[-10] ==
+[0 -10] ==
+
+/abc =
+(efg) =
+
+/inject {
+    % target key val
+    2 index type /dicttype eq {
+        2 index 3 1 roll put
+    } {
+        2 index 0 get
+        % array key val dict
+        3 1 roll put
+    } ifelse
+} def
+
+/debug= {
+    10 /=    inject dup =
+    10 /==   inject dup ==
+    10 /===  inject dup ===
+    10 /==== inject dup ====
+    pop
+} def
+
+% names cannot be used for keys because
+% the test output becomes unstable.
+%
+<< 10 null
+   97 1
+   98 /ab
+   99 (efg)
+   100 <<
+          101 2
+          102 /ef
+          103 (xyz)
+          104 <<
+                 105 3
+                 106 /ij
+             >>
+      >>
+>>
+debug=
+
+[
+<< 10 null
+   97 1
+   98 /ab
+   99 (efg)
+   100 <<
+          101 2
+          102 /ef
+          103 (xyz)
+          104 <<
+                 105 3
+                 106 /ij
+                 107 [ << 88 1 89 [ 0 1 2 ] >> ]
+             >>
+      >>
+   122 [ << 65 1 66 [ 0 1 2 ] >> ]
+>>
+]
+debug=
+
+(char after metachar) =
+[?a] ==
+[?\n] ==

@@ -1,0 +1,41 @@
+{ 20 }
+
+class A
+{
+  @number: X
+
+  def in_a {
+    { 20 }
+  }
+
+  def another {}
+}
+
+def foo {}
+
+class B {
+  def in_b {
+    { 10  }
+  }
+}
+
+def global {}
+
+trait SomeTrait {
+  # def this_should_be_ignored {}
+  def required_method
+}
+
+class Socket {
+  def quack {}
+}
+
+impl Bar for Socket {
+  def moo !! Integer {}
+}
+
+impl Chickens {
+  def bok_bok {}
+}
+
+let NUMBER = 10

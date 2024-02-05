@@ -1,0 +1,2 @@
+FOO	input.inko	/^let FOO = 10$/;"	c
+BAR	input.inko	/^let BAR = 20$/;"	c

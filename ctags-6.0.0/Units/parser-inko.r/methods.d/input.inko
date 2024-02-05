@@ -1,0 +1,16 @@
+class A {
+  def method_a {}
+}
+
+class B {
+  def method_b {}
+}
+
+def + {}
+def - {}
+def * {}
+def / {}
+def % {}
+def ^ {}
+def [] {}
+def []= {}

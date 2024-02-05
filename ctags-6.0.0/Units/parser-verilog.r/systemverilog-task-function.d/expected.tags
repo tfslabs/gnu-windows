@@ -1,0 +1,53 @@
+task_func	input.sv	/^module task_func;$/;"	m
+crc	input.sv	/^  function automatic int crc( ref byte packet [1000:1] );$/;"	f	module:task_func
+packet	input.sv	/^  function automatic int crc( ref byte packet [1000:1] );$/;"	p	function:task_func.crc
+show	input.sv	/^  task automatic show ( const ref byte data [] );$/;"	t	module:task_func
+data	input.sv	/^  task automatic show ( const ref byte data [] );$/;"	p	task:task_func.show
+attr	input.sv	/^  task automatic attr ( (* my_attr *) const ref foo, enum { s0, s1 } sel_e );$/;"	t	module:task_func
+foo	input.sv	/^  task automatic attr ( (* my_attr *) const ref foo, enum { s0, s1 } sel_e );$/;"	p	task:task_func.attr
+sel_e	input.sv	/^  task automatic attr ( (* my_attr *) const ref foo, enum { s0, s1 } sel_e );$/;"	p	task:task_func.attr
+C	input.sv	/^class C;$/;"	C
+M	input.sv	/^module M (output a, input b, c, d);$/;"	m
+a	input.sv	/^module M (output a, input b, c, d);$/;"	p	module:M
+b	input.sv	/^module M (output a, input b, c, d);$/;"	p	module:M
+c	input.sv	/^module M (output a, input b, c, d);$/;"	p	module:M
+d	input.sv	/^module M (output a, input b, c, d);$/;"	p	module:M
+myprint	input.sv	/^  function void myprint (int a);$/;"	f	module:M
+a	input.sv	/^  function void myprint (int a);$/;"	p	function:M.myprint
+x	input.sv	/^    logic x;$/;"	r	function:M.myprint
+N	input.sv	/^module N;$/;"	m
+array_locator	input.sv	/^  function array_locator();$/;"	f	module:N
+SA	input.sv	/^    string SA[10], qs[$];$/;"	r	function:N.array_locator
+qs	input.sv	/^    string SA[10], qs[$];$/;"	r	function:N.array_locator
+IA	input.sv	/^    int IA[int], qi[$];$/;"	r	function:N.array_locator
+qi	input.sv	/^    int IA[int], qi[$];$/;"	r	function:N.array_locator
+array_ordering	input.sv	/^  function array_ordering();$/;"	f	module:N
+c	input.sv	/^    struct { byte red, green, blue; } c [512];$/;"	S	function:N.array_ordering
+red	input.sv	/^    struct { byte red, green, blue; } c [512];$/;"	w	struct:N.array_ordering.c
+green	input.sv	/^    struct { byte red, green, blue; } c [512];$/;"	w	struct:N.array_ordering.c
+blue	input.sv	/^    struct { byte red, green, blue; } c [512];$/;"	w	struct:N.array_ordering.c
+foo	input.sv	/^package foo;$/;"	K
+uvm_object	input.sv	/^  typedef logic uvm_object;$/;"	T	package:foo
+bar	input.sv	/^  function logic bar (uvm_object baz);$/;"	f	package:foo
+baz	input.sv	/^  function logic bar (uvm_object baz);$/;"	p	function:foo.bar
+func_test	input.sv	/^class func_test;$/;"	C
+uvm_object	input.sv	/^  typedef logic uvm_object;$/;"	T	class:func_test
+uvm_comparer	input.sv	/^  typedef logic uvm_comparer;$/;"	T	class:func_test
+uvm_packer	input.sv	/^  typedef logic uvm_packer;$/;"	T	class:func_test
+bar	input.sv	/^  function void foo::bar(uvm_object element);	\/\/ FIXME$/;"	f	class:func_test.foo
+element	input.sv	/^  function void foo::bar(uvm_object element);	\/\/ FIXME$/;"	p	function:func_test.foo.bar
+do_compare	input.sv	/^  function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	f	class:func_test
+rhs	input.sv	/^  function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	p	function:func_test.do_compare
+comparer	input.sv	/^  function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	p	function:func_test.do_compare
+do_pack	input.sv	/^  function void do_pack(uvm_packer packer);$/;"	f	class:func_test
+packer	input.sv	/^  function void do_pack(uvm_packer packer);$/;"	p	function:func_test.do_pack
+get_if	input.sv	/^  function uvm_port_base #(IF) get_if(int index=0);	\/\/ FIXME$/;"	f	class:func_test
+index	input.sv	/^  function uvm_port_base #(IF) get_if(int index=0);	\/\/ FIXME$/;"	p	function:func_test.get_if
+bind_vitf	input.sv	/^  function void bind_vitf(virtual wb_if.master sigs);$/;"	f	class:func_test
+sigs	input.sv	/^  function void bind_vitf(virtual wb_if.master sigs);$/;"	p	function:func_test.bind_vitf
+get	input.sv	/^  function string get(string v);$/;"	f	class:func_test
+v	input.sv	/^  function string get(string v);$/;"	p	function:func_test.get
+get_arg	input.sv	/^  function string get_arg();$/;"	f	class:func_test
+parameterized_task	input.sv	/^  function parameterized_task;$/;"	f	class:func_test
+foo	input.sv	/^  function void foo (inout bar::type_t baz);$/;"	f	class:func_test
+baz	input.sv	/^  function void foo (inout bar::type_t baz);$/;"	p	function:func_test.foo

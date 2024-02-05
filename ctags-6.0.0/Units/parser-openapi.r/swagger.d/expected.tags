@@ -1,0 +1,10 @@
+test	input.yaml	/^    title: test$/;"	t
+example.com	input.yaml	/^host: example.com$/;"	s
+/sample/path	input.yaml	/^    \/sample\/path:$/;"	p
+/sample/other/path	input.yaml	/^    \/sample\/other\/path:$/;"	p
+PolymorphicString	input.yaml	/^    PolymorphicString:$/;"	d
+PolymorphicInteger	input.yaml	/^    PolymorphicInteger:$/;"	d
+Param1	input.yaml	/^    Param1:$/;"	P
+Param2	input.yaml	/^    Param2:$/;"	P
+Response1	input.yaml	/^    Response1:$/;"	R
+Response2	input.yaml	/^    Response2:$/;"	R

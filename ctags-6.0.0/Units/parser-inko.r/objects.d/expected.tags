@@ -1,0 +1,4 @@
+A	input.inko	/^class A {}$/;"	o
+B	input.inko	/^class B {}$/;"	o
+C	input.inko	/^class C {$/;"	o
+@foo	input.inko	/^  @foo: X$/;"	a	class:C

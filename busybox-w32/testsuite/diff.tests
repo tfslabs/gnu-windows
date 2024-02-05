@@ -160,11 +160,11 @@ testing "diff CRLF line endings" \
 --- -
 +++ input
 @@ -1,4 +1,4 @@
- a
- b
-+c
- d
--e
+ a
+ b
++c
+ d
+-e
 " \
 	"a\r\nb\r\nc\r\nd\r\n" \
 	"a\r\nb\r\nd\r\ne\r\n"
@@ -175,11 +175,11 @@ testing "diff --binary CRLF line endings" \
 --- -
 +++ input
 @@ -1,4 +1,4 @@
- a
- b
-+c
- d
--e
+ a
+ b
++c
+ d
+-e
 " \
 	"a\r\nb\r\nc\r\nd\r\n" \
 	"a\r\nb\r\nd\r\ne\r\n"

@@ -1,0 +1,3 @@
+"mystuff.R"	input.r	/^  source("mystuff.R");$/;"	s
+.First	input.r	/^.First <- function() {$/;"	f
+MASS	input.r	/^  library(MASS)                         # attach a package$/;"	l

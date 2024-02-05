@@ -1,0 +1,5 @@
+first	input.js	/^  "first": function(){},$/;"	m	variable:o
+fourth	input.js	/^  "fourth": function(){},$/;"	m	variable:o
+o	input.js	/^var o = {$/;"	v
+second	input.js	/^ond": function(){},$/;"	m	variable:o
+third	input.js	/^": function(){},$/;"	m	variable:o
