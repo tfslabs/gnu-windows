@@ -141,8 +141,7 @@ $GNU_FOLDER/binutils-$BINUTILS_VERSION/configure \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
  && make MAKEINFO=true -j$(nproc) \
- && make MAKEINFO=true install \
- && rm $BOOTSTRAP/bin/elfedit.exe $BOOTSTRAP/bin/gprof.exe $BOOTSTRAP/bin/readelf.exe
+ && make MAKEINFO=true install
 
 mkdir $MAKE_FOLDER/gmp && cd "$_"
 chmod +x $GNU_FOLDER/gmp-$GMP_VERSION/configure
