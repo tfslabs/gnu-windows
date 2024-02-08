@@ -26,7 +26,7 @@ cd $WORKDIR
 
 apt update && \
  apt upgrade -y && \
- apt install -y build-essential curl libgmp-dev libmpc-dev libmpfr-dev m4 zip wget gcc g++ make cmake automake
+ apt install -y build-essential curl libgmp-dev libmpc-dev libmpfr-dev m4 zip wget gcc g++ make cmake automake python3 python3-pip
 
 wget --trust-server-names  \
     http://ftp.vim.org/pub/vim/unix/vim-$VIM_VERSION.tar.bz2 \
