@@ -1,12 +1,6 @@
 # Use an official Ubuntu image as base
 FROM debian:latest
 
-# Set the working directory inside the container
-WORKDIR /root
-
-# Copy the contents of the current directory into the image
-COPY . /root
-
 # Install git and any other dependencies needed for your build script
 RUN apt update && \
  apt upgrade -y && \
@@ -20,10 +14,4 @@ RUN apt update && \
  libssh2-1 libstdc++-12-dev libtirpc-dev libtsan2 libubsan1 libuv1 libwebp7 libx11-6 libx11-data \
  libx265-199 libxau6 libxcb1 libxdmcp6 libxml2 libxpm4 libyuv0 linux-libc-dev manpages-dev patch \
  publicsuffix rpcsvc-proto unzip autoconf automake bison build-essential cmake curl dpkg-dev flex \
- g++ gcc libfl-dev libgmp-dev libmpc-dev libmpfr-dev m4 make wget zip texinfo pkg-config \
-
-# Clone the git repository into the container
-RUN git clone <your_git_repository_url> /root
-
-# Set the entrypoint to run the build script
-ENTRYPOINT ["/bin/bash", "/root/.gnu-windows/build.sh"]
+ g++ gcc libfl-dev libgmp-dev libmpc-dev libmpfr-dev m4 make wget zip texinfo pkg-config
