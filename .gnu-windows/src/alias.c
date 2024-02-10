@@ -1,4 +1,4 @@
-// Well-behaved command line aliases for w64devkit
+// Well-behaved command line aliases for gnu-windows
 //
 // Unlike batch script aliases, this program will not produce an annoying
 // and useless "Terminate batch job (Y/N)" prompt. When compiling, define
@@ -68,7 +68,7 @@ W32 b32    WriteFile(handle, u8 *, u32, u32 *, void *);
 
 // Application
 
-#define ERR(s) "w64devkit (alias): " s "\n"
+#define ERR(s) "gnu-windows (alias): " s "\n"
 
 #define new(h, t, n) (t *)alloc(h, sizeof(t), alignof(t), n)
 __attribute((malloc))

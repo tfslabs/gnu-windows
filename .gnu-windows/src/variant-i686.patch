@@ -1,6 +1,6 @@
 --- a/Dockerfile
 +++ b/Dockerfile
-@@ -65,3 +65,3 @@ COPY src/w64devkit.c src/w64devkit.ico \
+@@ -65,3 +65,3 @@ COPY src/gnu-windows.c src/gnu-windows.ico \
  
 -ARG ARCH=x86_64-w64-mingw32
 +ARG ARCH=i686-w64-mingw32

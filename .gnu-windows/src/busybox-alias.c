@@ -95,7 +95,7 @@ static u32 run(void)
     c16 busybox[] = u"\\busybox.exe";
     append(&exe, busybox, countof(busybox));
     if (exe.err) {
-        static u8 msg[] = "w64devkit: busybox.exe path too long\n";
+        static u8 msg[] = "gnu-windows: busybox.exe path too long\n";
         return fatal(msg, lengthof(msg));
     }
 
@@ -104,7 +104,7 @@ static u32 run(void)
     pi pi;
     c16 *cmdline = GetCommandLineW();
     if (!CreateProcessW(exe.buf, cmdline, 0, 0, 1, 0, 0, 0, &si, &pi)) {
-        static u8 msg[] = "w64devkit: could not start busybox.exe\n";
+        static u8 msg[] = "gnu-windows: could not start busybox.exe\n";
         return fatal(msg, lengthof(msg));
     }
 
