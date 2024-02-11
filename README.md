@@ -18,13 +18,13 @@ is a copyrightable year that could otherwise be listed individually.
 
 # GNU Windows
 
-GNU Windows is a suite of development kits for Windows, including the tools already metioned above. It is used to build [@TheFlightSims](https://github.com/TheFlightSims) application binaries from sources.
+GNU Windows is a suite of development kits for Windows, including the tools already mentioned above. It is used to build [@TheFlightSims](https://github.com/TheFlightSims) application binaries from sources.
 
-All exclusive documents, you can try search for yourself on over the Internet.
+All exclusive documents, you can try to search for yourself over the Internet.
 
 > :warning: Warning
 >
-> GNU Windows is only support 64-bit Windows operating system. Run best on Windows 10 1903 and later.
+> GNU Windows only supports the 64-bit Windows operating system. Run best on Windows 10 1903 and later.
 
 ## Getting started
 
@@ -32,9 +32,9 @@ All exclusive documents, you can try search for yourself on over the Internet.
 
 #### Building within Docker
 
-You need to run the pre-defined Docker image, mounting your cloned GitHub repo into, and build from that.
+You need to run the pre-defined Docker image, mount your cloned GitHub repo, and build from that.
 
-Replace `<your path>` with your real path to the local repo. Double-quote is needed is there are spaces in your path.
+Replace `<your path>` with your real path to the local repo. Double-quote is needed if there are spaces in your path.
 
 ```shell
 docker run -it -v <your path>:/root shiroinekotfs/gnu-windows:latest bash
@@ -75,6 +75,6 @@ Read the instruction [here](https://github.com/tfslabs/gnu-windows/blob/master/C
 
 ## License
 
-This project is linked with GNU GPL 3.0 License. With no restriction in distriution and reuse.
+This project is linked with GNU GPL 3.0 License. With no restriction on distribution and reuse.
 
 GNU Windows is made by team of TheFlightSims - Department of Research.
