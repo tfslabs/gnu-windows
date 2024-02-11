@@ -71,7 +71,7 @@ Just run the `<your path>/.gnu-windows/build.sh` directly, without changing the 
 
 ### Contributing
 
-Read the instruction [here](CONTRIBUTING.md)
+Read the instruction [here](https://github.com/tfslabs/gnu-windows/blob/master/CONTRIBUTING.md)
 
 ## License
 
