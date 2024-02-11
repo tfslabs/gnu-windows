@@ -14,4 +14,5 @@ RUN apt update && \
  libssh2-1 libstdc++-12-dev libtirpc-dev libtsan2 libubsan1 libuv1 libwebp7 libx11-6 libx11-data \
  libx265-199 libxau6 libxcb1 libxdmcp6 libxml2 libxpm4 libyuv0 linux-libc-dev manpages-dev patch \
  publicsuffix rpcsvc-proto unzip autoconf automake bison build-essential cmake curl dpkg-dev flex \
- g++ gcc libfl-dev libgmp-dev libmpc-dev libmpfr-dev m4 make wget zip texinfo pkg-config
+ g++ gcc libfl-dev libgmp-dev libmpc-dev libmpfr-dev m4 make wget zip texinfo pkg-config python3 \
+ python3-pip python3-venv file
