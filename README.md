@@ -18,7 +18,7 @@ is a copyrightable year that could otherwise be listed individually.
 
 # GNU Windows
 
-GNU Windows is a suite of development kits for Windows, including the tools already mentioned above. It is used to build [@TheFlightSims](https://github.com/TheFlightSims) application binaries from sources.
+GNU Windows is a suite of development kits for Windows, including the tools mentioned above. It is used to build [@TheFlightSims](https://github.com/TheFlightSims) application binaries from sources.
 
 All exclusive documents, you can try to search for yourself over the Internet.
 
@@ -67,11 +67,15 @@ g++ gcc libfl-dev libgmp-dev libmpc-dev libmpfr-dev m4 make wget zip texinfo pkg
 python3-pip python3-venv file mingw-w64-x86-64-dev mingw-w64-i686-dev mingw-w64-tools
 ```
 
-Just run the `<your path>/.gnu-windows/build.sh` directly, without changing the current console directory. Don't forget to use `chmod` command.
+Run the `<your path>/.gnu-windows/build.sh` directly, without changing the current console directory. Don't forget to use `chmod` command.
+
+### Extension
+
+For installing additional GNU Windows extensions, you can go [search at TheFlightSims Internal Labs repos](https://github.com/orgs/tfslabs/repositories?q=gnu-windows)
 
 ### Contributing
 
-Read the instruction [here](https://github.com/tfslabs/gnu-windows/blob/master/CONTRIBUTING.md)
+Read the instructions [here](https://github.com/tfslabs/gnu-windows/blob/master/CONTRIBUTING.md)
 
 ## License
 
