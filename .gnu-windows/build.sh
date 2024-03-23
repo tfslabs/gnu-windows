@@ -447,9 +447,6 @@ cd $WORKDIR
 cp -r $SOURCE_CODE/* $BOOTSTRAP/src #??
 printf "id ICON \"$BOOTSTRAP/src/gnu-windows.ico\"" >gnu-windows.rc \
  && $BOOTSTRAP/bin/$ARCH-windres -o gnu-windows.o gnu-windows.rc \
- && $BOOTSTRAP/bin/$ARCH-gcc -DVERSION=$VERSION -nostdlib -fno-asynchronous-unwind-tables \
-        -fno-builtin -Wl,--gc-sections -s -o $BOOTSTRAP/bin/gnu-windows.exe \
-        $BOOTSTRAP/src/gnu-windows.c gnu-windows.o -lkernel32 -luser32 \
  && $BOOTSTRAP/bin/$ARCH-gcc \
         -Os -fno-asynchronous-unwind-tables \
         -Wl,--gc-sections -s -nostdlib \
