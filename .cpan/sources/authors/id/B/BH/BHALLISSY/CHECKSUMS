@@ -1,0 +1,99 @@
+0&&<<''; # this PGP-signed message is also valid perl
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+# CHECKSUMS file written on Sun Nov 21 23:33:46 2021 GMT by CPAN::Checksums (v2.13)
+$cksum = {
+  'Font-TTF-1.06.meta' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => '8c5234672077febf716e5f38425f22ac',
+    'mtime' => '2016-08-18',
+    'sha256' => 'e690b04e37b51166f7b533cd76d1701beba4da1cead5b95e07d7ad83b0983f55',
+    'size' => 733
+  },
+  'Font-TTF-1.06.tar.gz' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => '241b59310ad4450e6e050d5e790f1b21',
+    'md5-ungz' => 'e8cc78be6294e5c3c909f65e281bde5c',
+    'mtime' => '2016-08-25',
+    'sha256' => '4b697d444259759ea02d2c442c9bffe5ffe14c9214084a01f743693a944cc293',
+    'sha256-ungz' => '0db601c4d0a3a1b9f952ed5d19a61f8636b62444551615110601a637e7cb6373',
+    'size' => 256048
+  },
+  'Font-TTF-Scripts-1.06.meta' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => '2322b98c747070f8d6b2d6390865bd18',
+    'mtime' => '2016-08-25',
+    'sha256' => '0e6d148060c1f7eb8477208f022c1f51d08b3b52fff27edfd0dce72bc15c3e27',
+    'size' => 765
+  },
+  'Font-TTF-Scripts-1.06.tar.gz' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => 'e206f32a46172caee156690d4e31f8b6',
+    'md5-ungz' => 'bf31f3e0cd3653258c0658c1a206feb5',
+    'mtime' => '2016-08-25',
+    'sha256' => 'dc6d6392fd742f58179b2317c1aeb2afea9e0728f1318fdbc752b4a0cfbcc353',
+    'sha256-ungz' => '4a3a00a226e712c6b64a4fafe00cf0ee3e5f8bb7adba33198a2f5ba829a59537',
+    'size' => 1637967
+  },
+  'Text-PDF-0.30.meta' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => 'bdaf2b8099039db5593f7e09113a20e4',
+    'mtime' => '2016-08-18',
+    'sha256' => 'e314337cf0d09cf03e78fd149a86aa32a83fe95554e528909e02bc464577fcee',
+    'size' => 736
+  },
+  'Text-PDF-0.30.tar.gz' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => 'cd3ca14a3caef9bde747c72124b47ca7',
+    'md5-ungz' => 'a1e2fdc90660c55fe5bbb748c45da8ed',
+    'mtime' => '2016-08-18',
+    'sha256' => 'c40cd3a279a9b54ee756c6ef12436cf46fa220afaacf7effdb39b5ea45c1d9e0',
+    'sha256-ungz' => '0450c7eaff6e2354a863b1c551d01b89f7eafe4c6d66d8cb7a71cccf3cf6c009',
+    'size' => 56169
+  },
+  'Text-PDF-0.31.meta' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => '9f02b634c5e689dab10d70b7fd2c627c',
+    'mtime' => '2016-08-24',
+    'sha256' => '997e2de193041fc0087fdaba7fe8896dcc9fa86b826759a4b551b0692dba4b86',
+    'size' => 736
+  },
+  'Text-PDF-0.31.tar.gz' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => 'bf63812e65f2e2012e10e422a637760a',
+    'md5-ungz' => '0eac76675533f98a836e660e68b45446',
+    'mtime' => '2016-08-25',
+    'sha256' => 'df9f515ee159804b0d5a75d5adb93c4584c7ec401d8c59c27e9f73925d8dac68',
+    'sha256-ungz' => '93d61f0e68c187aad686cf0aa1552e124e390827c363699c8d6a47322e4ee32c',
+    'size' => 56267
+  },
+  'Text-Unicode-Equivalents-0.05.meta' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => 'd72f2719165cf1b9b2855ec7dddb2546',
+    'mtime' => '2011-06-27',
+    'sha256' => 'fac0c2d4920b4f3a23ef23decde12c5a98f71bd9d89f3e06f9bf46fdb77beded',
+    'size' => 546
+  },
+  'Text-Unicode-Equivalents-0.05.tar.gz' => {
+    'cpan_path' => 'B/BH/BHALLISSY',
+    'md5' => '78f48a7e6283f2c0f8586a86f33700d6',
+    'md5-ungz' => '4b57e0a7a8888cd2eb056ad71d8284f2',
+    'mtime' => '2011-06-27',
+    'sha256' => 'a53862f7f935c1f894ff23d4fd2834573f6c537f05efd876612a3abcc7a0a3d6',
+    'sha256-ungz' => '5e04ae137ad4a383648383a3c1defa4242c43e3a585e7fcec9dcabd032bd9aec',
+    'size' => 6165
+  }
+};
+__END__
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.14 (GNU/Linux)
+
+iQEcBAEBAgAGBQJhmtdaAAoJELahc5BjdgzKG9EH/2Q8g5/AZg+q8muoqoL6Th03
+RltA3ANdVRe5i5SgkEuE1gFlqYy9jkPVwK4dQjyVMd7W+aSsyMtKJ+zVx1MfCBsz
+S2dhJpEsoq81G3S8sdK6OJpVJq2kbg3meMm++5UbKrkhOmVnnUd/B8zlSE4+UasE
+DT6WTmwQs5Qtlqw6648WNe9pp0niiUNYmdBjTHG0TUfJG6yoVEJ8jF13sBIAM8TT
+avblBLXHu6ge2LdwJpWS9Rupbhc4RSxh/CT1pb3xQnkJhuAfWbKM7ymm5bK9YOIW
+hd+VtKQFK0QogtdI9vJuuHKRFPgfi6GogOX2HE9VZ0/Hg6JMqeYoBRwrqpwS8mA=
+=JAv8
+-----END PGP SIGNATURE-----
