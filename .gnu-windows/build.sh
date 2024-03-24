@@ -413,12 +413,15 @@ ARCH= make -f Make_ming.mak \
         >$BOOTSTRAP/bin/vimtutor.bat
 
 # NOTE: nasm's configure script is broken, so no out-of-source build
+chmod +x $GNU_FOLDER/nasm-$NASM_VERSION/configure && chmod +x $GNU_FOLDER/nasm-$NASM_VERSION/autogen.sh
+cd $GNU_FOLDER/nasm-$NASM_VERSION/
+$GNU_FOLDER/nasm-$NASM_VERSION/autogen.sh
 mkdir $MAKE_FOLDER/nasm-$NASM_VERSION && cd "$_"
-chmod +x $GNU_FOLDER/nasm-$NASM_VERSION/configure && $GNU_FOLDER/nasm-$NASM_VERSION/configure \
+$GNU_FOLDER/nasm-$NASM_VERSION/configure \
         --host=$ARCH \
-        CFLAGS="-Os" \
+		 CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make \
+ && make everything \
  && cp nasm.exe ndisasm.exe $BOOTSTRAP/bin
 
 cd $GNU_FOLDER/ctags-$CTAGS_VERSION
