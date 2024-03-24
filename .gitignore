@@ -19,3 +19,6 @@ vim90
 # Build folder
 .gnu-windows/bootstrap
 .gnu-windows/make
+*Makefile
+*.exe
+*.dll
