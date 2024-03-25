@@ -7351,8 +7351,7 @@
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiEnvComponent">
-    <ROW Environment="PATH" Name="=-*PATH" Value="[~];[bin_Dir]" Component_="main.aap_15"/>
-    <ROW Environment="Path" Name="=-*Path" Value="[~];[APPDIR]" Component_="main.aap_15"/>
+    <ROW Environment="Path" Name="=-*Path" Value="[~];[bin_Dir]" Component_="main.aap_15"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
     <ROW Feature_="MainFeature" Component_="APPDIR"/>
