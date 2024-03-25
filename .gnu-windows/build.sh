@@ -421,7 +421,8 @@ $GNU_FOLDER/nasm-$NASM_VERSION/configure \
         --host=$ARCH \
 		 CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make everything \
+ && mkdir include \
+ && make \
  && cp nasm.exe ndisasm.exe $BOOTSTRAP/bin
 
 cd $GNU_FOLDER/ctags-$CTAGS_VERSION
