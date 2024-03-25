@@ -426,7 +426,7 @@ $GNU_FOLDER/nasm-$NASM_VERSION/configure \
  && cp nasm.exe ndisasm.exe $BOOTSTRAP/bin
 
 cd $GNU_FOLDER/ctags-$CTAGS_VERSION
-sed -i /RT_MANIFEST/d win32/ctags.rc \
+sed -i RT_MANIFEST/d win32/ctags.rc \
  && make -f mk_mingw.mak CC=gcc packcc.exe \
  && make -f mk_mingw.mak \
         CC=$BOOTSTRAP/bin/$ARCH-gcc WINDRES=$ARCH-windres \
