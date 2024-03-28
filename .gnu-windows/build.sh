@@ -43,7 +43,7 @@ $GNU_FOLDER/binutils-$BINUTILS_VERSION/configure \
         --disable-nls \
         --with-static-standard-libraries \
         --disable-multilib \
- && make -j4 MAKEINFO=true \
+ && make MAKEINFO=true \
  && make MAKEINFO=true install
 
 cd $WORKDIR
@@ -56,7 +56,7 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-headers/configure \
         --prefix=$BOOTSTRAP/$ARCH \
         --host=$ARCH \
         --with-default-msvcrt=msvcrt-os \
- && make -j4 \
+ && make \
  && make install
 
 cd $BOOTSTRAP
@@ -88,7 +88,7 @@ $GNU_FOLDER/gcc-$GCC_VERSION/configure \
         CFLAGS="-Os" \
         CXXFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 all-gcc \
+ && make all-gcc \
  && make install-gcc
 
 mkdir -p $BOOTSTRAP/$ARCH/lib \
@@ -108,7 +108,7 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-crt/configure \
         --enable-lib64 \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 mkdir $MAKE_FOLDER/x-winpthreads && cd "$_"
@@ -121,11 +121,11 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-libraries/winpthreads/configure 
         --disable-shared \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 cd $MAKE_FOLDER/x-gcc
-make -j4
+make
 make install
 
 # Cross-compile GCC
@@ -140,7 +140,7 @@ $GNU_FOLDER/binutils-$BINUTILS_VERSION/configure \
         --with-static-standard-libraries \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 MAKEINFO=true \
+ && make MAKEINFO=true \
  && make MAKEINFO=true install
 
 mkdir $MAKE_FOLDER/gmp && cd "$_"
@@ -153,7 +153,7 @@ $GNU_FOLDER/gmp-$GMP_VERSION/configure \
         CFLAGS="-Os" \
         CXXFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 mkdir $MAKE_FOLDER/mpfr && cd "$_"
@@ -167,7 +167,7 @@ $GNU_FOLDER/mpfr-$MPFR_VERSION/configure \
         --disable-shared \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 mkdir $MAKE_FOLDER/mpc && cd "$_"
@@ -183,7 +183,7 @@ $GNU_FOLDER/mpc-$MPC_VERSION/configure \
 		--disable-shared \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 mkdir $MAKE_FOLDER/mingw-headers && cd "$_"
@@ -192,7 +192,7 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-headers/configure \
         --prefix=$BOOTSTRAP/$ARCH \
         --host=$ARCH \
         --with-default-msvcrt=msvcrt-os \
- && make -j4 \
+ && make \
  && make install
 
 mkdir $MAKE_FOLDER/mingw-crt && cd "$_"
@@ -207,7 +207,7 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-crt/configure \
         --enable-lib64 \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 mkdir $MAKE_FOLDER/winpthreads && cd "$_"
@@ -219,7 +219,7 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-libraries/winpthreads/configure 
         --enable-static \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 mkdir $MAKE_FOLDER/gcc && cd "$_"
@@ -257,7 +257,7 @@ $GNU_FOLDER/gcc-$GCC_VERSION/configure \
         CFLAGS="-Os" \
         CXXFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install \
  && $BOOTSTRAP/bin/$ARCH-gcc -DEXE=g++.exe -DCMD=c++ \
         -Os -fno-asynchronous-unwind-tables \
@@ -291,7 +291,7 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-tools/gendef/configure \
         --host=$ARCH \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && cp gendef.exe $BOOTSTRAP/bin/
 
 mkdir $MAKE_FOLDER/expat && cd "$_"
@@ -301,7 +301,7 @@ $GNU_FOLDER/expat-$EXPAT_VERSION/configure \
         --host=$ARCH \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 cd $GNU_FOLDER/PDCurses-$PDCURSES_VERSION
@@ -319,7 +319,7 @@ $GNU_FOLDER/libiconv-$LIBICONV_VERSION/configure \
         --disable-shared \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && make install
 
 mkdir $MAKE_FOLDER/gdb && cd "$_"
@@ -333,7 +333,7 @@ $GNU_FOLDER/gdb-$GDB_VERSION/configure \
         CFLAGS="-Os -DPDC_WIDE -I$BOOTSTRAP/include" \
         CXXFLAGS="-Os -DPDC_WIDE -I$BOOTSTRAP/include" \
         LDFLAGS="-s -L$BOOTSTRAP/lib" \
- && make -j4 MAKEINFO=true \
+ && make MAKEINFO=true \
  && cp gdb/.libs/gdb.exe gdbserver/gdbserver.exe $BOOTSTRAP/bin/
 
 mkdir $MAKE_FOLDER/make && cd "$_"
@@ -343,7 +343,7 @@ $GNU_FOLDER/make-$MAKE_VERSION/configure \
         --disable-nls \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j4 \
+ && make \
  && cp make.exe $BOOTSTRAP/bin/ \
  && $BOOTSTRAP/bin/$ARCH-gcc -DEXE=make.exe -DCMD=make \
         -Os -fno-asynchronous-unwind-tables \
@@ -369,7 +369,7 @@ make mingw64_defconfig \
  && sed -ri 's/^(CONFIG_UNLINK)=y/\1=n/' .config \
  && sed -ri 's/^(CONFIG_VI)=y/\1=n/' .config \
  && sed -ri 's/^(CONFIG_XXD)=y/\1=n/' .config \
- && make -j4 CROSS_COMPILE=$ARCH- \
+ && make CROSS_COMPILE=$ARCH- \
     CONFIG_EXTRA_CFLAGS="-D_WIN32_WINNT=0x502" \
  && cp busybox.exe $BOOTSTRAP/bin/
 
@@ -422,7 +422,7 @@ $GNU_FOLDER/nasm-$NASM_VERSION/configure \
 		 CFLAGS="-Os" \
         LDFLAGS="-s" \
  && mkdir include \
- && make -j4 \
+ && make \
  && cp nasm.exe ndisasm.exe $BOOTSTRAP/bin
 
 cd $GNU_FOLDER/ctags-$CTAGS_VERSION
