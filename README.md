@@ -37,7 +37,7 @@ You need to run the pre-defined Docker image, mount your cloned GitHub repo, and
 Replace `<your path>` with your real path to the local repo. Double-quote is needed if there are spaces in your path.
 
 ```shell
-docker run -it -v <your path>:/root shiroinekotfs/gnu-windows:latest bash
+docker run -it -v <your path>:/root theflightsims/gnu-windows-build:latest bash
 ```
 
 Once you're in the `bash`, try this command:
