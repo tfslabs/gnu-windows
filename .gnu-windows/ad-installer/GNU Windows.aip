@@ -251,453 +251,453 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="APPDIR" ComponentId="{F87326F5-56F8-47E6-9335-FD1AFE511ECE}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="AUTHORS" ComponentId="{B595328F-D7D7-4B8E-98BC-8C17FB578FE2}" Directory_="expat_Dir" Attributes="0" KeyPath="AUTHORS" Type="0"/>
-    <ROW Component="AUTHORS_1" ComponentId="{3BFEB53A-D879-46EA-9497-23892BC4870A}" Directory_="mpfr_Dir" Attributes="0" KeyPath="AUTHORS_1" Type="0"/>
-    <ROW Component="Makefile" ComponentId="{18D52051-342D-451B-B17B-615C0E6D56B3}" Directory_="lang_Dir" Attributes="0" KeyPath="Makefile_2" Type="0"/>
-    <ROW Component="Makefile_1" ComponentId="{71E6A380-1DA0-4A99-8DA5-BD59EE54E1CE}" Directory_="maze_Dir" Attributes="0" KeyPath="Makefile_3" Type="0"/>
-    <ROW Component="Makefile_2" ComponentId="{091A016E-6EAA-4264-B50E-3DBC7812017C}" Directory_="tutor_Dir" Attributes="0" KeyPath="Makefile_4" Type="0"/>
-    <ROW Component="Makefile_3" ComponentId="{1E1E0666-B071-4F3E-98D0-B3DB2CBEC429}" Directory_="mingwtoolsgendef_Dir" Attributes="0" KeyPath="Makefile_5" Type="0"/>
-    <ROW Component="Path" ComponentId="{8766D827-602F-4533-BC25-40C8BA2DA1D7}" Directory_="APPDIR" Attributes="260" KeyPath="Path_1"/>
-    <ROW Component="ProductID" ComponentId="{ACED8155-61A5-426E-9B7C-89E8DFEB29D7}" Directory_="APPDIR" Attributes="260" KeyPath="ProductID"/>
-    <ROW Component="README" ComponentId="{C6D9441E-C233-457C-87A6-0D56278B416C}" Directory_="includefixed_Dir" Attributes="0" KeyPath="README" Type="0"/>
-    <ROW Component="README.txt" ComponentId="{5BE6FD8A-F840-4C34-B484-2D0A61752068}" Directory_="icons_Dir" Attributes="0" KeyPath="README.txt_4" Type="0"/>
+    <ROW Component="AUTHORS" ComponentId="{B6647082-AE70-49AB-B329-F837A4A92D55}" Directory_="expat_Dir" Attributes="0" KeyPath="AUTHORS" Type="0"/>
+    <ROW Component="AUTHORS_1" ComponentId="{483478F4-B20E-4E01-96F2-3735F424E6FA}" Directory_="mpfr_Dir" Attributes="0" KeyPath="AUTHORS_1" Type="0"/>
+    <ROW Component="Makefile" ComponentId="{6E35D51E-DAE3-43F0-A146-2DC80BA4AE0E}" Directory_="lang_Dir" Attributes="0" KeyPath="Makefile_2" Type="0"/>
+    <ROW Component="Makefile_1" ComponentId="{2671AB12-8CCA-49AE-8F6B-F5F54DEAFC22}" Directory_="maze_Dir" Attributes="0" KeyPath="Makefile_3" Type="0"/>
+    <ROW Component="Makefile_2" ComponentId="{5843FEE7-B7EF-44DA-8389-B7E6AAF17B2E}" Directory_="tutor_Dir" Attributes="0" KeyPath="Makefile_4" Type="0"/>
+    <ROW Component="Makefile_3" ComponentId="{F2475F3B-9FA2-41AE-8DB8-6DAE8B87DD4E}" Directory_="mingwtoolsgendef_Dir" Attributes="0" KeyPath="Makefile_5" Type="0"/>
+    <ROW Component="Path" ComponentId="{8766D827-602F-4533-BC25-40C8BA2DA1D7}" Directory_="APPDIR" Attributes="4" KeyPath="Path_1"/>
+    <ROW Component="ProductID" ComponentId="{ACED8155-61A5-426E-9B7C-89E8DFEB29D7}" Directory_="APPDIR" Attributes="4" KeyPath="ProductID"/>
+    <ROW Component="README" ComponentId="{B4DEB54B-C779-4859-9307-E277D3B2A743}" Directory_="includefixed_Dir" Attributes="0" KeyPath="README" Type="0"/>
+    <ROW Component="README.txt" ComponentId="{AEE201D4-6CA3-41E6-8E2C-A2C435F0D3C4}" Directory_="icons_Dir" Attributes="0" KeyPath="README.txt_4" Type="0"/>
     <ROW Component="TheFlightSims" ComponentId="{ECA96CFD-9D4A-49A0-A3E8-DD92876DCA88}" Directory_="APPDIR" Attributes="260" KeyPath="TheFlightSims"/>
-    <ROW Component="Version" ComponentId="{29213D9D-1F83-41B9-93B5-0646479778A7}" Directory_="APPDIR" Attributes="260" KeyPath="Version_1"/>
-    <ROW Component="__init__.py" ComponentId="{CBF20032-8A6F-4446-8ADF-8C81D4D3C91F}" Directory_="libstdcxx_Dir" Attributes="0" KeyPath="__init__.py_1" Type="0"/>
-    <ROW Component="_mingw_ddk.h" ComponentId="{FE670FB1-37BE-4B7A-9653-80B54AA000BD}" Directory_="sdks_Dir" Attributes="0" KeyPath="_mingw_ddk.h" Type="0"/>
-    <ROW Component="aap.vim" ComponentId="{E62554D7-6086-4916-8878-4FD069951F7C}" Directory_="indent_Dir" Attributes="0" KeyPath="aap.vim_1" Type="0"/>
-    <ROW Component="acc_prof.h" ComponentId="{EC04C78D-7ED3-43F0-833D-E89C8F7321C1}" Directory_="include_1_Dir" Attributes="0" KeyPath="acc_prof.h" Type="0"/>
-    <ROW Component="accctrl.h" ComponentId="{8C9ED1C4-2941-45B7-A721-E67420A50E8E}" Directory_="include_4_Dir" Attributes="0" KeyPath="accctrl.h" Type="0"/>
-    <ROW Component="accents.vim" ComponentId="{A9F7B276-C895-46D8-8485-2FD95D5AB30A}" Directory_="keymap_Dir" Attributes="0" KeyPath="accents.vim" Type="0"/>
-    <ROW Component="acpiioct.h" ComponentId="{AAD8F929-0333-40E6-A197-E497A06E500C}" Directory_="ddk_Dir" Attributes="0" KeyPath="acpiioct.h" Type="0"/>
-    <ROW Component="ada.vim" ComponentId="{294A41F5-E262-4F13-8020-0ADFAE27751D}" Directory_="autoload_Dir" Attributes="0" KeyPath="ada.vim" Type="0"/>
-    <ROW Component="adatree.def" ComponentId="{BDB1E51C-EC51-4E99-BB82-137B250388E9}" Directory_="gccinterface_Dir" Attributes="0" KeyPath="adatree.def" Type="0"/>
-    <ROW Component="addr2line.1" ComponentId="{771227FB-6E52-472C-89D4-6EABB7ED2FDD}" Directory_="man1_Dir" Attributes="0" KeyPath="addr2line.1" Type="0"/>
-    <ROW Component="addr2line.exe" ComponentId="{153DED28-192E-4209-B8B4-A2711B4BCEDE}" Directory_="bin_Dir" Attributes="256" KeyPath="addr2line.exe"/>
-    <ROW Component="addresses.h" ComponentId="{464CDAB3-64F8-4038-8ACB-F21ADEFC1CE3}" Directory_="include_3_Dir" Attributes="0" KeyPath="addresses.h" Type="0"/>
-    <ROW Component="af_ZA.diff" ComponentId="{173186C0-0C7F-48ED-9302-A3F2F477CE31}" Directory_="af_Dir" Attributes="0" KeyPath="af_ZA.diff" Type="0"/>
-    <ROW Component="algo.h" ComponentId="{6922ED07-4210-473B-865F-F07C51C41916}" Directory_="parallel_Dir" Attributes="0" KeyPath="algo.h" Type="0"/>
-    <ROW Component="algorithm" ComponentId="{1DABDE1C-EBE4-4EB1-8E05-791036941B83}" Directory_="c_Dir" Attributes="0" KeyPath="algorithm" Type="0"/>
-    <ROW Component="algorithm_1" ComponentId="{2B62DF2A-9C34-46E7-A333-4C6D0A1B0904}" Directory_="experimental_Dir" Attributes="0" KeyPath="algorithm_1" Type="0"/>
-    <ROW Component="algorithm_2" ComponentId="{3EA02FFF-C87F-49F4-86BA-487A316C6693}" Directory_="ext_Dir" Attributes="0" KeyPath="algorithm_2" Type="0"/>
-    <ROW Component="algorithm_fwd.h" ComponentId="{57DA1D4E-7027-4D33-A1D6-39708DB5355F}" Directory_="pstl_Dir" Attributes="0" KeyPath="algorithm_fwd.h" Type="0"/>
-    <ROW Component="algorithmfwd.h" ComponentId="{88D4A904-E204-4C7E-8DA5-5254E53EB3F6}" Directory_="bits_Dir" Attributes="0" KeyPath="algorithmfwd.h" Type="0"/>
-    <ROW Component="alias.c" ComponentId="{63DB93B6-8044-4B2A-BE3A-A0D9370FC2D2}" Directory_="src_Dir" Attributes="0" KeyPath="alias.c" Type="0"/>
-    <ROW Component="alias.exe" ComponentId="{203F72C5-0B30-4125-BF5B-6895D7CCE4EF}" Directory_="bin_Dir" Attributes="256" KeyPath="alias.exe"/>
-    <ROW Component="am_ET.diff" ComponentId="{86409BB3-E946-43CE-9598-3FF22F2DFF48}" Directory_="am_Dir" Attributes="0" KeyPath="am_ET.diff" Type="0"/>
-    <ROW Component="ansidecl.h" ComponentId="{1536B27A-1F8C-46C0-B07B-366D7AD25A01}" Directory_="include_Dir" Attributes="0" KeyPath="ansidecl.h" Type="0"/>
-    <ROW Component="ant.vim" ComponentId="{3C2BE8BF-A2C2-4251-9749-915D06CA1EC4}" Directory_="compiler_Dir" Attributes="0" KeyPath="ant.vim" Type="0"/>
-    <ROW Component="ar" ComponentId="{F6F5A00D-A113-42FF-BF50-BB65E0F4ACA4}" Directory_="bin_1_Dir" Attributes="0" KeyPath="ar" Type="0"/>
-    <ROW Component="ar.exe" ComponentId="{0C64EFF4-AF89-470D-AB3B-C7F831E3BF56}" Directory_="bin_Dir" Attributes="256" KeyPath="ar.exe"/>
-    <ROW Component="ar.exe_1" ComponentId="{8C9BDA08-A3E3-4BAE-8BE1-4A5613E483D1}" Directory_="bin_1_Dir" Attributes="256" KeyPath="ar.exe_1"/>
-    <ROW Component="arabic.txt" ComponentId="{FF509AD2-3F30-4B50-84EC-0137F3DC6813}" Directory_="doc_1_Dir" Attributes="0" KeyPath="arabic.txt" Type="0"/>
-    <ROW Component="arch.exe" ComponentId="{85BD380B-9EF3-47F7-A6D9-4FEBDFB15C7A}" Directory_="bin_Dir" Attributes="256" KeyPath="arch.exe"/>
-    <ROW Component="array" ComponentId="{1A62B0CE-9F1A-4366-BF2A-960C61334AEB}" Directory_="tr1_Dir" Attributes="0" KeyPath="array_2" Type="0"/>
-    <ROW Component="as.exe" ComponentId="{1F3D90AA-3634-4FB6-9506-A47D6105C793}" Directory_="bin_Dir" Attributes="256" KeyPath="as.exe"/>
-    <ROW Component="as.exe_1" ComponentId="{23DEB85B-E3C1-4383-874F-1EEDBF43CC5E}" Directory_="bin_1_Dir" Attributes="256" KeyPath="as.exe_1"/>
-    <ROW Component="as.info" ComponentId="{7AE6D4CF-555B-4728-BF29-05DF9368C6E6}" Directory_="info_Dir" Attributes="0" KeyPath="as.info" Type="0"/>
-    <ROW Component="ascii.ps" ComponentId="{95C4528A-D3C1-4897-8B57-3EE3DDBA90A5}" Directory_="print_Dir" Attributes="0" KeyPath="ascii.ps" Type="0"/>
-    <ROW Component="ash.exe" ComponentId="{ECBEF753-827C-4F3F-A4FD-A25B1AF15DDB}" Directory_="bin_Dir" Attributes="256" KeyPath="ash.exe"/>
-    <ROW Component="assertions.h" ComponentId="{BCE4FD44-716F-413F-9B05-F26BCA33F58E}" Directory_="debug_Dir" Attributes="0" KeyPath="assertions.h" Type="0"/>
-    <ROW Component="assoc_container.hpp" ComponentId="{4F0AD103-1237-425E-8FF4-E2DBA290B8D7}" Directory_="pb_ds_Dir" Attributes="0" KeyPath="assoc_container.hpp" Type="0"/>
-    <ROW Component="atomic_word.h" ComponentId="{035CABFB-ED7B-4600-90B5-A634E043B7E7}" Directory_="bits_2_Dir" Attributes="0" KeyPath="atomic_word.h" Type="0"/>
-    <ROW Component="auto_ptr.h" ComponentId="{58ACCEFB-992C-4005-93B9-8FDA03A89D99}" Directory_="backward_Dir" Attributes="0" KeyPath="auto_ptr.h" Type="0"/>
-    <ROW Component="avr.cfg" ComponentId="{1D841808-D44A-4E38-AF31-2384822A01CD}" Directory_="cfg_Dir" Attributes="0" KeyPath="avr.cfg" Type="0"/>
-    <ROW Component="awk.exe" ComponentId="{3F24822B-7301-46CA-A711-7CC8B1F19445}" Directory_="bin_Dir" Attributes="256" KeyPath="awk.exe"/>
-    <ROW Component="base32.exe" ComponentId="{2DDE0A38-F656-4DDF-9136-0055125FE0C0}" Directory_="bin_Dir" Attributes="256" KeyPath="base32.exe"/>
-    <ROW Component="base64.exe" ComponentId="{3D76A0E8-7AAF-4898-B14A-1135824DDF3C}" Directory_="bin_Dir" Attributes="256" KeyPath="base64.exe"/>
-    <ROW Component="basename.exe" ComponentId="{F81318AB-CEA2-4AB5-8AB2-6180B8444CE7}" Directory_="bin_Dir" Attributes="256" KeyPath="basename.exe"/>
-    <ROW Component="bash.exe" ComponentId="{DD02A780-88FA-4290-B51B-880DCA4C6768}" Directory_="bin_Dir" Attributes="256" KeyPath="bash.exe"/>
-    <ROW Component="bc.exe" ComponentId="{1E361E12-9EE9-40B9-B9FC-09666C2377FA}" Directory_="bin_Dir" Attributes="256" KeyPath="bc.exe"/>
-    <ROW Component="bg_BG.diff" ComponentId="{787F912D-E176-4A71-9DC1-141476A1EE0B}" Directory_="bg_Dir" Attributes="0" KeyPath="bg_BG.diff" Type="0"/>
-    <ROW Component="biarch64.h" ComponentId="{4B3A3E25-4E84-4C29-A8F9-F7A42D6B641E}" Directory_="i386_1_Dir" Attributes="0" KeyPath="biarch64.h" Type="0"/>
-    <ROW Component="bin_search_tree_.hpp" ComponentId="{1F47EF92-E395-4E2B-A333-F69B8A0D1EA8}" Directory_="bin_search_tree__Dir" Attributes="0" KeyPath="bin_search_tree_.hpp" Type="0"/>
-    <ROW Component="binary_heap_.hpp" ComponentId="{98CE4D17-4FAB-431B-AE00-5855B00DDB5F}" Directory_="binary_heap__Dir" Attributes="0" KeyPath="binary_heap_.hpp" Type="0"/>
-    <ROW Component="binmode.o" ComponentId="{B38CFF53-287C-44A8-B92D-7E2A3B68B390}" Directory_="lib_1_Dir" Attributes="0" KeyPath="binmode.o" Type="0"/>
-    <ROW Component="binomial_heap_.hpp" ComponentId="{A49E69EB-5D2F-4FB3-9348-AAAE1FD78475}" Directory_="binomial_heap__Dir" Attributes="0" KeyPath="binomial_heap_.hpp" Type="0"/>
-    <ROW Component="binomial_heap_base_.hpp" ComponentId="{CDCED566-5526-4A94-8E31-347B57D29556}" Directory_="binomial_heap_base__Dir" Attributes="0" KeyPath="binomial_heap_base_.hpp" Type="0"/>
-    <ROW Component="blink.c" ComponentId="{7EA95143-2B38-4283-A818-AC6D5F42CF70}" Directory_="tools_1_Dir" Attributes="0" KeyPath="blink.c" Type="0"/>
-    <ROW Component="blue.vim" ComponentId="{7FFF8FEA-F491-4FE3-913C-B3823030E711}" Directory_="colors_Dir" Attributes="0" KeyPath="blue.vim" Type="0"/>
-    <ROW Component="bool_set" ComponentId="{9E6E9A6D-4562-4653-83A5-D8B462B3519D}" Directory_="tr2_Dir" Attributes="0" KeyPath="bool_set" Type="0"/>
-    <ROW Component="br_FR.diff" ComponentId="{0834DB68-1871-4FC8-880A-0E57A9FB3EE7}" Directory_="br_Dir" Attributes="0" KeyPath="br_FR.diff" Type="0"/>
-    <ROW Component="branch_policy.hpp" ComponentId="{CB4CDE24-5B4B-4DF1-AA7E-813E9D59C555}" Directory_="branch_policy_Dir" Attributes="0" KeyPath="branch_policy.hpp" Type="0"/>
-    <ROW Component="bugreport.vim" ComponentId="{F563384F-F5F9-40F7-A344-BB8225B1A55D}" Directory_="vim_Dir" Attributes="0" KeyPath="bugreport.vim" Type="0"/>
-    <ROW Component="bunzip2.exe" ComponentId="{6D098A42-1E64-4D79-8717-AACC6F4A089C}" Directory_="bin_Dir" Attributes="256" KeyPath="bunzip2.exe"/>
-    <ROW Component="busybox.exe" ComponentId="{24195913-2B66-4075-A3B9-E1FBF9A59D43}" Directory_="bin_Dir" Attributes="256" KeyPath="busybox.exe"/>
-    <ROW Component="bzcat.exe" ComponentId="{6049B180-CAB6-4FBF-82FF-2ECEEC0B4848}" Directory_="bin_Dir" Attributes="256" KeyPath="bzcat.exe"/>
-    <ROW Component="bzip2.exe" ComponentId="{795C6E6B-9689-4EF7-90C7-8687DFB90AC5}" Directory_="bin_Dir" Attributes="256" KeyPath="bzip2.exe"/>
-    <ROW Component="c.exe" ComponentId="{7AAA4457-CB4F-4B7F-828C-9A8A2BA0FC3F}" Directory_="bin_Dir" Attributes="256" KeyPath="c.exe"/>
-    <ROW Component="c89.exe" ComponentId="{66756D0E-44D1-4E1B-B6EB-D0B660FCFC22}" Directory_="bin_Dir" Attributes="256" KeyPath="c89.exe"/>
-    <ROW Component="c99.exe" ComponentId="{1AD2EC24-EFB0-437B-90F3-3547A7088928}" Directory_="bin_Dir" Attributes="256" KeyPath="c99.exe"/>
-    <ROW Component="ca_ES.diff" ComponentId="{9163817A-8C6B-4062-A604-42CFD11F1DBC}" Directory_="ca_Dir" Attributes="0" KeyPath="ca_ES.diff" Type="0"/>
-    <ROW Component="cal.exe" ComponentId="{5B865CF2-F661-48DF-8622-92EB8620CDA2}" Directory_="bin_Dir" Attributes="256" KeyPath="cal.exe"/>
-    <ROW Component="can_round.c" ComponentId="{402576B3-F151-4704-AD53-95AB69307D75}" Directory_="examples_Dir" Attributes="0" KeyPath="can_round.c" Type="0"/>
-    <ROW Component="cat.exe" ComponentId="{EAE8622F-1565-4802-8192-17C98B54F7DA}" Directory_="bin_Dir" Attributes="256" KeyPath="cat.exe"/>
-    <ROW Component="cc.exe" ComponentId="{61FFD271-8987-4562-9459-2FBB102D9C02}" Directory_="bin_Dir" Attributes="256" KeyPath="cc.exe"/>
-    <ROW Component="cc1" ComponentId="{3E4E5D57-CEA2-4FF9-BE75-8DC3640729FA}" Directory_="__1_Dir" Attributes="0" KeyPath="cc1" Type="0"/>
-    <ROW Component="cc1.exe" ComponentId="{D7288C16-CFB9-46AE-866D-D001CF673320}" Directory_="__1_Dir" Attributes="256" KeyPath="cc1.exe"/>
-    <ROW Component="cc1plus.exe" ComponentId="{2CE02742-5F21-4BCD-A0C9-74E8BCA03D59}" Directory_="__1_Dir" Attributes="256" KeyPath="cc1plus.exe"/>
-    <ROW Component="cc_hash_max_collision_check_resize_trigger_imp.hpp" ComponentId="{F33C89DA-03F3-44C4-AB7A-70729C46B49B}" Directory_="resize_policy_Dir" Attributes="0" KeyPath="cc_hash_max_collision_check_resize_trigger_imp.hpp" Type="0"/>
-    <ROW Component="cc_ht_map_.hpp" ComponentId="{BBDB6A67-0222-4AFE-8BBC-443A6520EB3A}" Directory_="cc_hash_table_map__Dir" Attributes="0" KeyPath="cc_ht_map_.hpp" Type="0"/>
-    <ROW Component="ccommon.def" ComponentId="{63B0CD7F-D595-4793-BE89-04BD8B03D603}" Directory_="cfamily_Dir" Attributes="0" KeyPath="ccommon.def" Type="0"/>
-    <ROW Component="cdefs.h" ComponentId="{B107430A-C8B1-45D0-AC6D-32E071798EC6}" Directory_="sys_1_Dir" Attributes="0" KeyPath="cdefs.h" Type="0"/>
-    <ROW Component="cfilt.exe" ComponentId="{92BAC5DF-14E8-4F47-9822-10769D0C1CA2}" Directory_="bin_Dir" Attributes="256" KeyPath="cfilt.exe"/>
-    <ROW Component="cfilter.vim" ComponentId="{FDA2CE62-12C7-49A2-9D98-1FF4C273063B}" Directory_="plugin_2_Dir" Attributes="0" KeyPath="cfilter.vim" Type="0"/>
-    <ROW Component="chattr.exe" ComponentId="{79CBEB15-36AE-4985-B0FF-EF0B07A7746A}" Directory_="bin_Dir" Attributes="256" KeyPath="chattr.exe"/>
-    <ROW Component="check_aa.aff" ComponentId="{1A3CF684-12B1-4B94-B67F-6C0539E060AB}" Directory_="check_Dir" Attributes="0" KeyPath="check_aa.aff" Type="0"/>
-    <ROW Component="check_colors.vim" ComponentId="{27A835F8-E4D8-40DD-9231-145D58FA473C}" Directory_="tools_Dir" Attributes="0" KeyPath="check_colors.vim" Type="0"/>
-    <ROW Component="check_locales.vim" ComponentId="{0485F67B-B3A9-4B1C-A76F-6A34B72C3E28}" Directory_="spell_Dir" Attributes="0" KeyPath="check_locales.vim" Type="0"/>
-    <ROW Component="chmod.exe" ComponentId="{5805AA03-BC1D-4A66-85F2-C9E7CA8CA0CA}" Directory_="bin_Dir" Attributes="256" KeyPath="chmod.exe"/>
-    <ROW Component="cksum.exe" ComponentId="{3B9DBBEB-87D0-4197-9CCF-68F36BE243B5}" Directory_="bin_Dir" Attributes="256" KeyPath="cksum.exe"/>
-    <ROW Component="clear.exe" ComponentId="{30B3DD4D-B752-4ADC-A402-534462879399}" Directory_="bin_Dir" Attributes="256" KeyPath="clear.exe"/>
-    <ROW Component="click.me" ComponentId="{A9697347-62FD-42B1-A531-EA126B2C3DD5}" Directory_="hanoi_Dir" Attributes="0" KeyPath="click.me" Type="0"/>
-    <ROW Component="click.me_1" ComponentId="{695E3DA5-68CB-4574-A933-5DDCFE441595}" Directory_="life_Dir" Attributes="0" KeyPath="click.me_1" Type="0"/>
-    <ROW Component="client.h" ComponentId="{B95F21D4-EC9B-4A41-9703-F44A0D8F22A2}" Directory_="wrl_Dir" Attributes="0" KeyPath="client.h" Type="0"/>
-    <ROW Component="cmp.exe" ComponentId="{47BFA974-A4C8-4B51-A971-6B458B401AFD}" Directory_="bin_Dir" Attributes="256" KeyPath="cmp.exe"/>
-    <ROW Component="collect2.exe" ComponentId="{5F48D142-368D-498D-A27C-9D2387E4B8BA}" Directory_="__1_Dir" Attributes="256" KeyPath="collect2.exe"/>
-    <ROW Component="comm.exe" ComponentId="{901BF6BC-6161-4537-9377-FEFDFE1F0D99}" Directory_="bin_Dir" Attributes="256" KeyPath="comm.exe"/>
-    <ROW Component="cond_dealtor.hpp" ComponentId="{BBAEB36D-50EF-459E-A4D0-EBA2069875E6}" Directory_="detail_Dir" Attributes="0" KeyPath="cond_dealtor.hpp" Type="0"/>
-    <ROW Component="conio_s.h" ComponentId="{0A4873B2-7E40-4E29-AEA3-6A774025960F}" Directory_="sec_api_Dir" Attributes="0" KeyPath="conio_s.h" Type="0"/>
-    <ROW Component="const_iterator.hpp" ComponentId="{CD734919-2A1C-42D5-98EB-560F1668A3C2}" Directory_="unordered_iterator_Dir" Attributes="0" KeyPath="const_iterator.hpp_2" Type="0"/>
-    <ROW Component="constructor_destructor_fn_imps.hpp" ComponentId="{2A05CF78-69CE-4853-BC32-8E34ADD82EBD}" Directory_="gp_hash_table_map__Dir" Attributes="0" KeyPath="constructor_destructor_fn_imps.hpp_1" Type="0"/>
-    <ROW Component="constructor_destructor_fn_imps.hpp_1" ComponentId="{6193A1DE-697E-4E5A-A0DE-367202BE82F2}" Directory_="list_update_map__Dir" Attributes="0" KeyPath="constructor_destructor_fn_imps.hpp_2" Type="0"/>
-    <ROW Component="constructors_destructor_fn_imps.hpp" ComponentId="{AE45FABD-77A0-4FE6-B314-F795F437688B}" Directory_="left_child_next_sibling_heap__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_4" Type="0"/>
-    <ROW Component="constructors_destructor_fn_imps.hpp_1" ComponentId="{BD557CD8-4513-4D84-B852-C1D87E968B8A}" Directory_="ov_tree_map__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_5" Type="0"/>
-    <ROW Component="constructors_destructor_fn_imps.hpp_2" ComponentId="{4D1EA8C7-D670-451B-BF32-D326131AD229}" Directory_="pairing_heap__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_6" Type="0"/>
-    <ROW Component="constructors_destructor_fn_imps.hpp_3" ComponentId="{ABC2D4B2-AE99-49B4-ACC8-6F61A5B8CA1D}" Directory_="pat_trie__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_7" Type="0"/>
-    <ROW Component="constructors_destructor_fn_imps.hpp_4" ComponentId="{26D44DB6-0571-4C12-AF6D-3AE310E26E7E}" Directory_="rb_tree_map__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_8" Type="0"/>
-    <ROW Component="constructors_destructor_fn_imps.hpp_5" ComponentId="{0FD3F114-B4C2-4286-9CBB-F796BAEDF112}" Directory_="rc_binomial_heap__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_9" Type="0"/>
-    <ROW Component="constructors_destructor_fn_imps.hpp_6" ComponentId="{C560BC1D-0C42-41FE-9934-5D2BD6FD8042}" Directory_="splay_tree__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_10" Type="0"/>
-    <ROW Component="constructors_destructor_fn_imps.hpp_7" ComponentId="{22B1FAFF-C06F-49C6-ADCC-70C432AFDC2A}" Directory_="thin_heap__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_11" Type="0"/>
-    <ROW Component="contracts.h" ComponentId="{CB95167D-F739-4682-B643-9A62C6304CA5}" Directory_="cp_Dir" Attributes="0" KeyPath="contracts.h" Type="0"/>
-    <ROW Component="corewrappers.h" ComponentId="{06AFBB7B-CD92-44A9-88CC-BA98FBBFE76F}" Directory_="wrappers_Dir" Attributes="0" KeyPath="corewrappers.h" Type="0"/>
-    <ROW Component="cp.exe" ComponentId="{63663868-68FD-4182-8962-2F44ADE4489E}" Directory_="bin_Dir" Attributes="256" KeyPath="cp.exe"/>
-    <ROW Component="cpio.exe" ComponentId="{EBBBFF17-0326-4A66-9003-E9901B8C7E64}" Directory_="bin_Dir" Attributes="256" KeyPath="cpio.exe"/>
-    <ROW Component="cpp.exe" ComponentId="{4FBA3C80-BEA7-4F0E-A312-9638D5751966}" Directory_="bin_Dir" Attributes="256" KeyPath="cpp.exe"/>
-    <ROW Component="cppcheck.exe" ComponentId="{AF0BF948-9E35-4806-920F-894918BAE69B}" Directory_="bin_Dir" Attributes="256" KeyPath="cppcheck.exe"/>
-    <ROW Component="cppcheck.exe_1" ComponentId="{56C9D15D-BF39-452C-8404-0C4B80C135F3}" Directory_="cppcheck_Dir" Attributes="256" KeyPath="cppcheck.exe_1"/>
-    <ROW Component="crc32.exe" ComponentId="{6001926C-25BF-4747-A9AD-2D443481A297}" Directory_="bin_Dir" Attributes="256" KeyPath="crc32.exe"/>
-    <ROW Component="crtbegin.o" ComponentId="{627C8DA3-F4E0-49A9-AA9A-4279D9A9F7C2}" Directory_="__Dir" Attributes="0" KeyPath="crtbegin.o" Type="0"/>
-    <ROW Component="cs_CZ.diff" ComponentId="{C3194E80-4B10-42A6-BEBE-B33080923A0B}" Directory_="cs_Dir" Attributes="0" KeyPath="cs_CZ.diff" Type="0"/>
-    <ROW Component="csscolors.vim" ComponentId="{E5316421-7DE8-4389-BF74-8A8D8D4CD42B}" Directory_="lists_Dir" Attributes="0" KeyPath="csscolors.vim" Type="0"/>
-    <ROW Component="ctags.exe" ComponentId="{673AFBC9-C1C1-49A0-8C50-72E72D1E9979}" Directory_="bin_Dir" Attributes="256" KeyPath="ctags.exe"/>
-    <ROW Component="cut.exe" ComponentId="{DA416A99-19AB-4C73-81AB-DD5601982622}" Directory_="bin_Dir" Attributes="256" KeyPath="cut.exe"/>
-    <ROW Component="cy_GB.diff" ComponentId="{B9612828-7889-49BA-AEB4-9A23FF219B36}" Directory_="cy_Dir" Attributes="0" KeyPath="cy_GB.diff" Type="0"/>
-    <ROW Component="da_DK.diff" ComponentId="{74432509-00F3-4C82-886A-CA994D02DFFB}" Directory_="da_Dir" Attributes="0" KeyPath="da_DK.diff" Type="0"/>
-    <ROW Component="date.exe" ComponentId="{54D07B57-EED0-4E4B-9ED6-27FC244C0CA3}" Directory_="bin_Dir" Attributes="256" KeyPath="date.exe"/>
-    <ROW Component="dc.exe" ComponentId="{AEAA2065-DE39-48A8-8988-522FE3DA86ED}" Directory_="bin_Dir" Attributes="256" KeyPath="dc.exe"/>
-    <ROW Component="dd.exe" ComponentId="{D7DA1501-0E3D-4AB8-851B-856119F5544C}" Directory_="bin_Dir" Attributes="256" KeyPath="dd.exe"/>
-    <ROW Component="de_19.diff" ComponentId="{96CBDD42-2AC3-40EA-82D3-A879474389B7}" Directory_="de_Dir" Attributes="0" KeyPath="de_19.diff" Type="0"/>
-    <ROW Component="debugbreak.exe" ComponentId="{49D43B77-45CB-44BE-A30C-DA5F2D0DF356}" Directory_="bin_Dir" Attributes="256" KeyPath="debugbreak.exe"/>
-    <ROW Component="decimal" ComponentId="{7084DE87-D875-4C61-A0A4-CFD4029DC8A1}" Directory_="decimal_Dir" Attributes="0" KeyPath="decimal" Type="0"/>
-    <ROW Component="df.exe" ComponentId="{A88B9A2C-0D95-4E16-97BA-6A1EC73A83EA}" Directory_="bin_Dir" Attributes="256" KeyPath="df.exe"/>
-    <ROW Component="diff.exe" ComponentId="{3A4CF515-5D35-48A3-AC52-9109E62C06AF}" Directory_="bin_Dir" Attributes="256" KeyPath="diff.exe"/>
-    <ROW Component="direct_mask_range_hashing_imp.hpp" ComponentId="{19DED161-254E-4BF1-9772-849C1943D153}" Directory_="hash_fn_Dir" Attributes="0" KeyPath="direct_mask_range_hashing_imp.hpp" Type="0"/>
-    <ROW Component="dirname.exe" ComponentId="{86278302-83E7-4017-88D3-511EA4F9271C}" Directory_="bin_Dir" Attributes="256" KeyPath="dirname.exe"/>
-    <ROW Component="disable.vim" ComponentId="{05478F3A-D1EF-4F2A-BDDB-86CB5C4D9483}" Directory_="dvorak_1_Dir" Attributes="0" KeyPath="disable.vim" Type="0"/>
-    <ROW Component="dlltool.exe" ComponentId="{C03A47B7-FF29-482F-9CE6-B304BB6DE40C}" Directory_="bin_Dir" Attributes="256" KeyPath="dlltool.exe"/>
-    <ROW Component="dlltool.exe_1" ComponentId="{D218A332-3102-41CD-8684-8DF9700723D9}" Directory_="bin_1_Dir" Attributes="256" KeyPath="dlltool.exe_1"/>
-    <ROW Component="dllwrap.exe" ComponentId="{C25EEE90-B0F0-4E35-9939-DB0BE5DAC1BC}" Directory_="bin_Dir" Attributes="256" KeyPath="dllwrap.exe"/>
-    <ROW Component="dos2unix.exe" ComponentId="{C8E532B2-0BEA-4D0B-8961-BF43BAE59373}" Directory_="bin_Dir" Attributes="256" KeyPath="dos2unix.exe"/>
-    <ROW Component="dtree.def" ComponentId="{F146535A-D3A8-43F3-ACDE-ADB17C8C44CD}" Directory_="d_Dir" Attributes="0" KeyPath="dtree.def" Type="0"/>
-    <ROW Component="du.exe" ComponentId="{EE84F36D-79AB-4827-BB25-16460421BC09}" Directory_="bin_Dir" Attributes="256" KeyPath="du.exe"/>
-    <ROW Component="dvorak.vim" ComponentId="{59EAA17D-5426-4B58-92CC-66088283A66A}" Directory_="plugin_3_Dir" Attributes="0" KeyPath="dvorak.vim_1" Type="0"/>
-    <ROW Component="echo.exe" ComponentId="{7D0304C5-5EDC-45F7-BC8C-E9FF7CC1B8B3}" Directory_="bin_Dir" Attributes="256" KeyPath="echo.exe"/>
-    <ROW Component="ed.exe" ComponentId="{470DF1EF-22EC-4A8F-8EC0-D966B46D0DB0}" Directory_="bin_Dir" Attributes="256" KeyPath="ed.exe"/>
-    <ROW Component="editexisting.vim" ComponentId="{84333103-BD9C-478C-8A39-5663B83B8446}" Directory_="macros_Dir" Attributes="0" KeyPath="editexisting.vim" Type="0"/>
-    <ROW Component="editexisting.vim_1" ComponentId="{AA322659-8150-4337-B2D2-D888FCD8804C}" Directory_="plugin_4_Dir" Attributes="0" KeyPath="editexisting.vim_1" Type="0"/>
-    <ROW Component="egrep.exe" ComponentId="{C024B1C2-099E-4CC8-9E32-DAD7056389BA}" Directory_="bin_Dir" Attributes="256" KeyPath="egrep.exe"/>
-    <ROW Component="el_GR.diff" ComponentId="{592CF0D8-BA26-4375-8523-0B73BD1681B2}" Directory_="el_Dir" Attributes="0" KeyPath="el_GR.diff" Type="0"/>
-    <ROW Component="elfedit.exe" ComponentId="{D0C62BEE-6998-43A0-BE72-CBFE1F24B35D}" Directory_="bin_Dir" Attributes="256" KeyPath="elfedit.exe"/>
-    <ROW Component="en_AU.diff" ComponentId="{E8F110C2-4FE4-4ACD-BFAF-50CFCA4508CC}" Directory_="en_Dir" Attributes="0" KeyPath="en_AU.diff" Type="0"/>
-    <ROW Component="env.exe" ComponentId="{722F1230-0510-42C1-AADA-0C9FC7E3F305}" Directory_="bin_Dir" Attributes="256" KeyPath="env.exe"/>
-    <ROW Component="eo_l3.diff" ComponentId="{7605CB82-5BE3-4835-9AD5-3251D6B79E14}" Directory_="eo_Dir" Attributes="0" KeyPath="eo_l3.diff" Type="0"/>
-    <ROW Component="eq_by_less.hpp" ComponentId="{81EA3FF7-9C5C-4692-B1C1-913D45B74D3A}" Directory_="eq_fn_Dir" Attributes="0" KeyPath="eq_by_less.hpp" Type="0"/>
-    <ROW Component="es_ES.diff" ComponentId="{4563A550-E68E-4567-B370-526026B938CC}" Directory_="es_Dir" Attributes="0" KeyPath="es_ES.diff" Type="0"/>
-    <ROW Component="examples" ComponentId="{A5668D0D-224E-47E6-80BB-3390C8F385B3}" Directory_="urm_Dir" Attributes="0" KeyPath="examples" Type="0"/>
-    <ROW Component="expand.exe" ComponentId="{3B440E40-BA69-4BBC-8D36-5AED7D46CB92}" Directory_="bin_Dir" Attributes="256" KeyPath="expand.exe"/>
-    <ROW Component="expat.pc" ComponentId="{6B90BE94-C036-4D50-A393-1BAF2C46648E}" Directory_="pkgconfig_Dir" Attributes="0" KeyPath="expat.pc" Type="0"/>
-    <ROW Component="expatconfigversion.cmake" ComponentId="{C8468E27-86E0-4682-9429-CC63F4EFE8BA}" Directory_="expat2.5.0_Dir" Attributes="0" KeyPath="expatconfigversion.cmake" Type="0"/>
-    <ROW Component="expr.exe" ComponentId="{8FB3C690-254B-4A03-99C9-8E13B954B232}" Directory_="bin_Dir" Attributes="256" KeyPath="expr.exe"/>
-    <ROW Component="factor.exe" ComponentId="{D36392B0-C9F1-47CC-BEA4-8D93CBE59439}" Directory_="bin_Dir" Attributes="256" KeyPath="factor.exe"/>
-    <ROW Component="false.exe" ComponentId="{BAEAC324-AAAF-48B0-AAA7-D3D2A217E84B}" Directory_="bin_Dir" Attributes="256" KeyPath="false.exe"/>
-    <ROW Component="fgrep.exe" ComponentId="{31454DBB-1AE2-4F1B-BCD3-CF6E0AB5820C}" Directory_="bin_Dir" Attributes="256" KeyPath="fgrep.exe"/>
-    <ROW Component="find.exe" ComponentId="{613B6F6C-3377-4DD5-A2BB-89170319FFF0}" Directory_="bin_Dir" Attributes="256" KeyPath="find.exe"/>
-    <ROW Component="fixinc.sh" ComponentId="{B6C5E4D0-EA7F-423C-B8EC-A1A3E77793AA}" Directory_="installtools_1_Dir" Attributes="0" KeyPath="fixinc.sh" Type="0"/>
-    <ROW Component="fixinc_list" ComponentId="{06FC184F-1EED-4C82-8A9D-F9886F503F2D}" Directory_="installtools_Dir" Attributes="0" KeyPath="fixinc_list" Type="0"/>
-    <ROW Component="fixincl.exe" ComponentId="{D09E52D3-D193-4348-9712-324BA54CAB49}" Directory_="installtools_1_Dir" Attributes="256" KeyPath="fixincl.exe"/>
-    <ROW Component="fo_FO.diff" ComponentId="{653FFE63-7AAD-4186-B8FB-23DECC7AD422}" Directory_="fo_Dir" Attributes="0" KeyPath="fo_FO.diff" Type="0"/>
-    <ROW Component="fold.exe" ComponentId="{2858589D-0D87-439E-B4C7-F41F8C0455A1}" Directory_="bin_Dir" Attributes="256" KeyPath="fold.exe"/>
-    <ROW Component="fr_FR.diff" ComponentId="{2B8B5592-0874-4096-9AA9-EC48F1FBB8A5}" Directory_="fr_Dir" Attributes="0" KeyPath="fr_FR.diff" Type="0"/>
-    <ROW Component="free.exe" ComponentId="{201DC60B-C698-4694-A2E0-D3B21911B3F8}" Directory_="bin_Dir" Attributes="256" KeyPath="free.exe"/>
-    <ROW Component="fs_dir.h" ComponentId="{51ACF487-FED4-4697-9299-E80CA4D73BE9}" Directory_="bits_1_Dir" Attributes="0" KeyPath="fs_dir.h_1" Type="0"/>
-    <ROW Component="fsffunding.7" ComponentId="{25216053-0061-4530-9E2A-6E92DDAD0C59}" Directory_="man7_Dir" Attributes="0" KeyPath="fsffunding.7" Type="0"/>
-    <ROW Component="fsync.exe" ComponentId="{06284F09-A9BF-46AE-A164-F300C39E8F0F}" Directory_="bin_Dir" Attributes="256" KeyPath="fsync.exe"/>
-    <ROW Component="ft.vim" ComponentId="{E4AE4ED4-6A37-47CF-BAF3-79A01E6AFB6C}" Directory_="dist_Dir" Attributes="0" KeyPath="ft.vim" Type="0"/>
-    <ROW Component="g.exe" ComponentId="{9773E703-E006-4E5D-9C20-0EA48CBC1C0D}" Directory_="bin_Dir" Attributes="256" KeyPath="g.exe"/>
-    <ROW Component="ga_IE.diff" ComponentId="{4A8D7C91-6269-4CB8-87A1-799AB55D713E}" Directory_="ga_Dir" Attributes="0" KeyPath="ga_IE.diff" Type="0"/>
-    <ROW Component="gcc.exe" ComponentId="{653FE45C-DEF2-4A48-A68C-859172EA33B6}" Directory_="bin_Dir" Attributes="256" KeyPath="gcc.exe"/>
-    <ROW Component="gccar.exe" ComponentId="{D65C5660-7B15-4581-82F1-C3F6E09B7EB2}" Directory_="bin_Dir" Attributes="256" KeyPath="gccar.exe"/>
-    <ROW Component="gccnm.exe" ComponentId="{ECC08786-45DE-4185-AB27-920C3DA3830B}" Directory_="bin_Dir" Attributes="256" KeyPath="gccnm.exe"/>
-    <ROW Component="gccranlib.exe" ComponentId="{6649D2E3-3F8E-4FF9-A9DB-E393F321E2A9}" Directory_="bin_Dir" Attributes="256" KeyPath="gccranlib.exe"/>
-    <ROW Component="gcov.exe" ComponentId="{F26CA54D-F54B-4E4B-ACAA-4ED678715DE6}" Directory_="bin_Dir" Attributes="256" KeyPath="gcov.exe"/>
-    <ROW Component="gcovdump.exe" ComponentId="{A7F41CFA-EFBB-4A04-B284-2DB13C5D3744}" Directory_="bin_Dir" Attributes="256" KeyPath="gcovdump.exe"/>
-    <ROW Component="gcovtool.exe" ComponentId="{1B511648-3382-48D6-BBEB-B68929D11C5A}" Directory_="bin_Dir" Attributes="256" KeyPath="gcovtool.exe"/>
-    <ROW Component="gd_GB.diff" ComponentId="{7F30F49F-2264-4064-9936-6D5F583C48BE}" Directory_="gd_Dir" Attributes="0" KeyPath="gd_GB.diff" Type="0"/>
-    <ROW Component="gdb.exe" ComponentId="{AFFB8FC6-7C7A-414A-BF49-9D63ABADA304}" Directory_="bin_Dir" Attributes="256" KeyPath="gdb.exe"/>
-    <ROW Component="gdbserver.exe" ComponentId="{95C8B4DC-CC64-4FF2-932D-9B31A73E5208}" Directory_="bin_Dir" Attributes="256" KeyPath="gdbserver.exe"/>
-    <ROW Component="gdiplus.h" ComponentId="{3313F947-1ECB-4DF7-944F-E8C08B6DEC93}" Directory_="gdiplus_Dir" Attributes="0" KeyPath="gdiplus.h" Type="0"/>
-    <ROW Component="gendef.exe" ComponentId="{F399F939-66AE-4E67-835D-E7C86AD5F536}" Directory_="bin_Dir" Attributes="256" KeyPath="gendef.exe"/>
-    <ROW Component="gendef.exe_1" ComponentId="{B06E928F-23A4-4B4C-B8D7-7019F1E67780}" Directory_="mingwtoolsgendef_Dir" Attributes="256" KeyPath="gendef.exe_1"/>
-    <ROW Component="gengtype" ComponentId="{5DCBDDEF-6691-4EC2-B046-BF8824E8ED07}" Directory_="plugin_1_Dir" Attributes="0" KeyPath="gengtype" Type="0"/>
-    <ROW Component="getopt.exe" ComponentId="{48AFB38F-D891-4DAE-BF54-9E4719199BE4}" Directory_="bin_Dir" Attributes="256" KeyPath="getopt.exe"/>
-    <ROW Component="getscriptPlugin.vim" ComponentId="{7D53C15C-14ED-40B3-921C-C451304DD6C8}" Directory_="plugin_10_Dir" Attributes="0" KeyPath="getscriptPlugin.vim" Type="0"/>
-    <ROW Component="gitkeep" ComponentId="{DC0F2491-16A8-437F-8F89-0F03E8DFD540}" Directory_="APPDIR" Attributes="0" KeyPath="gitkeep" Type="0"/>
-    <ROW Component="gl.h" ComponentId="{8BC7F8CD-A94C-4CF4-880A-DECB828541D6}" Directory_="GL_Dir" Attributes="0" KeyPath="gl.h" Type="0"/>
-    <ROW Component="gl_ES.diff" ComponentId="{AA8A3BC3-CDBB-4392-A0A6-28BF82FE4A5B}" Directory_="gl_Dir" Attributes="0" KeyPath="gl_ES.diff" Type="0"/>
-    <ROW Component="gmapperserver.exe" ComponentId="{E59B4513-C69A-4521-A5A6-2D84662BF4C1}" Directory_="__1_Dir" Attributes="256" KeyPath="gmapperserver.exe"/>
-    <ROW Component="gprof.exe" ComponentId="{2D66638C-5633-44A9-BF33-E887DC731B0E}" Directory_="bin_Dir" Attributes="256" KeyPath="gprof.exe"/>
-    <ROW Component="grep.exe" ComponentId="{9F7B72F0-81ED-42A2-9A1B-36766BD8B44E}" Directory_="bin_Dir" Attributes="256" KeyPath="grep.exe"/>
-    <ROW Component="groups.exe" ComponentId="{BECB0B70-B148-45B1-BE4F-424A72FF7C18}" Directory_="bin_Dir" Attributes="256" KeyPath="groups.exe"/>
-    <ROW Component="gtype.state" ComponentId="{B2847E01-8C1C-4BA7-884F-0A8B5C02B79D}" Directory_="plugin_Dir" Attributes="0" KeyPath="gtype.state" Type="0"/>
-    <ROW Component="gunzip.exe" ComponentId="{0FC87D69-4383-4898-96A0-099580258B2C}" Directory_="bin_Dir" Attributes="256" KeyPath="gunzip.exe"/>
-    <ROW Component="gvim.bat" ComponentId="{50C72472-3354-45C1-BF8C-17192867F799}" Directory_="bin_Dir" Attributes="0" KeyPath="gvim.bat" Type="0"/>
-    <ROW Component="gvim.exe" ComponentId="{E2F391AA-2175-4980-BF22-35A1CEF429AC}" Directory_="vim_Dir" Attributes="256" KeyPath="gvim.exe"/>
-    <ROW Component="gzip.exe" ComponentId="{1004A2E8-5D3F-4DB7-9891-B3E6EE06CC80}" Directory_="bin_Dir" Attributes="256" KeyPath="gzip.exe"/>
-    <ROW Component="hd.exe" ComponentId="{51B47E70-7A99-42A4-8028-2F4028A3BE59}" Directory_="bin_Dir" Attributes="256" KeyPath="hd.exe"/>
-    <ROW Component="he_IL.diff" ComponentId="{998394B3-C3EB-4147-9D50-425FA2F0CE2B}" Directory_="he_Dir" Attributes="0" KeyPath="he_IL.diff" Type="0"/>
-    <ROW Component="head.exe" ComponentId="{226E95A4-8459-4551-A585-5BD49FBB39E0}" Directory_="bin_Dir" Attributes="256" KeyPath="head.exe"/>
-    <ROW Component="hexdump.exe" ComponentId="{74E26C9C-4C3C-4206-8ECC-CB08786E144C}" Directory_="bin_Dir" Attributes="256" KeyPath="hexdump.exe"/>
-    <ROW Component="hr_HR.diff" ComponentId="{99F96A87-7A51-4826-B260-F9F5F7F29CCA}" Directory_="hr_Dir" Attributes="0" KeyPath="hr_HR.diff" Type="0"/>
-    <ROW Component="html.in" ComponentId="{3D327726-5F59-4864-81E9-CCB823C588CB}" Directory_="testdir_Dir" Attributes="0" KeyPath="html.in" Type="0"/>
-    <ROW Component="html.vim" ComponentId="{1FFD4B8D-C667-4A4D-B502-136FF5D3FBBC}" Directory_="syntax_Dir" Attributes="0" KeyPath="html.vim_2" Type="0"/>
-    <ROW Component="html32.vim" ComponentId="{64A775EB-D4B1-47DC-A414-00B437525650}" Directory_="xml_Dir" Attributes="0" KeyPath="html32.vim" Type="0"/>
-    <ROW Component="httpd.exe" ComponentId="{CC39A4C6-AABC-46F4-B7C1-B8CB8C3AB9C9}" Directory_="bin_Dir" Attributes="256" KeyPath="httpd.exe"/>
-    <ROW Component="hu_HU.diff" ComponentId="{C6325AB2-480C-4882-95E4-A5D1F957A9BE}" Directory_="hu_Dir" Attributes="0" KeyPath="hu_HU.diff" Type="0"/>
-    <ROW Component="i386cpuinfo.h" ComponentId="{B63F2E4D-7A52-43DB-AD69-A78B7ED53BA5}" Directory_="i386_Dir" Attributes="0" KeyPath="i386cpuinfo.h" Type="0"/>
-    <ROW Component="i386pe.x" ComponentId="{BBCE8916-EEC8-4F2D-B1A8-39CB554DFF2B}" Directory_="ldscripts_Dir" Attributes="0" KeyPath="i386pe.x" Type="0"/>
-    <ROW Component="iconv.1.html" ComponentId="{05C390E6-1502-484D-993C-0243E20B3A89}" Directory_="doc_Dir" Attributes="0" KeyPath="iconv.1.html" Type="0"/>
-    <ROW Component="iconv.3" ComponentId="{BDB7F82E-4C80-40A9-8522-6E3C19DD8D27}" Directory_="man3_Dir" Attributes="0" KeyPath="iconv.3" Type="0"/>
-    <ROW Component="iconv.exe" ComponentId="{B1D8B0F8-81F0-4CA6-9B3F-654C35A1FD1D}" Directory_="bin_Dir" Attributes="256" KeyPath="iconv.exe"/>
-    <ROW Component="id.exe" ComponentId="{B41321C1-6D99-43A3-9C9A-F853BCA88C99}" Directory_="bin_Dir" Attributes="256" KeyPath="id.exe"/>
-    <ROW Component="id_ID.diff" ComponentId="{C931876C-6D7E-4A88-8C43-8F1185A37B21}" Directory_="id_Dir" Attributes="0" KeyPath="id_ID.diff" Type="0"/>
-    <ROW Component="initfiniarray.h" ComponentId="{4212AA14-9F01-4B74-9613-AE4D5AD17C70}" Directory_="config_1_Dir" Attributes="0" KeyPath="initfiniarray.h" Type="0"/>
-    <ROW Component="inotifyd.exe" ComponentId="{52E19058-0FC1-4435-8263-ACE83240754F}" Directory_="bin_Dir" Attributes="256" KeyPath="inotifyd.exe"/>
-    <ROW Component="install.exe" ComponentId="{1B53DBF1-3051-414D-8F06-5CFD0F8EFE98}" Directory_="bin_Dir" Attributes="256" KeyPath="install.exe"/>
-    <ROW Component="intrinimpl.h" ComponentId="{E18A97DF-D5C9-4417-8189-025149435F8B}" Directory_="psdk_inc_Dir" Attributes="0" KeyPath="intrinimpl.h" Type="0"/>
-    <ROW Component="ipcalc.exe" ComponentId="{18AA5521-7067-4E0C-80BC-24B6E13B2BDE}" Directory_="bin_Dir" Attributes="256" KeyPath="ipcalc.exe"/>
-    <ROW Component="isExtendable" ComponentId="{D4FA9890-C22C-40CB-A5BD-6ECB1196E068}" Directory_="APPDIR" Attributes="260" KeyPath="isExtendable"/>
-    <ROW Component="it_IT.diff" ComponentId="{6455D846-F320-450D-BC22-3002E89F5EE6}" Directory_="it_Dir" Attributes="0" KeyPath="it_IT.diff" Type="0"/>
-    <ROW Component="jn.exe" ComponentId="{17447ADF-F3E6-482E-9C50-12184DEE3D29}" Directory_="bin_Dir" Attributes="256" KeyPath="jn.exe"/>
-    <ROW Component="justify.vim" ComponentId="{0BF3FE26-7838-4455-AA6B-40D2190194C2}" Directory_="plugin_5_Dir" Attributes="0" KeyPath="justify.vim_1" Type="0"/>
-    <ROW Component="khrplatform.h" ComponentId="{6E8CD89F-FCAB-43F2-BD76-29A90CE70003}" Directory_="KHR_Dir" Attributes="0" KeyPath="khrplatform.h" Type="0"/>
-    <ROW Component="kill.exe" ComponentId="{555AE580-B949-4EE8-BD75-E3446705E085}" Directory_="bin_Dir" Attributes="256" KeyPath="kill.exe"/>
-    <ROW Component="killall.exe" ComponentId="{D61BD935-8A62-463B-B0B3-0F9729EA93B9}" Directory_="bin_Dir" Attributes="256" KeyPath="killall.exe"/>
-    <ROW Component="ku_TR.diff" ComponentId="{B6253722-A851-4461-9BFD-B2076CD7AA15}" Directory_="ku_Dir" Attributes="0" KeyPath="ku_TR.diff" Type="0"/>
-    <ROW Component="la.diff" ComponentId="{F75321B6-7F13-4557-8EBB-86F1845B9B47}" Directory_="la_Dir" Attributes="0" KeyPath="la.diff" Type="0"/>
-    <ROW Component="lash.exe" ComponentId="{A7B99CE2-E6B3-412A-96FB-70575704775E}" Directory_="bin_Dir" Attributes="256" KeyPath="lash.exe"/>
-    <ROW Component="ld.bfd.exe" ComponentId="{D62C378E-2AA9-47FC-B6BA-1E4FA744A0A2}" Directory_="bin_Dir" Attributes="256" KeyPath="ld.bfd.exe"/>
-    <ROW Component="ld.bfd.exe_1" ComponentId="{069C2633-C663-4A85-A075-E72C1661ADFA}" Directory_="bin_1_Dir" Attributes="256" KeyPath="ld.bfd.exe_1"/>
-    <ROW Component="ld.exe" ComponentId="{59839519-307B-4C8D-A890-DE3FC0E3DF8C}" Directory_="bin_Dir" Attributes="256" KeyPath="ld.exe"/>
-    <ROW Component="ld.exe_1" ComponentId="{BFCE16E0-B3D4-464A-B96B-9CA1B6539CB7}" Directory_="bin_1_Dir" Attributes="256" KeyPath="ld.exe_1"/>
-    <ROW Component="less.exe" ComponentId="{B61FF8D1-6912-49F5-86A9-C5025B099B63}" Directory_="bin_Dir" Attributes="256" KeyPath="less.exe"/>
-    <ROW Component="libbfd.a" ComponentId="{E421C4A2-8084-440C-A7E9-1B3F8D00DA8F}" Directory_="lib_Dir" Attributes="0" KeyPath="libbfd.a" Type="0"/>
-    <ROW Component="libdep.dll" ComponentId="{8D2ECA1A-1F1D-4FF7-841A-61C74786AEAE}" Directory_="bfdplugins_Dir" Attributes="256" KeyPath="libdep.dll"/>
-    <ROW Component="libdep.so" ComponentId="{B9011FE3-69F6-44C2-8428-C82367231604}" Directory_="bfdplugins_Dir" Attributes="0" KeyPath="libdep.so" Type="0"/>
-    <ROW Component="libexpat1.dll" ComponentId="{75FAF073-8779-4EDF-9014-2F6F29442156}" Directory_="bin_Dir" Attributes="256" KeyPath="libexpat1.dll"/>
-    <ROW Component="libwinpthread1.dll" ComponentId="{C061F2FB-973C-448E-A3FD-4FC27A4330EC}" Directory_="bin_Dir" Attributes="256" KeyPath="libwinpthread1.dll"/>
-    <ROW Component="libwinpthread1.dll_1" ComponentId="{2C7A9CA5-7D24-4888-BC67-99C7DAD2E08E}" Directory_="bin_1_Dir" Attributes="256" KeyPath="libwinpthread1.dll_1"/>
-    <ROW Component="limits.h" ComponentId="{36C29485-D9CC-40D3-A3D0-F28D63BB4DC8}" Directory_="include_2_Dir" Attributes="0" KeyPath="limits.h_2" Type="0"/>
-    <ROW Component="ln.exe" ComponentId="{DAA34D05-A47B-4F08-A7DE-618764DFF184}" Directory_="bin_Dir" Attributes="256" KeyPath="ln.exe"/>
-    <ROW Component="logname.exe" ComponentId="{E9A157AE-E47A-4954-BC42-B5C88EDD62F4}" Directory_="bin_Dir" Attributes="256" KeyPath="logname.exe"/>
-    <ROW Component="ls.exe" ComponentId="{2D55A44E-5C78-496F-8421-7F185542D78E}" Directory_="bin_Dir" Attributes="256" KeyPath="ls.exe"/>
-    <ROW Component="lsattr.exe" ComponentId="{A236FEBB-F2A0-45E4-8493-2FA9C430E6A2}" Directory_="bin_Dir" Attributes="256" KeyPath="lsattr.exe"/>
-    <ROW Component="lt_LT.diff" ComponentId="{A077737B-A478-4FA2-9143-30E6C083667F}" Directory_="lt_Dir" Attributes="0" KeyPath="lt_LT.diff" Type="0"/>
-    <ROW Component="ltowrapper.exe" ComponentId="{28FEDC49-D81F-4781-BE61-C1897A0A0C79}" Directory_="__1_Dir" Attributes="256" KeyPath="ltowrapper.exe"/>
-    <ROW Component="lu_counter_metadata.hpp" ComponentId="{D13147EA-EEA0-4CC4-9066-93BE98476C30}" Directory_="list_update_policy_Dir" Attributes="0" KeyPath="lu_counter_metadata.hpp" Type="0"/>
-    <ROW Component="lv_LV.diff" ComponentId="{AAB6C52E-204F-4FB2-A891-3B24ADBBBA73}" Directory_="lv_Dir" Attributes="0" KeyPath="lv_LV.diff" Type="0"/>
-    <ROW Component="lzcat.exe" ComponentId="{6750E7EC-FB72-40EF-882A-98EB5B940DB7}" Directory_="bin_Dir" Attributes="256" KeyPath="lzcat.exe"/>
-    <ROW Component="lzma.exe" ComponentId="{ED7ECA91-8341-4590-BBBE-CE6894009181}" Directory_="bin_Dir" Attributes="256" KeyPath="lzma.exe"/>
-    <ROW Component="lzop.exe" ComponentId="{0C0507CC-374E-4AC0-B79D-CDE96C7E15D3}" Directory_="bin_Dir" Attributes="256" KeyPath="lzop.exe"/>
-    <ROW Component="lzopcat.exe" ComponentId="{7A2577CF-81A8-4FF1-9F80-B325E0110397}" Directory_="bin_Dir" Attributes="256" KeyPath="lzopcat.exe"/>
-    <ROW Component="m2tree.def" ComponentId="{3BB62C26-F44C-40F5-958F-7E4D092C638A}" Directory_="m2_Dir" Attributes="0" KeyPath="m2tree.def" Type="0"/>
-    <ROW Component="main.aap" ComponentId="{E3FF0B68-109E-4EB9-975B-5EFAB0656C65}" Directory_="eu_Dir" Attributes="0" KeyPath="main.aap_14" Type="0"/>
-    <ROW Component="main.aap_1" ComponentId="{AA47B8A5-3ACF-44EF-87A2-1E06B243B66F}" Directory_="mg_Dir" Attributes="0" KeyPath="main.aap_30" Type="0"/>
-    <ROW Component="main.aap_10" ComponentId="{04C36A94-15B2-44F6-AF27-08D44D3E836B}" Directory_="ro_Dir" Attributes="0" KeyPath="main.aap_39" Type="0"/>
-    <ROW Component="main.aap_11" ComponentId="{41FD9454-2B0D-46D8-9640-801ACAA836D6}" Directory_="ru_Dir" Attributes="0" KeyPath="main.aap_40" Type="0"/>
-    <ROW Component="main.aap_12" ComponentId="{6F573F64-9BF7-4F23-AA5B-98545528958E}" Directory_="rw_Dir" Attributes="0" KeyPath="main.aap_41" Type="0"/>
-    <ROW Component="main.aap_13" ComponentId="{CA5CD4C3-BAF4-49B5-B2BD-FD6C0FE316A4}" Directory_="sk_Dir" Attributes="0" KeyPath="main.aap_42" Type="0"/>
-    <ROW Component="main.aap_14" ComponentId="{16350592-0B35-4DC8-A563-667D8FB5343F}" Directory_="sl_Dir" Attributes="0" KeyPath="main.aap_43" Type="0"/>
-    <ROW Component="main.aap_15" ComponentId="{FC30FDD8-1C33-4AD2-A648-0E9ADA473471}" Directory_="sr_Dir" Attributes="0" KeyPath="main.aap_44" Type="0"/>
-    <ROW Component="main.aap_16" ComponentId="{1140FB8F-5AAE-4942-A8EA-3BA88BA0919C}" Directory_="sv_Dir" Attributes="0" KeyPath="main.aap_45" Type="0"/>
-    <ROW Component="main.aap_17" ComponentId="{D3453E93-3E05-4A1E-9F41-D4C9D24557F1}" Directory_="sw_Dir" Attributes="0" KeyPath="main.aap_46" Type="0"/>
-    <ROW Component="main.aap_18" ComponentId="{D7D09580-3B3D-4946-B3B2-B949DD48FDA3}" Directory_="tet_Dir" Attributes="0" KeyPath="main.aap_47" Type="0"/>
-    <ROW Component="main.aap_19" ComponentId="{3F3B656B-6375-4C83-A6A7-8326B45EA61A}" Directory_="th_Dir" Attributes="0" KeyPath="main.aap_48" Type="0"/>
-    <ROW Component="main.aap_2" ComponentId="{140F4C4B-4CFB-419D-8C37-05BF65B22223}" Directory_="mi_Dir" Attributes="0" KeyPath="main.aap_31" Type="0"/>
-    <ROW Component="main.aap_20" ComponentId="{7DD2883D-2B00-4412-9C18-8537DBAB82A3}" Directory_="tl_Dir" Attributes="0" KeyPath="main.aap_49" Type="0"/>
-    <ROW Component="main.aap_21" ComponentId="{D97EA561-5B41-4260-A5CB-561AFC81EC5F}" Directory_="tn_Dir" Attributes="0" KeyPath="main.aap_50" Type="0"/>
-    <ROW Component="main.aap_22" ComponentId="{8357171A-770D-43E6-9961-D56A469AF064}" Directory_="tr_Dir" Attributes="0" KeyPath="main.aap_51" Type="0"/>
-    <ROW Component="main.aap_23" ComponentId="{8EAED774-06FB-4213-8AE0-92B8C50416E2}" Directory_="uk_Dir" Attributes="0" KeyPath="main.aap_52" Type="0"/>
-    <ROW Component="main.aap_24" ComponentId="{6CFD3171-7553-4EE8-9E22-699FFE13BA88}" Directory_="yi_Dir" Attributes="0" KeyPath="main.aap_53" Type="0"/>
-    <ROW Component="main.aap_25" ComponentId="{E3804554-E658-4F04-92A3-E1A598C12FB7}" Directory_="zu_Dir" Attributes="0" KeyPath="main.aap_54" Type="0"/>
-    <ROW Component="main.aap_3" ComponentId="{4FD9018C-9229-453B-8AD2-AE58B19EF3FA}" Directory_="ms_Dir" Attributes="0" KeyPath="main.aap_32" Type="0"/>
-    <ROW Component="main.aap_4" ComponentId="{57633A31-6D9B-44A5-8253-694D969AE4E9}" Directory_="nb_Dir" Attributes="0" KeyPath="main.aap_33" Type="0"/>
-    <ROW Component="main.aap_5" ComponentId="{D347A9E6-D78D-433A-B735-0F5632AE5CBC}" Directory_="nl_Dir" Attributes="0" KeyPath="main.aap_34" Type="0"/>
-    <ROW Component="main.aap_6" ComponentId="{70171BCC-FC17-4800-8C8D-F49946980919}" Directory_="nn_Dir" Attributes="0" KeyPath="main.aap_35" Type="0"/>
-    <ROW Component="main.aap_7" ComponentId="{50EC9EA2-E7C2-43CC-A817-28A0A31CA6ED}" Directory_="ny_Dir" Attributes="0" KeyPath="main.aap_36" Type="0"/>
-    <ROW Component="main.aap_8" ComponentId="{3CC73F24-BE74-4043-995D-A57E8CC64FFA}" Directory_="pl_Dir" Attributes="0" KeyPath="main.aap_37" Type="0"/>
-    <ROW Component="main.aap_9" ComponentId="{5885E68A-BBC4-47AD-B482-9B9AC63E9A26}" Directory_="pt_Dir" Attributes="0" KeyPath="main.aap_38" Type="0"/>
-    <ROW Component="make.exe" ComponentId="{B732ABC3-46D4-4C26-AEBF-375126F5E844}" Directory_="bin_Dir" Attributes="256" KeyPath="make.exe"/>
-    <ROW Component="matchit.txt" ComponentId="{A694AA51-D1D8-44B2-A7EA-B2B1B80B1BCE}" Directory_="doc_2_Dir" Attributes="0" KeyPath="matchit.txt" Type="0"/>
-    <ROW Component="matchit.vim" ComponentId="{BB13E855-7BED-41BE-A947-A910A36C13F8}" Directory_="autoload_1_Dir" Attributes="0" KeyPath="matchit.vim_1" Type="0"/>
-    <ROW Component="matchit.vim_1" ComponentId="{C578117C-BD7D-470D-911C-79CF1F42C63D}" Directory_="plugin_6_Dir" Attributes="0" KeyPath="matchit.vim_2" Type="0"/>
-    <ROW Component="md5sum.exe" ComponentId="{90785DC2-4EE9-4C8C-B1DC-803EE46F3473}" Directory_="bin_Dir" Attributes="256" KeyPath="md5sum.exe"/>
-    <ROW Component="mingw32make.exe" ComponentId="{DB19BF19-4498-44FF-B83C-077660193A33}" Directory_="bin_Dir" Attributes="256" KeyPath="mingw32make.exe"/>
-    <ROW Component="mkdir.exe" ComponentId="{E1D38C48-A465-4199-B2D4-C34EBBF31252}" Directory_="bin_Dir" Attributes="256" KeyPath="mkdir.exe"/>
-    <ROW Component="mktemp.exe" ComponentId="{B05A87EC-2F02-4E4C-9FFB-54CF5A25AB8D}" Directory_="bin_Dir" Attributes="256" KeyPath="mktemp.exe"/>
-    <ROW Component="mv.exe" ComponentId="{BE281FC0-C67F-4740-A028-E4A7B240F926}" Directory_="bin_Dir" Attributes="256" KeyPath="mv.exe"/>
-    <ROW Component="nasm.exe" ComponentId="{69A91DC8-063B-46DD-8F74-45645CA91F71}" Directory_="bin_Dir" Attributes="256" KeyPath="nasm.exe"/>
-    <ROW Component="nc.exe" ComponentId="{78FC95A6-49E3-4191-8647-2B467AB5AC7F}" Directory_="bin_Dir" Attributes="256" KeyPath="nc.exe"/>
-    <ROW Component="ndisasm.exe" ComponentId="{A6A2DAD3-95E2-45D5-BF46-D261A4F1B503}" Directory_="bin_Dir" Attributes="256" KeyPath="ndisasm.exe"/>
-    <ROW Component="nl.exe" ComponentId="{83EE3B56-98E7-4402-85C5-36A5EAB094A5}" Directory_="bin_Dir" Attributes="256" KeyPath="nl.exe"/>
-    <ROW Component="nm.exe" ComponentId="{40FD742B-1F54-402E-94DC-5740B5EEFDF5}" Directory_="bin_Dir" Attributes="256" KeyPath="nm.exe"/>
-    <ROW Component="nm.exe_1" ComponentId="{9615F567-8F9C-4DA0-A50A-4156C0568538}" Directory_="bin_1_Dir" Attributes="256" KeyPath="nm.exe_1"/>
-    <ROW Component="node_metadata_selector.hpp" ComponentId="{D7D493EB-53C2-45C9-8363-613AC10E8DD6}" Directory_="tree_policy_Dir" Attributes="0" KeyPath="node_metadata_selector.hpp" Type="0"/>
-    <ROW Component="node_metadata_selector.hpp_1" ComponentId="{C11F62A8-1AC7-4064-84CE-C374FA1B5B89}" Directory_="trie_policy_Dir" Attributes="0" KeyPath="node_metadata_selector.hpp_1" Type="0"/>
-    <ROW Component="nproc.exe" ComponentId="{BAE17919-B326-4540-8CE1-FF63100D56E7}" Directory_="bin_Dir" Attributes="256" KeyPath="nproc.exe"/>
-    <ROW Component="objcopy.exe" ComponentId="{C401A88C-3EF8-4EC1-A800-96E5872FF0B0}" Directory_="bin_Dir" Attributes="256" KeyPath="objcopy.exe"/>
-    <ROW Component="objcopy.exe_1" ComponentId="{502504C9-29F0-42E1-AE0D-94FDE975146C}" Directory_="bin_1_Dir" Attributes="256" KeyPath="objcopy.exe_1"/>
-    <ROW Component="objctree.def" ComponentId="{B6706E05-7366-467E-9FA8-DA4FBDA65C4A}" Directory_="objc_Dir" Attributes="0" KeyPath="objctree.def" Type="0"/>
-    <ROW Component="objdump.exe" ComponentId="{0CEE8DDE-93FA-477B-AB07-4AC1B0CC80D2}" Directory_="bin_Dir" Attributes="256" KeyPath="objdump.exe"/>
-    <ROW Component="objdump.exe_1" ComponentId="{5D950024-913E-4F2A-A91D-6C1CAD509CB4}" Directory_="bin_1_Dir" Attributes="256" KeyPath="objdump.exe_1"/>
-    <ROW Component="od.exe" ComponentId="{EA2AFEDC-1664-4192-B7FB-ACB8F1708E08}" Directory_="bin_Dir" Attributes="256" KeyPath="od.exe"/>
-    <ROW Component="opt_random.h" ComponentId="{19305055-D697-4F70-90B2-C2428A3923E1}" Directory_="ext_1_Dir" Attributes="0" KeyPath="opt_random.h_1" Type="0"/>
-    <ROW Component="paste.exe" ComponentId="{5DE6287F-C96C-44DD-B133-791C7DEA781E}" Directory_="bin_Dir" Attributes="256" KeyPath="paste.exe"/>
-    <ROW Component="patch.exe" ComponentId="{BDA4716D-D4C2-48CC-8FE5-4CEC474954BA}" Directory_="bin_Dir" Attributes="256" KeyPath="patch.exe"/>
-    <ROW Component="pgrep.exe" ComponentId="{A7EDA4C3-2147-4C16-8E0C-A076CE4C1CD4}" Directory_="bin_Dir" Attributes="256" KeyPath="pgrep.exe"/>
-    <ROW Component="pidof.exe" ComponentId="{15BAEE84-1BB9-48CE-9BDA-B67AD99309D2}" Directory_="bin_Dir" Attributes="256" KeyPath="pidof.exe"/>
-    <ROW Component="pipe_progress.exe" ComponentId="{A0897E19-44A4-4F6B-AF11-C273C50177E2}" Directory_="bin_Dir" Attributes="256" KeyPath="pipe_progress.exe"/>
-    <ROW Component="pkgconfig.exe" ComponentId="{3AD4CA90-E0B9-4099-97E3-2B27B1705793}" Directory_="bin_Dir" Attributes="256" KeyPath="pkgconfig.exe"/>
-    <ROW Component="pkill.exe" ComponentId="{0BE5E4D2-2039-4476-8B80-2160073CA608}" Directory_="bin_Dir" Attributes="256" KeyPath="pkill.exe"/>
-    <ROW Component="printenv.exe" ComponentId="{E405EA0C-00AA-410F-9C56-BACDC8B1B9F5}" Directory_="bin_Dir" Attributes="256" KeyPath="printenv.exe"/>
-    <ROW Component="printers.py" ComponentId="{78FE1CE1-DC22-4FB0-A674-A3032548CE4C}" Directory_="v6_Dir" Attributes="0" KeyPath="printers.py" Type="0"/>
-    <ROW Component="printf.exe" ComponentId="{0DFE8E56-9FA6-4E77-B0F9-368580CA206A}" Directory_="bin_Dir" Attributes="256" KeyPath="printf.exe"/>
-    <ROW Component="ps.exe" ComponentId="{A218B9E5-4E05-4B1D-8208-649C04C1C1A6}" Directory_="bin_Dir" Attributes="256" KeyPath="ps.exe"/>
-    <ROW Component="pwd.exe" ComponentId="{9A3B35B0-8D06-4C81-B017-FE2C3B44CF23}" Directory_="bin_Dir" Attributes="256" KeyPath="pwd.exe"/>
-    <ROW Component="ranlib.exe" ComponentId="{A50F171D-909C-45EA-BFF3-71FE1554B225}" Directory_="bin_Dir" Attributes="256" KeyPath="ranlib.exe"/>
-    <ROW Component="ranlib.exe_1" ComponentId="{281A547F-33C8-4DE7-A946-1DA17B46D37F}" Directory_="bin_1_Dir" Attributes="256" KeyPath="ranlib.exe_1"/>
-    <ROW Component="readelf.exe" ComponentId="{88652361-9FCA-4E0F-86A1-EED85088988D}" Directory_="bin_Dir" Attributes="256" KeyPath="readelf.exe"/>
-    <ROW Component="readelf.exe_1" ComponentId="{9E0C1C79-7F06-4022-85B0-8A5868573350}" Directory_="bin_1_Dir" Attributes="256" KeyPath="readelf.exe_1"/>
-    <ROW Component="readlink.exe" ComponentId="{7EB1533B-05C6-4B40-A81A-BFF434879F70}" Directory_="bin_Dir" Attributes="256" KeyPath="readlink.exe"/>
-    <ROW Component="realpath.exe" ComponentId="{6A08DBEB-C941-41D2-BF86-1DD54E49B8EC}" Directory_="bin_Dir" Attributes="256" KeyPath="realpath.exe"/>
-    <ROW Component="reset.exe" ComponentId="{327FCD94-B8A4-48AC-AF75-392F33DB100B}" Directory_="bin_Dir" Attributes="256" KeyPath="reset.exe"/>
-    <ROW Component="rev.exe" ComponentId="{E6B3A525-A99D-4862-A63E-86E8BD024676}" Directory_="bin_Dir" Attributes="256" KeyPath="rev.exe"/>
-    <ROW Component="rm.exe" ComponentId="{18F14E58-A077-4F2A-93C8-46A6CC5B77F6}" Directory_="bin_Dir" Attributes="256" KeyPath="rm.exe"/>
-    <ROW Component="rmdir.exe" ComponentId="{C51A8123-C189-4472-91D5-80D9A38E77C6}" Directory_="bin_Dir" Attributes="256" KeyPath="rmdir.exe"/>
-    <ROW Component="sed.exe" ComponentId="{4911C483-BFD4-472D-9F2F-6713849E32BE}" Directory_="bin_Dir" Attributes="256" KeyPath="sed.exe"/>
-    <ROW Component="seq.exe" ComponentId="{37EB519F-CE49-4215-8990-36C4A59ED31C}" Directory_="bin_Dir" Attributes="256" KeyPath="seq.exe"/>
-    <ROW Component="sh.exe" ComponentId="{FAD75BDC-0684-4F61-AD24-5755EEC6077A}" Directory_="bin_Dir" Attributes="256" KeyPath="sh.exe"/>
-    <ROW Component="sha1sum.exe" ComponentId="{046E01EB-8156-4BC8-8857-9E5736DE8845}" Directory_="bin_Dir" Attributes="256" KeyPath="sha1sum.exe"/>
-    <ROW Component="sha256sum.exe" ComponentId="{678359FC-39B2-43F5-A824-670A8B32E7F3}" Directory_="bin_Dir" Attributes="256" KeyPath="sha256sum.exe"/>
-    <ROW Component="sha3sum.exe" ComponentId="{B26FFC61-6695-4830-94E4-9B936926EAD5}" Directory_="bin_Dir" Attributes="256" KeyPath="sha3sum.exe"/>
-    <ROW Component="sha512sum.exe" ComponentId="{01BC3C85-CE48-45D6-B10C-EEE72A50746E}" Directory_="bin_Dir" Attributes="256" KeyPath="sha512sum.exe"/>
-    <ROW Component="shellmenu.vim" ComponentId="{57106AB0-6AC8-44D1-9FEB-B2A5A2E2A326}" Directory_="plugin_7_Dir" Attributes="0" KeyPath="shellmenu.vim_1" Type="0"/>
-    <ROW Component="shred.exe" ComponentId="{D86E0A1D-6187-4D0E-B16A-0C583AFB7B8A}" Directory_="bin_Dir" Attributes="256" KeyPath="shred.exe"/>
-    <ROW Component="shuf.exe" ComponentId="{227F01FC-7640-40DB-82F8-627C4A40612F}" Directory_="bin_Dir" Attributes="256" KeyPath="shuf.exe"/>
-    <ROW Component="size.exe" ComponentId="{10B81426-84CF-4CCC-8B3D-CDDD26E30547}" Directory_="bin_Dir" Attributes="256" KeyPath="size.exe"/>
-    <ROW Component="sleep.exe" ComponentId="{D017A756-0130-4905-9456-9F228D22AA4A}" Directory_="bin_Dir" Attributes="256" KeyPath="sleep.exe"/>
-    <ROW Component="sort.exe" ComponentId="{76ECABF9-E636-4F31-9919-C73B2787BAFC}" Directory_="bin_Dir" Attributes="256" KeyPath="sort.exe"/>
-    <ROW Component="split.exe" ComponentId="{DFBFBB35-D065-4817-B1FF-3BCF35547E77}" Directory_="bin_Dir" Attributes="256" KeyPath="split.exe"/>
-    <ROW Component="ssl_client.exe" ComponentId="{D9B37EF9-5C90-4298-A324-D80440DC6500}" Directory_="bin_Dir" Attributes="256" KeyPath="ssl_client.exe"/>
-    <ROW Component="ssp.h" ComponentId="{189F66BF-764C-4836-9E8A-60710EFDE9AA}" Directory_="ssp_Dir" Attributes="0" KeyPath="ssp.h" Type="0"/>
-    <ROW Component="stat.exe" ComponentId="{E077A43B-691A-40E2-A1A3-0C55E1E40268}" Directory_="bin_Dir" Attributes="256" KeyPath="stat.exe"/>
-    <ROW Component="strings.exe" ComponentId="{BC2501DB-4841-4C31-A662-E074F76F8081}" Directory_="bin_Dir" Attributes="256" KeyPath="strings.exe"/>
-    <ROW Component="strip.exe" ComponentId="{BF08FF60-151D-4AAA-B7CF-69A771E50867}" Directory_="bin_Dir" Attributes="256" KeyPath="strip.exe"/>
-    <ROW Component="strip.exe_1" ComponentId="{F80FDC2F-5ED4-4DB2-AC95-9314121BC4D4}" Directory_="bin_1_Dir" Attributes="256" KeyPath="strip.exe_1"/>
-    <ROW Component="su.exe" ComponentId="{049F60BA-554F-419F-9175-BD805822DCAA}" Directory_="bin_Dir" Attributes="256" KeyPath="su.exe"/>
-    <ROW Component="sum.exe" ComponentId="{A216D003-3ACC-459F-8A8D-8112E4A70EE9}" Directory_="bin_Dir" Attributes="256" KeyPath="sum.exe"/>
-    <ROW Component="swapmouse.vim" ComponentId="{326533A9-9BE1-4DE2-85D8-01AF8AFD53E3}" Directory_="plugin_8_Dir" Attributes="0" KeyPath="swapmouse.vim" Type="0"/>
-    <ROW Component="sync.exe" ComponentId="{68150949-A0FA-4E19-9232-D37FEEA67F78}" Directory_="bin_Dir" Attributes="256" KeyPath="sync.exe"/>
-    <ROW Component="tac.exe" ComponentId="{15A103DC-9FF8-4C59-A278-DF94AFD5E5E2}" Directory_="bin_Dir" Attributes="256" KeyPath="tac.exe"/>
-    <ROW Component="tail.exe" ComponentId="{894ED188-CC8A-406D-A61A-AE51F8EEB78B}" Directory_="bin_Dir" Attributes="256" KeyPath="tail.exe"/>
-    <ROW Component="tar.exe" ComponentId="{0D4D2ACA-AFAA-4501-AE2A-35A319A56E6A}" Directory_="bin_Dir" Attributes="256" KeyPath="tar.exe"/>
-    <ROW Component="tee.exe" ComponentId="{AA8CF46E-C936-4638-A67C-308D0E12413E}" Directory_="bin_Dir" Attributes="256" KeyPath="tee.exe"/>
-    <ROW Component="termdebug.vim" ComponentId="{24E6BCA1-27A5-467D-8E1C-95B3D0908DDF}" Directory_="plugin_9_Dir" Attributes="0" KeyPath="termdebug.vim" Type="0"/>
-    <ROW Component="test.exe" ComponentId="{6970FEC1-75D7-4A9C-AB4A-D3F5DED74E08}" Directory_="bin_Dir" Attributes="256" KeyPath="test.exe"/>
-    <ROW Component="th.vim" ComponentId="{BC4FDA9B-69A7-4205-B711-1611C905D677}" Directory_="ftplugin_Dir" Attributes="0" KeyPath="th.vim" Type="0"/>
-    <ROW Component="time.exe" ComponentId="{99ADA73B-7BDF-4E0F-B270-55FBBFDE17DF}" Directory_="bin_Dir" Attributes="256" KeyPath="time.exe"/>
-    <ROW Component="timeb_s.h" ComponentId="{9195DB67-A429-49B3-AEC7-8E96CCBD9A7A}" Directory_="sys_Dir" Attributes="0" KeyPath="timeb_s.h" Type="0"/>
-    <ROW Component="timeout.exe" ComponentId="{C9402209-6BDD-4B72-9B58-FEE1A20D2295}" Directory_="bin_Dir" Attributes="256" KeyPath="timeout.exe"/>
-    <ROW Component="touch.exe" ComponentId="{5C2F0C3D-693C-42E2-B5CE-4DCC59D48940}" Directory_="bin_Dir" Attributes="256" KeyPath="touch.exe"/>
-    <ROW Component="tr.exe" ComponentId="{0C1BA7A8-A27C-468A-B3F9-6B780C65B39F}" Directory_="bin_Dir" Attributes="256" KeyPath="tr.exe"/>
-    <ROW Component="true.exe" ComponentId="{D41BE973-964E-4DBF-B72E-57EE27E872F6}" Directory_="bin_Dir" Attributes="256" KeyPath="true.exe"/>
-    <ROW Component="truncate.exe" ComponentId="{D75DB0DC-3BAD-4379-A37C-CC76C9F590E0}" Directory_="bin_Dir" Attributes="256" KeyPath="truncate.exe"/>
-    <ROW Component="ts.exe" ComponentId="{5B19EEBC-DA5E-486B-B9EC-83680378C8C2}" Directory_="bin_Dir" Attributes="256" KeyPath="ts.exe"/>
-    <ROW Component="ttysize.exe" ComponentId="{C2A02FB4-4CCF-444D-B134-8160A1338716}" Directory_="bin_Dir" Attributes="256" KeyPath="ttysize.exe"/>
-    <ROW Component="uname.exe" ComponentId="{500C9AD1-ABDD-4EE6-919B-A20A809718F0}" Directory_="bin_Dir" Attributes="256" KeyPath="uname.exe"/>
-    <ROW Component="uncompress.exe" ComponentId="{4C736094-0832-4290-A174-68E711A065A0}" Directory_="bin_Dir" Attributes="256" KeyPath="uncompress.exe"/>
-    <ROW Component="unexpand.exe" ComponentId="{9F1CD7C5-D80B-4341-A27F-4D8FB6C63CD4}" Directory_="bin_Dir" Attributes="256" KeyPath="unexpand.exe"/>
-    <ROW Component="uniq.exe" ComponentId="{E75E1E7C-4F74-40B1-9852-7AB3B3EB353D}" Directory_="bin_Dir" Attributes="256" KeyPath="uniq.exe"/>
-    <ROW Component="unix2dos.exe" ComponentId="{464DFCC1-BF9D-41E7-9E60-49A943341671}" Directory_="bin_Dir" Attributes="256" KeyPath="unix2dos.exe"/>
-    <ROW Component="unlzma.exe" ComponentId="{1E7CED82-8C6D-4276-8C7D-B2B65DEF9D43}" Directory_="bin_Dir" Attributes="256" KeyPath="unlzma.exe"/>
-    <ROW Component="unlzop.exe" ComponentId="{5FB7AA7F-B84F-42B3-9318-B1AB57B0EA5E}" Directory_="bin_Dir" Attributes="256" KeyPath="unlzop.exe"/>
-    <ROW Component="unxz.exe" ComponentId="{323A5C36-75C7-4ABD-AED0-23513BDC362F}" Directory_="bin_Dir" Attributes="256" KeyPath="unxz.exe"/>
-    <ROW Component="unzip.exe" ComponentId="{CBF82D5E-13FA-44C4-BAB0-71CA31851437}" Directory_="bin_Dir" Attributes="256" KeyPath="unzip.exe"/>
-    <ROW Component="uptime.exe" ComponentId="{2821F41A-D71C-4D77-960A-1D48DF91C04D}" Directory_="bin_Dir" Attributes="256" KeyPath="uptime.exe"/>
-    <ROW Component="usleep.exe" ComponentId="{17C2EEFF-7BF2-4B4C-8C98-E3BD80720F51}" Directory_="bin_Dir" Attributes="256" KeyPath="usleep.exe"/>
-    <ROW Component="uudecode.exe" ComponentId="{3D537372-61FA-4037-9134-A4A5B38FA272}" Directory_="bin_Dir" Attributes="256" KeyPath="uudecode.exe"/>
-    <ROW Component="uuencode.exe" ComponentId="{BA8D7953-966D-42A6-BC2B-7BF0023CD828}" Directory_="bin_Dir" Attributes="256" KeyPath="uuencode.exe"/>
-    <ROW Component="vcfilt.exe" ComponentId="{57491833-9154-4785-81B7-2021465B1CAA}" Directory_="bin_Dir" Attributes="256" KeyPath="vcfilt.exe"/>
-    <ROW Component="vim.exe" ComponentId="{2D5F7EBB-BB9C-47F6-929B-9C0628EF026B}" Directory_="vim_Dir" Attributes="256" KeyPath="vim.exe"/>
-    <ROW Component="vim.ico" ComponentId="{AF9EF2D8-D410-414D-B4F5-989F9E289345}" Directory_="bitmaps_Dir" Attributes="0" KeyPath="vim.ico" Type="0"/>
-    <ROW Component="vim64.dll" ComponentId="{6E56CC29-7530-462C-8FED-9B96F6EDDA33}" Directory_="vim_Dir" Attributes="256" KeyPath="vim64.dll"/>
-    <ROW Component="vimhelp.vim" ComponentId="{01CDA266-3AFE-4001-8621-CAEE382A0938}" Directory_="dist_1_Dir" Attributes="0" KeyPath="vimhelp.vim" Type="0"/>
-    <ROW Component="vimrun.exe" ComponentId="{5FD7589A-1AA9-4CA8-95AB-BEFA6A88D02B}" Directory_="vim_Dir" Attributes="256" KeyPath="vimrun.exe"/>
-    <ROW Component="watch.exe" ComponentId="{846017EB-C70A-4508-B061-F5AB049BAD62}" Directory_="bin_Dir" Attributes="256" KeyPath="watch.exe"/>
-    <ROW Component="wc.exe" ComponentId="{3238147F-0665-4209-A0F9-094B28B5F52D}" Directory_="bin_Dir" Attributes="256" KeyPath="wc.exe"/>
-    <ROW Component="wget.exe" ComponentId="{D6A6BF07-6716-4CA6-9627-4651EAD72616}" Directory_="bin_Dir" Attributes="256" KeyPath="wget.exe"/>
-    <ROW Component="which.exe" ComponentId="{0974B6DF-D145-460D-BF3E-1E3CBBDF48B2}" Directory_="bin_Dir" Attributes="256" KeyPath="which.exe"/>
-    <ROW Component="whoami.exe" ComponentId="{49BE64B6-A94B-473B-9A01-1B750E83C9DE}" Directory_="bin_Dir" Attributes="256" KeyPath="whoami.exe"/>
-    <ROW Component="whois.exe" ComponentId="{4C2362AE-2CB8-4418-878E-34859D88F7CC}" Directory_="bin_Dir" Attributes="256" KeyPath="whois.exe"/>
-    <ROW Component="windmc.exe" ComponentId="{BF8F7E21-9351-4B94-8B0A-E717456F9326}" Directory_="bin_Dir" Attributes="256" KeyPath="windmc.exe"/>
-    <ROW Component="windres.exe" ComponentId="{C7245CA1-CD7E-4723-B610-3AD4638727BB}" Directory_="bin_Dir" Attributes="256" KeyPath="windres.exe"/>
-    <ROW Component="x86_64w64mingw32addr2line.exe" ComponentId="{3FABDB5D-7503-4192-80F7-72F5F7C884D8}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32addr2line.exe"/>
-    <ROW Component="x86_64w64mingw32ar.exe" ComponentId="{5FFC1789-B0E6-4573-9BCE-ED0BAF19C9A7}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32ar.exe"/>
-    <ROW Component="x86_64w64mingw32as.exe" ComponentId="{4D89CEE1-0DC7-4AD3-8AA4-1D522F04324F}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32as.exe"/>
-    <ROW Component="x86_64w64mingw32c.exe" ComponentId="{EAFC03A1-ED7E-4EFF-BE81-D0DC09814CAE}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32c.exe"/>
-    <ROW Component="x86_64w64mingw32cfilt.exe" ComponentId="{99CED9E9-6AD6-42B9-A3EC-88DEA28D649F}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32cfilt.exe"/>
-    <ROW Component="x86_64w64mingw32cpp.exe" ComponentId="{23A91827-27A5-4D43-A6AA-146025271B1E}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32cpp.exe"/>
-    <ROW Component="x86_64w64mingw32dlltool.exe" ComponentId="{67536B06-7483-4C9F-B36F-9A6B8F5282F2}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32dlltool.exe"/>
-    <ROW Component="x86_64w64mingw32dllwrap.exe" ComponentId="{B4D0A2F2-F94C-4356-8BEE-27797CB54541}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32dllwrap.exe"/>
-    <ROW Component="x86_64w64mingw32elfedit.exe" ComponentId="{101665EC-C6F3-4D37-B8CD-92AB63D09A6C}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32elfedit.exe"/>
-    <ROW Component="x86_64w64mingw32g.exe" ComponentId="{12A0FBF9-CBB5-47CD-A455-DE630F18F9AA}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32g.exe"/>
-    <ROW Component="x86_64w64mingw32gcc.exe" ComponentId="{40B5C103-A010-4DDF-AF2E-334DB0E58994}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcc.exe"/>
-    <ROW Component="x86_64w64mingw32gcc13.2.0.exe" ComponentId="{E8D484B2-9F8E-4A5F-8CE5-A4E40DE49592}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcc13.2.0.exe"/>
-    <ROW Component="x86_64w64mingw32gccar.exe" ComponentId="{BCFB3BE9-76A8-44CF-A7EE-6D487678C099}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gccar.exe"/>
-    <ROW Component="x86_64w64mingw32gccnm.exe" ComponentId="{CF08AF11-458C-46B5-8E0A-F44FE9C14F4B}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gccnm.exe"/>
-    <ROW Component="x86_64w64mingw32gccranlib.exe" ComponentId="{BB97D118-8945-4678-803E-53D8CBAE14BE}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gccranlib.exe"/>
-    <ROW Component="x86_64w64mingw32gcov.exe" ComponentId="{87036179-2D34-4DB3-AEC1-0C19A381BCB9}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcov.exe"/>
-    <ROW Component="x86_64w64mingw32gcovdump.exe" ComponentId="{BEF9C360-4948-4233-9F77-8922B358FFCF}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcovdump.exe"/>
-    <ROW Component="x86_64w64mingw32gcovtool.exe" ComponentId="{CBBB645B-8D38-4565-B11C-83586F91E1D3}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcovtool.exe"/>
-    <ROW Component="x86_64w64mingw32ld.exe" ComponentId="{2E80CD8B-DBDC-412B-9413-C5CA8A0AF16A}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32ld.exe"/>
-    <ROW Component="x86_64w64mingw32nm.exe" ComponentId="{DA0A1845-7FE0-4D4B-88FA-E3D686A2EF0E}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32nm.exe"/>
-    <ROW Component="x86_64w64mingw32objcopy.exe" ComponentId="{A777C01A-C99A-4ABB-8DFE-8065152390C5}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32objcopy.exe"/>
-    <ROW Component="x86_64w64mingw32objdump.exe" ComponentId="{5E8C6BC0-3591-43EA-9408-F8A715131670}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32objdump.exe"/>
-    <ROW Component="x86_64w64mingw32pkgconfig.exe" ComponentId="{0A8E9AB2-19C6-4566-9201-BEE4423F599E}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32pkgconfig.exe"/>
-    <ROW Component="x86_64w64mingw32ranlib.exe" ComponentId="{AFD973B2-6C72-41D3-8589-1E90331670CD}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32ranlib.exe"/>
-    <ROW Component="x86_64w64mingw32readelf.exe" ComponentId="{FD90BE2B-37B0-4D22-98D1-521DD081B684}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32readelf.exe"/>
-    <ROW Component="x86_64w64mingw32size.exe" ComponentId="{4F757462-E2D3-4988-ADA9-FC3607DB437F}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32size.exe"/>
-    <ROW Component="x86_64w64mingw32strings.exe" ComponentId="{228288E3-933E-4C6D-AAA6-27F42C921C8F}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32strings.exe"/>
-    <ROW Component="x86_64w64mingw32strip.exe" ComponentId="{E1B72ABE-B969-42B5-B55D-1FA43D8E3E0F}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32strip.exe"/>
-    <ROW Component="x86_64w64mingw32windmc.exe" ComponentId="{52FF644F-5A7A-4226-B4D3-8B478FBBFDB0}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32windmc.exe"/>
-    <ROW Component="x86_64w64mingw32windres.exe" ComponentId="{3075A677-E051-4B5D-A0E7-EA8545723457}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32windres.exe"/>
-    <ROW Component="xargs.exe" ComponentId="{4620F6E0-4BA7-4873-8A27-2BC7E692CBAA}" Directory_="bin_Dir" Attributes="256" KeyPath="xargs.exe"/>
-    <ROW Component="xmlwf.exe" ComponentId="{792D5C1D-0EE7-4213-8F25-40A2130CD97A}" Directory_="bin_Dir" Attributes="256" KeyPath="xmlwf.exe"/>
-    <ROW Component="xxd.exe" ComponentId="{25A11E87-2AD0-4E4A-9711-814BD8369C6A}" Directory_="bin_Dir" Attributes="256" KeyPath="xxd.exe"/>
-    <ROW Component="xz.exe" ComponentId="{F25FD176-2A3A-414E-A27D-B7D253C91630}" Directory_="bin_Dir" Attributes="256" KeyPath="xz.exe"/>
-    <ROW Component="xzcat.exe" ComponentId="{D7CC3C0F-44F1-47BE-86AC-8FDC7758A7BB}" Directory_="bin_Dir" Attributes="256" KeyPath="xzcat.exe"/>
-    <ROW Component="yes.exe" ComponentId="{5F67FFAE-6686-4EF1-AC73-D4116E46B8CF}" Directory_="bin_Dir" Attributes="256" KeyPath="yes.exe"/>
-    <ROW Component="zcat.exe" ComponentId="{4554CAE3-A0CA-4A4A-BBAD-91A3357F98D7}" Directory_="bin_Dir" Attributes="256" KeyPath="zcat.exe"/>
+    <ROW Component="Version" ComponentId="{29213D9D-1F83-41B9-93B5-0646479778A7}" Directory_="APPDIR" Attributes="4" KeyPath="Version_1"/>
+    <ROW Component="__init__.py" ComponentId="{B0FC76F3-CFD6-43FE-89A6-8E60D6E6386F}" Directory_="libstdcxx_Dir" Attributes="0" KeyPath="__init__.py_1" Type="0"/>
+    <ROW Component="_mingw_ddk.h" ComponentId="{4AB6182D-DC75-43E1-AC26-7145E07CCA8F}" Directory_="sdks_Dir" Attributes="0" KeyPath="_mingw_ddk.h" Type="0"/>
+    <ROW Component="aap.vim" ComponentId="{53A31D18-CE2F-4CE5-954E-A139ED198829}" Directory_="indent_Dir" Attributes="0" KeyPath="aap.vim_1" Type="0"/>
+    <ROW Component="acc_prof.h" ComponentId="{59CCDF1C-2739-4510-AC12-04844F9E4254}" Directory_="include_1_Dir" Attributes="0" KeyPath="acc_prof.h" Type="0"/>
+    <ROW Component="accctrl.h" ComponentId="{CAD560A7-DA62-4367-B9B7-268B8D108D3D}" Directory_="include_4_Dir" Attributes="0" KeyPath="accctrl.h" Type="0"/>
+    <ROW Component="accents.vim" ComponentId="{FC879612-248A-4A23-BE58-3B0E4D2A7F44}" Directory_="keymap_Dir" Attributes="0" KeyPath="accents.vim" Type="0"/>
+    <ROW Component="acpiioct.h" ComponentId="{9933E04B-CF7C-48FB-9881-FF845BB62018}" Directory_="ddk_Dir" Attributes="0" KeyPath="acpiioct.h" Type="0"/>
+    <ROW Component="ada.vim" ComponentId="{A3853286-D738-4BA9-A5A2-92EF9358E320}" Directory_="autoload_Dir" Attributes="0" KeyPath="ada.vim" Type="0"/>
+    <ROW Component="adatree.def" ComponentId="{5340EFEC-7A8E-4002-B805-039ED13AC543}" Directory_="gccinterface_Dir" Attributes="0" KeyPath="adatree.def" Type="0"/>
+    <ROW Component="addr2line.1" ComponentId="{C966B1C5-48D5-4C85-866D-98AA950EC8F8}" Directory_="man1_Dir" Attributes="0" KeyPath="addr2line.1" Type="0"/>
+    <ROW Component="addr2line.exe" ComponentId="{E4C23F6C-428B-41B3-BD7D-1A25A1B6C420}" Directory_="bin_Dir" Attributes="256" KeyPath="addr2line.exe"/>
+    <ROW Component="addresses.h" ComponentId="{94520E96-0BB2-49BA-B92F-FF7033B30F2D}" Directory_="include_3_Dir" Attributes="0" KeyPath="addresses.h" Type="0"/>
+    <ROW Component="af_ZA.diff" ComponentId="{C90D1384-36D7-4607-BFB8-3E1464D9C6A2}" Directory_="af_Dir" Attributes="0" KeyPath="af_ZA.diff" Type="0"/>
+    <ROW Component="algo.h" ComponentId="{2161D671-8688-48C7-B275-3CCE8668F78D}" Directory_="parallel_Dir" Attributes="0" KeyPath="algo.h" Type="0"/>
+    <ROW Component="algorithm" ComponentId="{738ECDB8-846C-473E-85B1-399B395015F8}" Directory_="c_Dir" Attributes="0" KeyPath="algorithm" Type="0"/>
+    <ROW Component="algorithm_1" ComponentId="{A230E423-F714-4EC1-B923-A15B8E6310EE}" Directory_="experimental_Dir" Attributes="0" KeyPath="algorithm_1" Type="0"/>
+    <ROW Component="algorithm_2" ComponentId="{04A6932A-EBA8-4A2E-AF92-05980DC6388D}" Directory_="ext_Dir" Attributes="0" KeyPath="algorithm_2" Type="0"/>
+    <ROW Component="algorithm_fwd.h" ComponentId="{AFB8147C-EBEC-4B31-B940-C13846330F99}" Directory_="pstl_Dir" Attributes="0" KeyPath="algorithm_fwd.h" Type="0"/>
+    <ROW Component="algorithmfwd.h" ComponentId="{8A4CAFAD-C8DD-4861-9A81-D52666ABC21B}" Directory_="bits_Dir" Attributes="0" KeyPath="algorithmfwd.h" Type="0"/>
+    <ROW Component="alias.c" ComponentId="{DD56156D-9BF1-4703-9B46-2B48B7C3233C}" Directory_="src_Dir" Attributes="0" KeyPath="alias.c" Type="0"/>
+    <ROW Component="alias.exe" ComponentId="{F673EC9C-88D1-4046-A8A3-1DAB8A3D87B4}" Directory_="bin_Dir" Attributes="256" KeyPath="alias.exe"/>
+    <ROW Component="am_ET.diff" ComponentId="{43182610-12CE-401A-8EB5-59A5F5C1B319}" Directory_="am_Dir" Attributes="0" KeyPath="am_ET.diff" Type="0"/>
+    <ROW Component="ansidecl.h" ComponentId="{D9157441-10FC-427C-B667-C0A1D1C8C435}" Directory_="include_Dir" Attributes="0" KeyPath="ansidecl.h" Type="0"/>
+    <ROW Component="ant.vim" ComponentId="{7E98DE17-5BB1-44E4-8C4D-26FD8825E0F7}" Directory_="compiler_Dir" Attributes="0" KeyPath="ant.vim" Type="0"/>
+    <ROW Component="ar" ComponentId="{CF35639C-DB0B-4911-86FE-6999AFB4E7B6}" Directory_="bin_1_Dir" Attributes="0" KeyPath="ar" Type="0"/>
+    <ROW Component="ar.exe" ComponentId="{93785505-11ED-4E89-B897-FFA84B405C0E}" Directory_="bin_Dir" Attributes="256" KeyPath="ar.exe"/>
+    <ROW Component="ar.exe_1" ComponentId="{F8B0D465-6F6C-4A2E-A7EA-2AB439AD8A82}" Directory_="bin_1_Dir" Attributes="256" KeyPath="ar.exe_1"/>
+    <ROW Component="arabic.txt" ComponentId="{EBAD7830-4233-45CE-9F93-3CD9225E2B3D}" Directory_="doc_1_Dir" Attributes="0" KeyPath="arabic.txt" Type="0"/>
+    <ROW Component="arch.exe" ComponentId="{1CBDC18E-56C2-4384-ABDB-D39291074DF3}" Directory_="bin_Dir" Attributes="256" KeyPath="arch.exe"/>
+    <ROW Component="array" ComponentId="{F034615E-E208-4799-A82F-0DAEBCF2AEF0}" Directory_="tr1_Dir" Attributes="0" KeyPath="array_2" Type="0"/>
+    <ROW Component="as.exe" ComponentId="{7EB68F65-697E-4B12-81CD-77537641EA1C}" Directory_="bin_Dir" Attributes="256" KeyPath="as.exe"/>
+    <ROW Component="as.exe_1" ComponentId="{4DBDDD1D-6025-4D54-B94C-CAC24A7E5D29}" Directory_="bin_1_Dir" Attributes="256" KeyPath="as.exe_1"/>
+    <ROW Component="as.info" ComponentId="{57AB7597-7175-4831-A9EF-1CD5D60189FC}" Directory_="info_Dir" Attributes="0" KeyPath="as.info" Type="0"/>
+    <ROW Component="ascii.ps" ComponentId="{0E340650-1013-415F-8C09-2534873398D5}" Directory_="print_Dir" Attributes="0" KeyPath="ascii.ps" Type="0"/>
+    <ROW Component="ash.exe" ComponentId="{D0CE09D9-9DF0-4838-B57B-FF9EDB463F6D}" Directory_="bin_Dir" Attributes="256" KeyPath="ash.exe"/>
+    <ROW Component="assertions.h" ComponentId="{13C22E6E-8D0D-47E6-B406-B90EF1710F1C}" Directory_="debug_Dir" Attributes="0" KeyPath="assertions.h" Type="0"/>
+    <ROW Component="assoc_container.hpp" ComponentId="{EC583EEA-47BB-4925-B03D-F76E348288AC}" Directory_="pb_ds_Dir" Attributes="0" KeyPath="assoc_container.hpp" Type="0"/>
+    <ROW Component="atomic_word.h" ComponentId="{69F8380E-2ED0-45F5-AB45-35A8E53C8CE4}" Directory_="bits_2_Dir" Attributes="0" KeyPath="atomic_word.h" Type="0"/>
+    <ROW Component="auto_ptr.h" ComponentId="{9E20C7CD-DFEB-47C3-9419-3930503F7644}" Directory_="backward_Dir" Attributes="0" KeyPath="auto_ptr.h" Type="0"/>
+    <ROW Component="avr.cfg" ComponentId="{8454DF9F-A216-43FD-B042-9874C356EB5C}" Directory_="cfg_Dir" Attributes="0" KeyPath="avr.cfg" Type="0"/>
+    <ROW Component="awk.exe" ComponentId="{37D599D1-D595-426B-A48A-4A818D512609}" Directory_="bin_Dir" Attributes="256" KeyPath="awk.exe"/>
+    <ROW Component="base32.exe" ComponentId="{8EFD0B14-F0B1-4074-8DB2-5D71AFCE2AF0}" Directory_="bin_Dir" Attributes="256" KeyPath="base32.exe"/>
+    <ROW Component="base64.exe" ComponentId="{783BBBB2-870B-40B9-9220-FE8FF0EB7C07}" Directory_="bin_Dir" Attributes="256" KeyPath="base64.exe"/>
+    <ROW Component="basename.exe" ComponentId="{9CDF2D12-0E28-4EDF-B679-B890579AFE4D}" Directory_="bin_Dir" Attributes="256" KeyPath="basename.exe"/>
+    <ROW Component="bash.exe" ComponentId="{8EC64D5B-CBBC-438D-9754-37F3C05EF144}" Directory_="bin_Dir" Attributes="256" KeyPath="bash.exe"/>
+    <ROW Component="bc.exe" ComponentId="{DC45AA7F-7764-4112-A043-21F31EDF4FBF}" Directory_="bin_Dir" Attributes="256" KeyPath="bc.exe"/>
+    <ROW Component="bg_BG.diff" ComponentId="{1E4E8709-E201-4AF2-821E-CFE2B5275EB0}" Directory_="bg_Dir" Attributes="0" KeyPath="bg_BG.diff" Type="0"/>
+    <ROW Component="biarch64.h" ComponentId="{255F224B-0525-464D-B263-F4258900A8E0}" Directory_="i386_1_Dir" Attributes="0" KeyPath="biarch64.h" Type="0"/>
+    <ROW Component="bin_search_tree_.hpp" ComponentId="{DAC9E127-B101-4B39-9122-3EAD44EA4BC6}" Directory_="bin_search_tree__Dir" Attributes="0" KeyPath="bin_search_tree_.hpp" Type="0"/>
+    <ROW Component="binary_heap_.hpp" ComponentId="{38E783E0-7E8A-410E-B2A8-4FAC24215A14}" Directory_="binary_heap__Dir" Attributes="0" KeyPath="binary_heap_.hpp" Type="0"/>
+    <ROW Component="binmode.o" ComponentId="{AC55C7CC-5B14-4235-B332-459C11251797}" Directory_="lib_1_Dir" Attributes="0" KeyPath="binmode.o" Type="0"/>
+    <ROW Component="binomial_heap_.hpp" ComponentId="{94D2B46C-CAE0-46B9-8E91-ED88E9147604}" Directory_="binomial_heap__Dir" Attributes="0" KeyPath="binomial_heap_.hpp" Type="0"/>
+    <ROW Component="binomial_heap_base_.hpp" ComponentId="{02D9F3EB-3701-423D-BF9E-0E39EF765CEF}" Directory_="binomial_heap_base__Dir" Attributes="0" KeyPath="binomial_heap_base_.hpp" Type="0"/>
+    <ROW Component="blink.c" ComponentId="{1F182FA1-3762-4635-98F5-F1E3C4A330CB}" Directory_="tools_1_Dir" Attributes="0" KeyPath="blink.c" Type="0"/>
+    <ROW Component="blue.vim" ComponentId="{961CC4AD-AD35-4D4D-B5E8-E956113EB591}" Directory_="colors_Dir" Attributes="0" KeyPath="blue.vim" Type="0"/>
+    <ROW Component="bool_set" ComponentId="{4706F6F4-D0C1-4263-BE47-31C49A221AF1}" Directory_="tr2_Dir" Attributes="0" KeyPath="bool_set" Type="0"/>
+    <ROW Component="br_FR.diff" ComponentId="{B56115EE-28D0-4E31-8962-E00AAF939990}" Directory_="br_Dir" Attributes="0" KeyPath="br_FR.diff" Type="0"/>
+    <ROW Component="branch_policy.hpp" ComponentId="{9D63270E-9D5A-4E74-97D6-B2E3FCAE2DFE}" Directory_="branch_policy_Dir" Attributes="0" KeyPath="branch_policy.hpp" Type="0"/>
+    <ROW Component="bugreport.vim" ComponentId="{5ACDF482-26E0-4DC1-AEFB-EEC46A35B6F1}" Directory_="vim_Dir" Attributes="0" KeyPath="bugreport.vim" Type="0"/>
+    <ROW Component="bunzip2.exe" ComponentId="{58CE8E33-C62C-4B2B-83BD-C011C756FAC2}" Directory_="bin_Dir" Attributes="256" KeyPath="bunzip2.exe"/>
+    <ROW Component="busybox.exe" ComponentId="{D126D6F9-25AF-4F2D-BECD-9028B81BA1F7}" Directory_="bin_Dir" Attributes="256" KeyPath="busybox.exe"/>
+    <ROW Component="bzcat.exe" ComponentId="{49FFE4E3-2EC6-44BD-8024-313CA353381E}" Directory_="bin_Dir" Attributes="256" KeyPath="bzcat.exe"/>
+    <ROW Component="bzip2.exe" ComponentId="{8A80D818-C494-4311-B7C5-4C54CC4BFDFA}" Directory_="bin_Dir" Attributes="256" KeyPath="bzip2.exe"/>
+    <ROW Component="c.exe" ComponentId="{8C834458-004A-4D64-8205-3A6DF0526DFE}" Directory_="bin_Dir" Attributes="256" KeyPath="c.exe"/>
+    <ROW Component="c89.exe" ComponentId="{9103B500-F9B2-442A-9A2C-51EAAAD97720}" Directory_="bin_Dir" Attributes="256" KeyPath="c89.exe"/>
+    <ROW Component="c99.exe" ComponentId="{554D5232-5D8B-4F31-B4A9-87C3152D0B3A}" Directory_="bin_Dir" Attributes="256" KeyPath="c99.exe"/>
+    <ROW Component="ca_ES.diff" ComponentId="{BB213965-FA91-4E58-9CB7-3581441A8CA7}" Directory_="ca_Dir" Attributes="0" KeyPath="ca_ES.diff" Type="0"/>
+    <ROW Component="cal.exe" ComponentId="{C67CFCC1-EB8D-4760-A60F-2B09BA31CE29}" Directory_="bin_Dir" Attributes="256" KeyPath="cal.exe"/>
+    <ROW Component="can_round.c" ComponentId="{CDF730EE-35A4-4035-AFB0-577B76405BD8}" Directory_="examples_Dir" Attributes="0" KeyPath="can_round.c" Type="0"/>
+    <ROW Component="cat.exe" ComponentId="{4FDBF1FF-C77E-4650-AEEC-9EA8367C72D8}" Directory_="bin_Dir" Attributes="256" KeyPath="cat.exe"/>
+    <ROW Component="cc.exe" ComponentId="{910C8F69-C7A0-480B-B248-4B127933557B}" Directory_="bin_Dir" Attributes="256" KeyPath="cc.exe"/>
+    <ROW Component="cc1" ComponentId="{12BB4B8A-83A7-424C-8ABA-0DC792792471}" Directory_="__1_Dir" Attributes="0" KeyPath="cc1" Type="0"/>
+    <ROW Component="cc1.exe" ComponentId="{823C0ECC-0181-4204-B649-D845719ECC34}" Directory_="__1_Dir" Attributes="256" KeyPath="cc1.exe"/>
+    <ROW Component="cc1plus.exe" ComponentId="{BF827B3D-3FA2-44B1-A712-A3CB693500DF}" Directory_="__1_Dir" Attributes="256" KeyPath="cc1plus.exe"/>
+    <ROW Component="cc_hash_max_collision_check_resize_trigger_imp.hpp" ComponentId="{9892085B-90F3-4EC7-86AB-D56C382D5D02}" Directory_="resize_policy_Dir" Attributes="0" KeyPath="cc_hash_max_collision_check_resize_trigger_imp.hpp" Type="0"/>
+    <ROW Component="cc_ht_map_.hpp" ComponentId="{996A1053-6AA4-4AA3-A3C4-D346D4EC92C1}" Directory_="cc_hash_table_map__Dir" Attributes="0" KeyPath="cc_ht_map_.hpp" Type="0"/>
+    <ROW Component="ccommon.def" ComponentId="{C00282F2-0750-49FD-AA2B-E88E8FF9A1F1}" Directory_="cfamily_Dir" Attributes="0" KeyPath="ccommon.def" Type="0"/>
+    <ROW Component="cdefs.h" ComponentId="{42925FB8-78E9-4A55-8629-73664207C386}" Directory_="sys_1_Dir" Attributes="0" KeyPath="cdefs.h" Type="0"/>
+    <ROW Component="cfilt.exe" ComponentId="{8E18A538-A00C-4994-8180-D9B90E194780}" Directory_="bin_Dir" Attributes="256" KeyPath="cfilt.exe"/>
+    <ROW Component="cfilter.vim" ComponentId="{9892152E-D6E3-43A9-9A58-5D32BC99A0FB}" Directory_="plugin_2_Dir" Attributes="0" KeyPath="cfilter.vim" Type="0"/>
+    <ROW Component="chattr.exe" ComponentId="{41BF2730-218E-457B-AF92-47BB8837EB4D}" Directory_="bin_Dir" Attributes="256" KeyPath="chattr.exe"/>
+    <ROW Component="check_aa.aff" ComponentId="{4DFB8CF0-B436-47E9-A7A1-E92BF054E976}" Directory_="check_Dir" Attributes="0" KeyPath="check_aa.aff" Type="0"/>
+    <ROW Component="check_colors.vim" ComponentId="{D8103364-7EE3-47B1-BC93-1D06E5451CBE}" Directory_="tools_Dir" Attributes="0" KeyPath="check_colors.vim" Type="0"/>
+    <ROW Component="check_locales.vim" ComponentId="{54996CC9-BE13-418E-9642-05656291234E}" Directory_="spell_Dir" Attributes="0" KeyPath="check_locales.vim" Type="0"/>
+    <ROW Component="chmod.exe" ComponentId="{691C2106-00D1-4F9C-B62F-9BFFEBC000F2}" Directory_="bin_Dir" Attributes="256" KeyPath="chmod.exe"/>
+    <ROW Component="cksum.exe" ComponentId="{814DC4CF-F5C2-4B5C-B56F-015259052651}" Directory_="bin_Dir" Attributes="256" KeyPath="cksum.exe"/>
+    <ROW Component="clear.exe" ComponentId="{25DB5F6F-6704-4E6E-B303-B361EDBD631B}" Directory_="bin_Dir" Attributes="256" KeyPath="clear.exe"/>
+    <ROW Component="click.me" ComponentId="{921BC552-75B1-4FC4-95CC-75DD6EBEE0D3}" Directory_="hanoi_Dir" Attributes="0" KeyPath="click.me" Type="0"/>
+    <ROW Component="click.me_1" ComponentId="{14040481-6B2E-4F2F-BD1C-3898F4594235}" Directory_="life_Dir" Attributes="0" KeyPath="click.me_1" Type="0"/>
+    <ROW Component="client.h" ComponentId="{DC13FBEA-731B-40EB-B8FD-539EC89F577C}" Directory_="wrl_Dir" Attributes="0" KeyPath="client.h" Type="0"/>
+    <ROW Component="cmp.exe" ComponentId="{48E87EF0-0EDD-4F6D-8DCA-AAF9884EB7B1}" Directory_="bin_Dir" Attributes="256" KeyPath="cmp.exe"/>
+    <ROW Component="collect2.exe" ComponentId="{D3F80AFD-1E11-4774-A563-9B8D8C4E9750}" Directory_="__1_Dir" Attributes="256" KeyPath="collect2.exe"/>
+    <ROW Component="comm.exe" ComponentId="{E51D39C7-420D-4AAC-AF3F-E2C8DF697D08}" Directory_="bin_Dir" Attributes="256" KeyPath="comm.exe"/>
+    <ROW Component="cond_dealtor.hpp" ComponentId="{D9E6C278-1D70-4EC3-84BC-F74BA53661C9}" Directory_="detail_Dir" Attributes="0" KeyPath="cond_dealtor.hpp" Type="0"/>
+    <ROW Component="conio_s.h" ComponentId="{583B7DC9-F1A8-4E17-B615-32DFEAAA90B6}" Directory_="sec_api_Dir" Attributes="0" KeyPath="conio_s.h" Type="0"/>
+    <ROW Component="const_iterator.hpp" ComponentId="{B7500FBE-4973-48C3-B8C0-0065F40B11D4}" Directory_="unordered_iterator_Dir" Attributes="0" KeyPath="const_iterator.hpp_2" Type="0"/>
+    <ROW Component="constructor_destructor_fn_imps.hpp" ComponentId="{D9829AA0-82DB-496A-A495-2D4C15F3C015}" Directory_="gp_hash_table_map__Dir" Attributes="0" KeyPath="constructor_destructor_fn_imps.hpp_1" Type="0"/>
+    <ROW Component="constructor_destructor_fn_imps.hpp_1" ComponentId="{7B7BB36F-2B00-4425-A245-8A486FCA8EB7}" Directory_="list_update_map__Dir" Attributes="0" KeyPath="constructor_destructor_fn_imps.hpp_2" Type="0"/>
+    <ROW Component="constructors_destructor_fn_imps.hpp" ComponentId="{EED60F36-DC60-40C1-A8BE-160FF5F0D322}" Directory_="left_child_next_sibling_heap__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_4" Type="0"/>
+    <ROW Component="constructors_destructor_fn_imps.hpp_1" ComponentId="{0BBCFF81-BDDF-4A42-A6A6-8E3796DBF5D7}" Directory_="ov_tree_map__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_5" Type="0"/>
+    <ROW Component="constructors_destructor_fn_imps.hpp_2" ComponentId="{A508721C-1059-47CE-A5EF-F56C1D669FEB}" Directory_="pairing_heap__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_6" Type="0"/>
+    <ROW Component="constructors_destructor_fn_imps.hpp_3" ComponentId="{97A154B3-3E7B-44BB-9CE7-60A85E074C38}" Directory_="pat_trie__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_7" Type="0"/>
+    <ROW Component="constructors_destructor_fn_imps.hpp_4" ComponentId="{AD26F893-5DDA-45DD-8400-4616347617E1}" Directory_="rb_tree_map__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_8" Type="0"/>
+    <ROW Component="constructors_destructor_fn_imps.hpp_5" ComponentId="{662B4631-F71A-4A95-94EA-61B523880A0B}" Directory_="rc_binomial_heap__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_9" Type="0"/>
+    <ROW Component="constructors_destructor_fn_imps.hpp_6" ComponentId="{A6DB84A6-A3B7-47F9-9E63-731C22AEC2A4}" Directory_="splay_tree__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_10" Type="0"/>
+    <ROW Component="constructors_destructor_fn_imps.hpp_7" ComponentId="{FF45469A-613A-4E18-BB9B-DB0D41369DB9}" Directory_="thin_heap__Dir" Attributes="0" KeyPath="constructors_destructor_fn_imps.hpp_11" Type="0"/>
+    <ROW Component="contracts.h" ComponentId="{7FAD7ACE-BB74-46D5-9FE3-E70D1EF1BE71}" Directory_="cp_Dir" Attributes="0" KeyPath="contracts.h" Type="0"/>
+    <ROW Component="corewrappers.h" ComponentId="{0345BCB7-44E0-4394-9C97-036256D0A942}" Directory_="wrappers_Dir" Attributes="0" KeyPath="corewrappers.h" Type="0"/>
+    <ROW Component="cp.exe" ComponentId="{DD0D3937-365C-47AE-98C8-A457CC9442F9}" Directory_="bin_Dir" Attributes="256" KeyPath="cp.exe"/>
+    <ROW Component="cpio.exe" ComponentId="{309B896F-FDDA-4D4F-AFC6-1B6BAC9E69C1}" Directory_="bin_Dir" Attributes="256" KeyPath="cpio.exe"/>
+    <ROW Component="cpp.exe" ComponentId="{0E146791-98F5-4F11-911D-B309AF36B19A}" Directory_="bin_Dir" Attributes="256" KeyPath="cpp.exe"/>
+    <ROW Component="cppcheck.exe" ComponentId="{5280ABC3-4DCF-4746-B203-48C0DD10875A}" Directory_="bin_Dir" Attributes="256" KeyPath="cppcheck.exe"/>
+    <ROW Component="cppcheck.exe_1" ComponentId="{0EB7C011-72A2-4C2D-9E54-10549815A937}" Directory_="cppcheck_Dir" Attributes="256" KeyPath="cppcheck.exe_1"/>
+    <ROW Component="crc32.exe" ComponentId="{86C770C9-C6CC-451E-95B5-D33EACC61907}" Directory_="bin_Dir" Attributes="256" KeyPath="crc32.exe"/>
+    <ROW Component="crtbegin.o" ComponentId="{495AA2B2-F12F-47BD-887F-070DAEBD68A1}" Directory_="__Dir" Attributes="0" KeyPath="crtbegin.o" Type="0"/>
+    <ROW Component="cs_CZ.diff" ComponentId="{9E0A06F3-2F04-40B5-AFF1-24BEB6796CE8}" Directory_="cs_Dir" Attributes="0" KeyPath="cs_CZ.diff" Type="0"/>
+    <ROW Component="csscolors.vim" ComponentId="{79FAA046-77EA-43FF-977D-980EF171EE88}" Directory_="lists_Dir" Attributes="0" KeyPath="csscolors.vim" Type="0"/>
+    <ROW Component="ctags.exe" ComponentId="{DAE826F2-3598-40A5-9575-5895DFFCA7B5}" Directory_="bin_Dir" Attributes="256" KeyPath="ctags.exe"/>
+    <ROW Component="cut.exe" ComponentId="{64ECDD5F-8F3A-41BC-90F6-80ECE4ADD10A}" Directory_="bin_Dir" Attributes="256" KeyPath="cut.exe"/>
+    <ROW Component="cy_GB.diff" ComponentId="{ACD22463-BED5-4009-8A56-03EF162FDB2D}" Directory_="cy_Dir" Attributes="0" KeyPath="cy_GB.diff" Type="0"/>
+    <ROW Component="da_DK.diff" ComponentId="{75F79AE7-8940-4B3F-83BF-CCC2103F4507}" Directory_="da_Dir" Attributes="0" KeyPath="da_DK.diff" Type="0"/>
+    <ROW Component="date.exe" ComponentId="{F5A03D93-BF4C-4AE5-8FC1-59EF56B60D4C}" Directory_="bin_Dir" Attributes="256" KeyPath="date.exe"/>
+    <ROW Component="dc.exe" ComponentId="{CBB6F6DF-4B22-442F-B319-A153C8C1B84C}" Directory_="bin_Dir" Attributes="256" KeyPath="dc.exe"/>
+    <ROW Component="dd.exe" ComponentId="{62905663-97F8-4CFF-A9A6-B5ACB3E24A26}" Directory_="bin_Dir" Attributes="256" KeyPath="dd.exe"/>
+    <ROW Component="de_19.diff" ComponentId="{097B2A19-1224-4A0C-A571-0F89CCBECC19}" Directory_="de_Dir" Attributes="0" KeyPath="de_19.diff" Type="0"/>
+    <ROW Component="decimal" ComponentId="{30FB0302-28A4-4FC7-A8FB-8F52810291A7}" Directory_="decimal_Dir" Attributes="0" KeyPath="decimal" Type="0"/>
+    <ROW Component="df.exe" ComponentId="{DE071B5D-94E2-4300-828A-FCEC22FCAB54}" Directory_="bin_Dir" Attributes="256" KeyPath="df.exe"/>
+    <ROW Component="diff.exe" ComponentId="{27C29401-BAE2-4633-897E-FB76B00FF08F}" Directory_="bin_Dir" Attributes="256" KeyPath="diff.exe"/>
+    <ROW Component="direct_mask_range_hashing_imp.hpp" ComponentId="{571DA5B7-019B-4537-9816-840F3576B017}" Directory_="hash_fn_Dir" Attributes="0" KeyPath="direct_mask_range_hashing_imp.hpp" Type="0"/>
+    <ROW Component="dirname.exe" ComponentId="{3CBE4338-F93B-457C-A592-93BE85125F3F}" Directory_="bin_Dir" Attributes="256" KeyPath="dirname.exe"/>
+    <ROW Component="disable.vim" ComponentId="{5F30F08B-5AEA-4269-B997-84704920F941}" Directory_="dvorak_1_Dir" Attributes="0" KeyPath="disable.vim" Type="0"/>
+    <ROW Component="dlltool.exe" ComponentId="{C966EE02-8D5A-43D9-B235-A47EB9601837}" Directory_="bin_Dir" Attributes="256" KeyPath="dlltool.exe"/>
+    <ROW Component="dlltool.exe_1" ComponentId="{0E065A74-E453-4FDA-9A51-14C9E63D5446}" Directory_="bin_1_Dir" Attributes="256" KeyPath="dlltool.exe_1"/>
+    <ROW Component="dllwrap.exe" ComponentId="{FBC1D4D8-93EC-4787-9B34-D457FFC063F9}" Directory_="bin_Dir" Attributes="256" KeyPath="dllwrap.exe"/>
+    <ROW Component="dos2unix.exe" ComponentId="{0949672E-EE3A-47BF-BBEE-820EC2E5F93A}" Directory_="bin_Dir" Attributes="256" KeyPath="dos2unix.exe"/>
+    <ROW Component="dtree.def" ComponentId="{CFAC51F3-179A-423C-B359-CB4800D2B581}" Directory_="d_Dir" Attributes="0" KeyPath="dtree.def" Type="0"/>
+    <ROW Component="du.exe" ComponentId="{F827C950-95C7-4427-A1A5-0897509FAD6C}" Directory_="bin_Dir" Attributes="256" KeyPath="du.exe"/>
+    <ROW Component="dvorak.vim" ComponentId="{287B6411-7CF6-4A51-94AC-1BFDBB3C1324}" Directory_="plugin_3_Dir" Attributes="0" KeyPath="dvorak.vim_1" Type="0"/>
+    <ROW Component="echo.exe" ComponentId="{4E3ADBD3-496D-4BDF-8A99-32FB22380F57}" Directory_="bin_Dir" Attributes="256" KeyPath="echo.exe"/>
+    <ROW Component="ed.exe" ComponentId="{8765634D-A4E3-4267-A425-11F429FE0DDD}" Directory_="bin_Dir" Attributes="256" KeyPath="ed.exe"/>
+    <ROW Component="editexisting.vim" ComponentId="{186B6FD0-DB30-4E59-9B34-8FA4E5354E0C}" Directory_="macros_Dir" Attributes="0" KeyPath="editexisting.vim" Type="0"/>
+    <ROW Component="editexisting.vim_1" ComponentId="{D78CEA75-2269-480D-9432-E022C47389EB}" Directory_="plugin_4_Dir" Attributes="0" KeyPath="editexisting.vim_1" Type="0"/>
+    <ROW Component="egrep.exe" ComponentId="{860C1AEA-9C76-4FE8-B382-26BA7A72F50D}" Directory_="bin_Dir" Attributes="256" KeyPath="egrep.exe"/>
+    <ROW Component="el_GR.diff" ComponentId="{B1367648-21CD-45E3-8685-FED2BA860270}" Directory_="el_Dir" Attributes="0" KeyPath="el_GR.diff" Type="0"/>
+    <ROW Component="elfedit.exe" ComponentId="{AF184FF1-D4AE-446D-BD98-3A65D82747A4}" Directory_="bin_Dir" Attributes="256" KeyPath="elfedit.exe"/>
+    <ROW Component="en_AU.diff" ComponentId="{F7F45703-F9EB-45C2-942D-7DCEA2EE307A}" Directory_="en_Dir" Attributes="0" KeyPath="en_AU.diff" Type="0"/>
+    <ROW Component="env.exe" ComponentId="{2D04CEA3-AA23-409E-BD65-96C5ADA7A359}" Directory_="bin_Dir" Attributes="256" KeyPath="env.exe"/>
+    <ROW Component="eo_l3.diff" ComponentId="{2ED58559-B1CC-4BC0-9CB7-ECF75CC3B09F}" Directory_="eo_Dir" Attributes="0" KeyPath="eo_l3.diff" Type="0"/>
+    <ROW Component="eq_by_less.hpp" ComponentId="{BFD791A0-FF4F-487D-9367-B17FE8B12194}" Directory_="eq_fn_Dir" Attributes="0" KeyPath="eq_by_less.hpp" Type="0"/>
+    <ROW Component="es_ES.diff" ComponentId="{51551D18-F4EF-4784-A8B0-0694FD3F24B6}" Directory_="es_Dir" Attributes="0" KeyPath="es_ES.diff" Type="0"/>
+    <ROW Component="examples" ComponentId="{954F43EF-95AB-41E4-8872-E089ABB587E5}" Directory_="urm_Dir" Attributes="0" KeyPath="examples" Type="0"/>
+    <ROW Component="expand.exe" ComponentId="{DCBCFF32-D0DF-4DC1-9F71-6D60A3171873}" Directory_="bin_Dir" Attributes="256" KeyPath="expand.exe"/>
+    <ROW Component="expat.pc" ComponentId="{8E8671F3-47E2-4BA2-96D1-26B35066FFF5}" Directory_="pkgconfig_Dir" Attributes="0" KeyPath="expat.pc" Type="0"/>
+    <ROW Component="expatconfigversion.cmake" ComponentId="{9434F2F5-C345-4002-A612-93D60688D2F4}" Directory_="expat2.5.0_Dir" Attributes="0" KeyPath="expatconfigversion.cmake" Type="0"/>
+    <ROW Component="expr.exe" ComponentId="{A2EAB44A-F69A-483E-A753-9E0C8978BFFF}" Directory_="bin_Dir" Attributes="256" KeyPath="expr.exe"/>
+    <ROW Component="factor.exe" ComponentId="{ED16A90B-D7C4-4721-BD1F-10650300F531}" Directory_="bin_Dir" Attributes="256" KeyPath="factor.exe"/>
+    <ROW Component="false.exe" ComponentId="{454FAEE6-1B13-4BB9-800E-2575E5BFCDF4}" Directory_="bin_Dir" Attributes="256" KeyPath="false.exe"/>
+    <ROW Component="fgrep.exe" ComponentId="{4D151D6F-5AFA-47F0-8460-85A3F14CE31F}" Directory_="bin_Dir" Attributes="256" KeyPath="fgrep.exe"/>
+    <ROW Component="find.exe" ComponentId="{B4F09E26-26A4-4BB5-A0F6-7CC583D2B308}" Directory_="bin_Dir" Attributes="256" KeyPath="find.exe"/>
+    <ROW Component="fixinc.sh" ComponentId="{0E0EB010-9BD0-4474-A77F-C15EE0D5FC37}" Directory_="installtools_1_Dir" Attributes="0" KeyPath="fixinc.sh" Type="0"/>
+    <ROW Component="fixinc_list" ComponentId="{434D1ACC-21C6-4CEE-8337-D7E752B271C0}" Directory_="installtools_Dir" Attributes="0" KeyPath="fixinc_list" Type="0"/>
+    <ROW Component="fixincl.exe" ComponentId="{4881B998-9A7C-4393-B475-89F2EDCA0921}" Directory_="installtools_1_Dir" Attributes="256" KeyPath="fixincl.exe"/>
+    <ROW Component="fo_FO.diff" ComponentId="{AD06C473-9371-4A43-BA55-D459E1645563}" Directory_="fo_Dir" Attributes="0" KeyPath="fo_FO.diff" Type="0"/>
+    <ROW Component="fold.exe" ComponentId="{B58CE6DD-A997-4733-8886-E7A94F0FE4D5}" Directory_="bin_Dir" Attributes="256" KeyPath="fold.exe"/>
+    <ROW Component="fr_FR.diff" ComponentId="{3BBFA3A9-F343-475D-B9EC-7B2DB8056B8B}" Directory_="fr_Dir" Attributes="0" KeyPath="fr_FR.diff" Type="0"/>
+    <ROW Component="free.exe" ComponentId="{A4DCC114-2FAC-4F41-892B-DF3C2039D992}" Directory_="bin_Dir" Attributes="256" KeyPath="free.exe"/>
+    <ROW Component="fs_dir.h" ComponentId="{24C6A056-2EF1-4B07-9AD1-219DFE6D26AB}" Directory_="bits_1_Dir" Attributes="0" KeyPath="fs_dir.h_1" Type="0"/>
+    <ROW Component="fsffunding.7" ComponentId="{D5035C7A-47AA-479F-AB4C-7F7A07828CFB}" Directory_="man7_Dir" Attributes="0" KeyPath="fsffunding.7" Type="0"/>
+    <ROW Component="fsync.exe" ComponentId="{9E3BCF33-A21F-46D0-9575-9F8868351548}" Directory_="bin_Dir" Attributes="256" KeyPath="fsync.exe"/>
+    <ROW Component="ft.vim" ComponentId="{ED9BEF09-4DAA-49DA-AD71-F2475A1D4FBF}" Directory_="dist_Dir" Attributes="0" KeyPath="ft.vim" Type="0"/>
+    <ROW Component="g.exe" ComponentId="{FDD7F0BD-D44D-45F4-9AA4-DE41387B2A4A}" Directory_="bin_Dir" Attributes="256" KeyPath="g.exe"/>
+    <ROW Component="ga_IE.diff" ComponentId="{40799883-7E84-4D87-9B3B-86F304745EE6}" Directory_="ga_Dir" Attributes="0" KeyPath="ga_IE.diff" Type="0"/>
+    <ROW Component="gcc.exe" ComponentId="{E2884AC0-A598-4B17-85C9-AD87BAC46D30}" Directory_="bin_Dir" Attributes="256" KeyPath="gcc.exe"/>
+    <ROW Component="gccar.exe" ComponentId="{225A497B-CD43-49F7-B2F2-C34833C30475}" Directory_="bin_Dir" Attributes="256" KeyPath="gccar.exe"/>
+    <ROW Component="gccnm.exe" ComponentId="{61669AFF-60EF-44BD-8959-A6D423BB368F}" Directory_="bin_Dir" Attributes="256" KeyPath="gccnm.exe"/>
+    <ROW Component="gccranlib.exe" ComponentId="{B97BA0E3-656C-4426-9290-DA8F7BE52135}" Directory_="bin_Dir" Attributes="256" KeyPath="gccranlib.exe"/>
+    <ROW Component="gcov.exe" ComponentId="{3D24BCA3-7248-47E9-9932-41A13137DAA5}" Directory_="bin_Dir" Attributes="256" KeyPath="gcov.exe"/>
+    <ROW Component="gcovdump.exe" ComponentId="{458373D3-8C6A-4861-8D47-A1E575054EEC}" Directory_="bin_Dir" Attributes="256" KeyPath="gcovdump.exe"/>
+    <ROW Component="gcovtool.exe" ComponentId="{ECD2DFBE-48C3-4D57-8541-D563DF52415A}" Directory_="bin_Dir" Attributes="256" KeyPath="gcovtool.exe"/>
+    <ROW Component="gd_GB.diff" ComponentId="{5FA9481F-BB9E-43F1-8187-99F7622F2C67}" Directory_="gd_Dir" Attributes="0" KeyPath="gd_GB.diff" Type="0"/>
+    <ROW Component="gdb.exe" ComponentId="{8E036607-8B87-472A-9643-B1ACDA0CE528}" Directory_="bin_Dir" Attributes="256" KeyPath="gdb.exe"/>
+    <ROW Component="gdbserver.exe" ComponentId="{421E4C11-60FE-4910-A4DD-D4776A1754B3}" Directory_="bin_Dir" Attributes="256" KeyPath="gdbserver.exe"/>
+    <ROW Component="gdiplus.h" ComponentId="{F39F0371-5538-4737-888A-B7753F69BB47}" Directory_="gdiplus_Dir" Attributes="0" KeyPath="gdiplus.h" Type="0"/>
+    <ROW Component="gendef.exe" ComponentId="{CC482130-2607-4F43-ACF4-D0F9F03B75DD}" Directory_="bin_Dir" Attributes="256" KeyPath="gendef.exe"/>
+    <ROW Component="gendef.exe_1" ComponentId="{2BF75ABA-8B7A-4401-B699-DA9425B471A1}" Directory_="mingwtoolsgendef_Dir" Attributes="256" KeyPath="gendef.exe_1"/>
+    <ROW Component="gengtype" ComponentId="{DAD7F1CD-609E-4D6A-B043-D6684ABFBC75}" Directory_="plugin_1_Dir" Attributes="0" KeyPath="gengtype" Type="0"/>
+    <ROW Component="getopt.exe" ComponentId="{05733D80-FAA7-41FC-B090-984964AC5846}" Directory_="bin_Dir" Attributes="256" KeyPath="getopt.exe"/>
+    <ROW Component="getscriptPlugin.vim" ComponentId="{D1C34811-9FFB-4FFA-8D27-AF0DFED3C2F4}" Directory_="plugin_10_Dir" Attributes="0" KeyPath="getscriptPlugin.vim" Type="0"/>
+    <ROW Component="gitkeep" ComponentId="{557A7812-CC51-4F14-8283-074AF7F7835B}" Directory_="APPDIR" Attributes="0" KeyPath="gitkeep" Type="0"/>
+    <ROW Component="gl.h" ComponentId="{96AC613B-2044-4F83-999F-1A87AD3E5F01}" Directory_="GL_Dir" Attributes="0" KeyPath="gl.h" Type="0"/>
+    <ROW Component="gl_ES.diff" ComponentId="{F84D7159-F0E3-410A-9BA0-19F323484468}" Directory_="gl_Dir" Attributes="0" KeyPath="gl_ES.diff" Type="0"/>
+    <ROW Component="gmapperserver.exe" ComponentId="{8A242494-4D1F-45CB-8778-3CB9AFA9DE3C}" Directory_="__1_Dir" Attributes="256" KeyPath="gmapperserver.exe"/>
+    <ROW Component="gprof.exe" ComponentId="{18F0A24A-8716-405B-A4CE-8F1A15C3174A}" Directory_="bin_Dir" Attributes="256" KeyPath="gprof.exe"/>
+    <ROW Component="grep.exe" ComponentId="{E24D49EA-46C7-4733-8A61-8E4239227D61}" Directory_="bin_Dir" Attributes="256" KeyPath="grep.exe"/>
+    <ROW Component="groups.exe" ComponentId="{60E84A04-A841-4BE0-AF4C-5D2F8141AAD1}" Directory_="bin_Dir" Attributes="256" KeyPath="groups.exe"/>
+    <ROW Component="gtype.state" ComponentId="{88B1A60E-357C-45FF-8306-3D21FB80C12A}" Directory_="plugin_Dir" Attributes="0" KeyPath="gtype.state" Type="0"/>
+    <ROW Component="gunzip.exe" ComponentId="{360CA27B-41A7-409F-BBA2-D0AE03821D66}" Directory_="bin_Dir" Attributes="256" KeyPath="gunzip.exe"/>
+    <ROW Component="gvim.bat" ComponentId="{CF117FA0-8299-434B-B222-CD96D866130A}" Directory_="bin_Dir" Attributes="0" KeyPath="gvim.bat" Type="0"/>
+    <ROW Component="gvim.exe" ComponentId="{F44CC7D0-060B-4FF9-8711-870C7AEA2692}" Directory_="vim_Dir" Attributes="256" KeyPath="gvim.exe"/>
+    <ROW Component="gzip.exe" ComponentId="{25B26B1B-F2E0-4FDC-86C6-3D79F6C0FC94}" Directory_="bin_Dir" Attributes="256" KeyPath="gzip.exe"/>
+    <ROW Component="hd.exe" ComponentId="{6F88617C-4098-4889-B7D4-765B32A89F02}" Directory_="bin_Dir" Attributes="256" KeyPath="hd.exe"/>
+    <ROW Component="he_IL.diff" ComponentId="{B108F347-4EF7-4A8F-B92D-F9669A5BDC09}" Directory_="he_Dir" Attributes="0" KeyPath="he_IL.diff" Type="0"/>
+    <ROW Component="head.exe" ComponentId="{8F9723BD-6E23-4C40-843E-566FAE81A8A4}" Directory_="bin_Dir" Attributes="256" KeyPath="head.exe"/>
+    <ROW Component="hexdump.exe" ComponentId="{AE5B346E-C9F8-4CDD-8EA2-E89B7DB48BA5}" Directory_="bin_Dir" Attributes="256" KeyPath="hexdump.exe"/>
+    <ROW Component="hr_HR.diff" ComponentId="{0EA9C058-C9EF-4E47-8DD7-417061867395}" Directory_="hr_Dir" Attributes="0" KeyPath="hr_HR.diff" Type="0"/>
+    <ROW Component="html.in" ComponentId="{5268EDA5-8769-4A7A-BE55-1857EC9DFC76}" Directory_="testdir_Dir" Attributes="0" KeyPath="html.in" Type="0"/>
+    <ROW Component="html.vim" ComponentId="{239F9E3D-8C1A-469F-9814-E1DFFE04CF05}" Directory_="syntax_Dir" Attributes="0" KeyPath="html.vim_2" Type="0"/>
+    <ROW Component="html32.vim" ComponentId="{76BB84E1-09A7-4135-AE1D-8B88CF1E7A1F}" Directory_="xml_Dir" Attributes="0" KeyPath="html32.vim" Type="0"/>
+    <ROW Component="httpd.exe" ComponentId="{83C2875E-E69C-4D3F-9D5F-DB0B89A71BB3}" Directory_="bin_Dir" Attributes="256" KeyPath="httpd.exe"/>
+    <ROW Component="hu_HU.diff" ComponentId="{F5235E77-2778-4212-8324-4DE6D86F8D32}" Directory_="hu_Dir" Attributes="0" KeyPath="hu_HU.diff" Type="0"/>
+    <ROW Component="i386cpuinfo.h" ComponentId="{AAA2B9ED-B3CB-4600-8DCF-73783B2BD2B7}" Directory_="i386_Dir" Attributes="0" KeyPath="i386cpuinfo.h" Type="0"/>
+    <ROW Component="i386pe.x" ComponentId="{07D8F48D-4AC0-42B8-8FEB-3494E01F2953}" Directory_="ldscripts_Dir" Attributes="0" KeyPath="i386pe.x" Type="0"/>
+    <ROW Component="iconv.1.html" ComponentId="{30F35FF4-825F-45DD-AF50-4BCEAE4365EE}" Directory_="doc_Dir" Attributes="0" KeyPath="iconv.1.html" Type="0"/>
+    <ROW Component="iconv.3" ComponentId="{5AC14499-0472-42A9-B49B-2D1F2C80DACD}" Directory_="man3_Dir" Attributes="0" KeyPath="iconv.3" Type="0"/>
+    <ROW Component="iconv.exe" ComponentId="{0EAAA637-8DF4-490F-A9F0-F88F532D1F45}" Directory_="bin_Dir" Attributes="256" KeyPath="iconv.exe"/>
+    <ROW Component="id.exe" ComponentId="{2B4A90E0-DF14-49B2-A2CA-8BA920215461}" Directory_="bin_Dir" Attributes="256" KeyPath="id.exe"/>
+    <ROW Component="id_ID.diff" ComponentId="{70ED08B1-C701-48D4-AADD-324CC6A41208}" Directory_="id_Dir" Attributes="0" KeyPath="id_ID.diff" Type="0"/>
+    <ROW Component="initfiniarray.h" ComponentId="{4B7D3784-0167-4D2A-A5AF-204B7DCF2A49}" Directory_="config_1_Dir" Attributes="0" KeyPath="initfiniarray.h" Type="0"/>
+    <ROW Component="inotifyd.exe" ComponentId="{7CAE80D1-EE7A-4956-9609-402B98B535C8}" Directory_="bin_Dir" Attributes="256" KeyPath="inotifyd.exe"/>
+    <ROW Component="install.exe" ComponentId="{DB4732CB-0F0B-4C7D-A958-68ED51EF43E4}" Directory_="bin_Dir" Attributes="256" KeyPath="install.exe"/>
+    <ROW Component="intrinimpl.h" ComponentId="{E27F9A97-9564-477F-A447-FC8B207BF97B}" Directory_="psdk_inc_Dir" Attributes="0" KeyPath="intrinimpl.h" Type="0"/>
+    <ROW Component="ipcalc.exe" ComponentId="{9E428F45-49AB-40ED-91A0-4D9F5DA1788F}" Directory_="bin_Dir" Attributes="256" KeyPath="ipcalc.exe"/>
+    <ROW Component="isExtendable" ComponentId="{D4FA9890-C22C-40CB-A5BD-6ECB1196E068}" Directory_="APPDIR" Attributes="4" KeyPath="isExtendable"/>
+    <ROW Component="it_IT.diff" ComponentId="{F3F98930-1F41-475E-A76C-1B1EFC2E01F3}" Directory_="it_Dir" Attributes="0" KeyPath="it_IT.diff" Type="0"/>
+    <ROW Component="jn.exe" ComponentId="{A3250FEA-8F26-41A6-BBF7-3227BBDF2A9E}" Directory_="bin_Dir" Attributes="256" KeyPath="jn.exe"/>
+    <ROW Component="justify.vim" ComponentId="{7BCB44E9-BE52-4CA7-9466-24C85D1C64F5}" Directory_="plugin_5_Dir" Attributes="0" KeyPath="justify.vim_1" Type="0"/>
+    <ROW Component="khrplatform.h" ComponentId="{D3B60BCA-9990-4173-9693-456824D1C322}" Directory_="KHR_Dir" Attributes="0" KeyPath="khrplatform.h" Type="0"/>
+    <ROW Component="kill.exe" ComponentId="{840DFC52-1C9E-4E65-9BE4-F0053FADCB02}" Directory_="bin_Dir" Attributes="256" KeyPath="kill.exe"/>
+    <ROW Component="killall.exe" ComponentId="{77C45F0B-7EE8-428C-A4FE-DD473D73EB18}" Directory_="bin_Dir" Attributes="256" KeyPath="killall.exe"/>
+    <ROW Component="ku_TR.diff" ComponentId="{3360F6F2-1C91-4C06-8E1C-AEFDAE284BE8}" Directory_="ku_Dir" Attributes="0" KeyPath="ku_TR.diff" Type="0"/>
+    <ROW Component="la.diff" ComponentId="{0719C488-66E8-4D08-B8C2-B96E5C2E960B}" Directory_="la_Dir" Attributes="0" KeyPath="la.diff" Type="0"/>
+    <ROW Component="lash.exe" ComponentId="{32F0FE8F-06F2-44D6-AE3B-97AFECDEC678}" Directory_="bin_Dir" Attributes="256" KeyPath="lash.exe"/>
+    <ROW Component="ld.bfd.exe" ComponentId="{5A075FF4-5787-4FC7-AE41-52057A22EA00}" Directory_="bin_Dir" Attributes="256" KeyPath="ld.bfd.exe"/>
+    <ROW Component="ld.bfd.exe_1" ComponentId="{5E4B7308-37E5-46A7-9482-D1FC502C0CA7}" Directory_="bin_1_Dir" Attributes="256" KeyPath="ld.bfd.exe_1"/>
+    <ROW Component="ld.exe" ComponentId="{1234E4FA-8DED-4C07-BA1A-EE989FD79C93}" Directory_="bin_Dir" Attributes="256" KeyPath="ld.exe"/>
+    <ROW Component="ld.exe_1" ComponentId="{859C53BA-95DA-4550-AE5D-97DE6FA507AE}" Directory_="bin_1_Dir" Attributes="256" KeyPath="ld.exe_1"/>
+    <ROW Component="less.exe" ComponentId="{F6332C2A-1C78-4F5B-A92E-6AE34325DE4B}" Directory_="bin_Dir" Attributes="256" KeyPath="less.exe"/>
+    <ROW Component="libbfd.a" ComponentId="{EA5AF492-B464-48B6-91BB-C21C82B50D29}" Directory_="lib_Dir" Attributes="0" KeyPath="libbfd.a" Type="0"/>
+    <ROW Component="libdep.dll" ComponentId="{D44E3D9E-E019-46A9-A8FC-88B997BE1E6C}" Directory_="bfdplugins_Dir" Attributes="256" KeyPath="libdep.dll"/>
+    <ROW Component="libdep.so" ComponentId="{C3E5E2D9-B953-433C-8726-78C67C3F40DB}" Directory_="bfdplugins_Dir" Attributes="0" KeyPath="libdep.so" Type="0"/>
+    <ROW Component="libexpat1.dll" ComponentId="{44B6AC4B-A6D5-4F07-A8C3-46B9425D177A}" Directory_="bin_Dir" Attributes="256" KeyPath="libexpat1.dll"/>
+    <ROW Component="libwinpthread1.dll" ComponentId="{D24A3A37-D39E-42CF-A427-20A61A5608F9}" Directory_="bin_Dir" Attributes="256" KeyPath="libwinpthread1.dll"/>
+    <ROW Component="libwinpthread1.dll_1" ComponentId="{C586BB1D-7730-4DB4-A76F-A470E8ADFCF7}" Directory_="bin_1_Dir" Attributes="256" KeyPath="libwinpthread1.dll_1"/>
+    <ROW Component="limits.h" ComponentId="{C48F2857-C076-4810-946E-666E50B45C2F}" Directory_="include_2_Dir" Attributes="0" KeyPath="limits.h_2" Type="0"/>
+    <ROW Component="ln.exe" ComponentId="{104E955B-5235-40A7-BDDB-D8A2EC7B50E2}" Directory_="bin_Dir" Attributes="256" KeyPath="ln.exe"/>
+    <ROW Component="logname.exe" ComponentId="{C294F264-8E05-42FE-942D-305FA630CAB3}" Directory_="bin_Dir" Attributes="256" KeyPath="logname.exe"/>
+    <ROW Component="ls.exe" ComponentId="{09C3270B-39F0-4A16-BE2B-F411E4E1EAD0}" Directory_="bin_Dir" Attributes="256" KeyPath="ls.exe"/>
+    <ROW Component="lsattr.exe" ComponentId="{08642E19-5A84-4B7D-A775-0A1ED1ED4B15}" Directory_="bin_Dir" Attributes="256" KeyPath="lsattr.exe"/>
+    <ROW Component="lt_LT.diff" ComponentId="{5907D485-AEFE-45ED-9D39-FC6D89406E7B}" Directory_="lt_Dir" Attributes="0" KeyPath="lt_LT.diff" Type="0"/>
+    <ROW Component="ltowrapper.exe" ComponentId="{704E2BA7-ACE1-488A-AD3D-822640CAA29B}" Directory_="__1_Dir" Attributes="256" KeyPath="ltowrapper.exe"/>
+    <ROW Component="lu_counter_metadata.hpp" ComponentId="{60620B3F-F0E3-455B-9C9B-DCBAF853B3C5}" Directory_="list_update_policy_Dir" Attributes="0" KeyPath="lu_counter_metadata.hpp" Type="0"/>
+    <ROW Component="lv_LV.diff" ComponentId="{2EC1A875-EF26-4DA6-AC72-05B1C558B894}" Directory_="lv_Dir" Attributes="0" KeyPath="lv_LV.diff" Type="0"/>
+    <ROW Component="lzcat.exe" ComponentId="{796CCCDB-58D9-46E0-9593-3921B7F82BB7}" Directory_="bin_Dir" Attributes="256" KeyPath="lzcat.exe"/>
+    <ROW Component="lzma.exe" ComponentId="{3A9261EE-2670-41E5-8497-EE0A7CB1CE18}" Directory_="bin_Dir" Attributes="256" KeyPath="lzma.exe"/>
+    <ROW Component="lzop.exe" ComponentId="{0EC7F5D7-217A-4606-87E2-E2741FB73E6C}" Directory_="bin_Dir" Attributes="256" KeyPath="lzop.exe"/>
+    <ROW Component="lzopcat.exe" ComponentId="{2D6AD1B0-98E4-4C7C-8C81-BA039606B649}" Directory_="bin_Dir" Attributes="256" KeyPath="lzopcat.exe"/>
+    <ROW Component="m2tree.def" ComponentId="{7BB42561-E077-4D89-88FB-EE3ABB1FC631}" Directory_="m2_Dir" Attributes="0" KeyPath="m2tree.def" Type="0"/>
+    <ROW Component="main.aap" ComponentId="{DBA809A2-2912-49F5-B20C-DC11BBC0B880}" Directory_="eu_Dir" Attributes="0" KeyPath="main.aap_14" Type="0"/>
+    <ROW Component="main.aap_1" ComponentId="{3D85656C-120D-4D91-90F6-01B003C4EEED}" Directory_="mg_Dir" Attributes="0" KeyPath="main.aap_30" Type="0"/>
+    <ROW Component="main.aap_10" ComponentId="{F56E7C31-53E2-4DFF-92AC-3FBC167123B6}" Directory_="ro_Dir" Attributes="0" KeyPath="main.aap_39" Type="0"/>
+    <ROW Component="main.aap_11" ComponentId="{2556ADE6-6650-49F4-A8D2-DDECF2DC4029}" Directory_="ru_Dir" Attributes="0" KeyPath="main.aap_40" Type="0"/>
+    <ROW Component="main.aap_12" ComponentId="{215E04A6-0C9A-46A1-8184-2FA2127A89D9}" Directory_="rw_Dir" Attributes="0" KeyPath="main.aap_41" Type="0"/>
+    <ROW Component="main.aap_13" ComponentId="{09BBD0C5-85B9-4C34-9C93-FFBE02D6AAE0}" Directory_="sk_Dir" Attributes="0" KeyPath="main.aap_42" Type="0"/>
+    <ROW Component="main.aap_14" ComponentId="{E3DCDA8D-3C9A-4A40-BA51-EB0BE4B06CD3}" Directory_="sl_Dir" Attributes="0" KeyPath="main.aap_43" Type="0"/>
+    <ROW Component="main.aap_15" ComponentId="{2BE86CCF-8D4F-4ABC-859C-D87FD184E1B7}" Directory_="sr_Dir" Attributes="0" KeyPath="main.aap_44" Type="0"/>
+    <ROW Component="main.aap_16" ComponentId="{FBC525DD-36AD-45E5-A081-15C8715924D6}" Directory_="sv_Dir" Attributes="0" KeyPath="main.aap_45" Type="0"/>
+    <ROW Component="main.aap_17" ComponentId="{777943DA-60DB-4BEE-A846-0184ADE864B1}" Directory_="sw_Dir" Attributes="0" KeyPath="main.aap_46" Type="0"/>
+    <ROW Component="main.aap_18" ComponentId="{581B4169-18C7-4116-8138-96B79D5E7BCB}" Directory_="tet_Dir" Attributes="0" KeyPath="main.aap_47" Type="0"/>
+    <ROW Component="main.aap_19" ComponentId="{83C6410A-E388-40F3-AEB2-6CEF211504C7}" Directory_="th_Dir" Attributes="0" KeyPath="main.aap_48" Type="0"/>
+    <ROW Component="main.aap_2" ComponentId="{E049DBB2-0D4A-48A0-A570-527D6B3E218E}" Directory_="mi_Dir" Attributes="0" KeyPath="main.aap_31" Type="0"/>
+    <ROW Component="main.aap_20" ComponentId="{E55D6FE9-A1B7-4C14-95FB-55CB5DD43419}" Directory_="tl_Dir" Attributes="0" KeyPath="main.aap_49" Type="0"/>
+    <ROW Component="main.aap_21" ComponentId="{BE166D36-2D8D-4883-B0AF-1589D1F3709E}" Directory_="tn_Dir" Attributes="0" KeyPath="main.aap_50" Type="0"/>
+    <ROW Component="main.aap_22" ComponentId="{18110A58-967E-49FE-8EAD-B6B864DFD83E}" Directory_="tr_Dir" Attributes="0" KeyPath="main.aap_51" Type="0"/>
+    <ROW Component="main.aap_23" ComponentId="{D68FE266-9B35-4266-9208-6DC8FE913AC1}" Directory_="uk_Dir" Attributes="0" KeyPath="main.aap_52" Type="0"/>
+    <ROW Component="main.aap_24" ComponentId="{82FF52A8-D3BF-4F7D-9D50-4B36752E1AFD}" Directory_="yi_Dir" Attributes="0" KeyPath="main.aap_53" Type="0"/>
+    <ROW Component="main.aap_25" ComponentId="{6032A0F0-77FE-4067-BAA1-CF244191E138}" Directory_="zu_Dir" Attributes="0" KeyPath="main.aap_54" Type="0"/>
+    <ROW Component="main.aap_3" ComponentId="{660A9FD0-3EE9-4893-90A2-CB040785482E}" Directory_="ms_Dir" Attributes="0" KeyPath="main.aap_32" Type="0"/>
+    <ROW Component="main.aap_4" ComponentId="{F7A0A652-6D4C-44DC-80F9-49230540C300}" Directory_="nb_Dir" Attributes="0" KeyPath="main.aap_33" Type="0"/>
+    <ROW Component="main.aap_5" ComponentId="{FF0B3762-78C4-462F-91A4-125D500F8C6C}" Directory_="nl_Dir" Attributes="0" KeyPath="main.aap_34" Type="0"/>
+    <ROW Component="main.aap_6" ComponentId="{26672888-3757-459C-BCDC-90CE37247CE4}" Directory_="nn_Dir" Attributes="0" KeyPath="main.aap_35" Type="0"/>
+    <ROW Component="main.aap_7" ComponentId="{530E7FBC-4196-4561-8A5F-5CD25072953B}" Directory_="ny_Dir" Attributes="0" KeyPath="main.aap_36" Type="0"/>
+    <ROW Component="main.aap_8" ComponentId="{5FD091D4-41B3-4AE2-95BA-9450A41877FE}" Directory_="pl_Dir" Attributes="0" KeyPath="main.aap_37" Type="0"/>
+    <ROW Component="main.aap_9" ComponentId="{F3F92698-C132-4027-9362-675F1DC4A1A5}" Directory_="pt_Dir" Attributes="0" KeyPath="main.aap_38" Type="0"/>
+    <ROW Component="make.exe" ComponentId="{9AEF118A-EBAD-4D39-A9C0-A72E79A4F691}" Directory_="bin_Dir" Attributes="256" KeyPath="make.exe"/>
+    <ROW Component="matchit.txt" ComponentId="{01D62BDC-0B50-4B23-BF4D-5885A1607848}" Directory_="doc_2_Dir" Attributes="0" KeyPath="matchit.txt" Type="0"/>
+    <ROW Component="matchit.vim" ComponentId="{DB86C027-220C-4802-AE1A-AA42361ED239}" Directory_="autoload_1_Dir" Attributes="0" KeyPath="matchit.vim_1" Type="0"/>
+    <ROW Component="matchit.vim_1" ComponentId="{28A566B7-4B62-481B-A343-5C6BD3566F7B}" Directory_="plugin_6_Dir" Attributes="0" KeyPath="matchit.vim_2" Type="0"/>
+    <ROW Component="md5sum.exe" ComponentId="{9E0AE951-B43B-4707-917A-811CF8CC0FA5}" Directory_="bin_Dir" Attributes="256" KeyPath="md5sum.exe"/>
+    <ROW Component="mingw32make.exe" ComponentId="{DA123E1A-E4F3-4CD3-9E76-FA9BBFA420B7}" Directory_="bin_Dir" Attributes="256" KeyPath="mingw32make.exe"/>
+    <ROW Component="mkdir.exe" ComponentId="{7341717C-018A-41C8-8FC8-92091DEE01C4}" Directory_="bin_Dir" Attributes="256" KeyPath="mkdir.exe"/>
+    <ROW Component="mktemp.exe" ComponentId="{9917DF25-2A1D-4E38-B370-05859F05BF29}" Directory_="bin_Dir" Attributes="256" KeyPath="mktemp.exe"/>
+    <ROW Component="mv.exe" ComponentId="{552D5B49-75A3-4A51-AA2B-48BEB38BFD48}" Directory_="bin_Dir" Attributes="256" KeyPath="mv.exe"/>
+    <ROW Component="nasm.exe" ComponentId="{563A5514-F26F-4DCA-B6CA-85BA18A435C1}" Directory_="bin_Dir" Attributes="256" KeyPath="nasm.exe"/>
+    <ROW Component="nc.exe" ComponentId="{2666A125-E1D1-4C89-B938-F655DB94E130}" Directory_="bin_Dir" Attributes="256" KeyPath="nc.exe"/>
+    <ROW Component="ndisasm.exe" ComponentId="{2701D48A-3AF2-44F9-9F84-2A97861AC73A}" Directory_="bin_Dir" Attributes="256" KeyPath="ndisasm.exe"/>
+    <ROW Component="nl.exe" ComponentId="{C557626F-2C49-4B88-9CD6-8AE55AD04221}" Directory_="bin_Dir" Attributes="256" KeyPath="nl.exe"/>
+    <ROW Component="nm.exe" ComponentId="{E14E67AA-3839-4191-B1D7-F8EAC30B33AC}" Directory_="bin_Dir" Attributes="256" KeyPath="nm.exe"/>
+    <ROW Component="nm.exe_1" ComponentId="{5540BB21-F99F-43F2-8D29-E46FE376C4CE}" Directory_="bin_1_Dir" Attributes="256" KeyPath="nm.exe_1"/>
+    <ROW Component="node_metadata_selector.hpp" ComponentId="{655B51E0-A99E-471C-8C0B-2F846F8E2079}" Directory_="tree_policy_Dir" Attributes="0" KeyPath="node_metadata_selector.hpp" Type="0"/>
+    <ROW Component="node_metadata_selector.hpp_1" ComponentId="{5AD6D4D1-D991-4BFF-B578-F17E16BB1D4A}" Directory_="trie_policy_Dir" Attributes="0" KeyPath="node_metadata_selector.hpp_1" Type="0"/>
+    <ROW Component="nproc.exe" ComponentId="{2EEF99A4-1FD6-45B5-AC6D-F99F1351CFA7}" Directory_="bin_Dir" Attributes="256" KeyPath="nproc.exe"/>
+    <ROW Component="objcopy.exe" ComponentId="{98E48F04-30AD-401B-AAD5-551A1F082237}" Directory_="bin_Dir" Attributes="256" KeyPath="objcopy.exe"/>
+    <ROW Component="objcopy.exe_1" ComponentId="{F806E860-FDE9-4FC1-A480-72708A83158D}" Directory_="bin_1_Dir" Attributes="256" KeyPath="objcopy.exe_1"/>
+    <ROW Component="objctree.def" ComponentId="{8E8AA4DF-AE37-4327-B5BB-375E045E79CA}" Directory_="objc_Dir" Attributes="0" KeyPath="objctree.def" Type="0"/>
+    <ROW Component="objdump.exe" ComponentId="{47FDE969-EEAE-4B98-87E3-5446A10BE063}" Directory_="bin_Dir" Attributes="256" KeyPath="objdump.exe"/>
+    <ROW Component="objdump.exe_1" ComponentId="{62ED02D0-5B5A-4337-B24F-AB6A06131ADB}" Directory_="bin_1_Dir" Attributes="256" KeyPath="objdump.exe_1"/>
+    <ROW Component="od.exe" ComponentId="{5ACA326C-37EB-4230-8862-7EACE5B26542}" Directory_="bin_Dir" Attributes="256" KeyPath="od.exe"/>
+    <ROW Component="opt_random.h" ComponentId="{FDFE44BC-568B-41C7-9CD6-1EF3AB02849C}" Directory_="ext_1_Dir" Attributes="0" KeyPath="opt_random.h_1" Type="0"/>
+    <ROW Component="optscript.exe" ComponentId="{8A7C9917-C975-4FA5-B023-9F18AC9226AA}" Directory_="bin_Dir" Attributes="256" KeyPath="optscript.exe"/>
+    <ROW Component="packcc.exe" ComponentId="{F8D46965-3BE6-4456-B5AE-90B86E3EEE38}" Directory_="bin_Dir" Attributes="0" KeyPath="packcc.exe"/>
+    <ROW Component="paste.exe" ComponentId="{3A3A1356-BDCC-40FD-980D-FB64B6DB1FBE}" Directory_="bin_Dir" Attributes="256" KeyPath="paste.exe"/>
+    <ROW Component="patch.exe" ComponentId="{ABA51304-A570-4953-9130-5AA967E4E9D6}" Directory_="bin_Dir" Attributes="256" KeyPath="patch.exe"/>
+    <ROW Component="pgrep.exe" ComponentId="{CB00860D-AAF3-425A-945D-B438DA15815F}" Directory_="bin_Dir" Attributes="256" KeyPath="pgrep.exe"/>
+    <ROW Component="pidof.exe" ComponentId="{F908CE36-DE6B-403E-B602-61D1A96C6502}" Directory_="bin_Dir" Attributes="256" KeyPath="pidof.exe"/>
+    <ROW Component="pipe_progress.exe" ComponentId="{DC6E717A-8D77-44FA-8870-24530E9DCE85}" Directory_="bin_Dir" Attributes="256" KeyPath="pipe_progress.exe"/>
+    <ROW Component="pkill.exe" ComponentId="{2D81F9CD-0478-441C-8222-7DBDE92B263F}" Directory_="bin_Dir" Attributes="256" KeyPath="pkill.exe"/>
+    <ROW Component="printenv.exe" ComponentId="{062256C9-2309-4EC6-B27A-EDD2257F0989}" Directory_="bin_Dir" Attributes="256" KeyPath="printenv.exe"/>
+    <ROW Component="printers.py" ComponentId="{FFF76C7F-BD48-4B27-A537-DEACB98C84EF}" Directory_="v6_Dir" Attributes="0" KeyPath="printers.py" Type="0"/>
+    <ROW Component="printf.exe" ComponentId="{083DE1FD-3F75-450F-B3CA-506C97E42AFC}" Directory_="bin_Dir" Attributes="256" KeyPath="printf.exe"/>
+    <ROW Component="ps.exe" ComponentId="{4CD9B39D-C3D7-413D-B96F-ACF3D6BEF59A}" Directory_="bin_Dir" Attributes="256" KeyPath="ps.exe"/>
+    <ROW Component="pwd.exe" ComponentId="{13C15D17-75A3-4125-BE15-93481A7F448F}" Directory_="bin_Dir" Attributes="256" KeyPath="pwd.exe"/>
+    <ROW Component="ranlib.exe" ComponentId="{C6908287-31D2-4439-953B-4620F7A50F6A}" Directory_="bin_Dir" Attributes="256" KeyPath="ranlib.exe"/>
+    <ROW Component="ranlib.exe_1" ComponentId="{5BF9E2D6-88AD-40A8-B13B-600C88F0460C}" Directory_="bin_1_Dir" Attributes="256" KeyPath="ranlib.exe_1"/>
+    <ROW Component="readelf.exe" ComponentId="{9A833A83-8109-4598-B96A-98CEE86AE9DF}" Directory_="bin_Dir" Attributes="256" KeyPath="readelf.exe"/>
+    <ROW Component="readelf.exe_1" ComponentId="{1C257E72-A183-4DAD-BBC3-1DF6413F3119}" Directory_="bin_1_Dir" Attributes="256" KeyPath="readelf.exe_1"/>
+    <ROW Component="readlink.exe" ComponentId="{24EE56F4-84B9-4BE2-ABB6-D17DD948F2DC}" Directory_="bin_Dir" Attributes="256" KeyPath="readlink.exe"/>
+    <ROW Component="readtags.exe" ComponentId="{41AC2F96-823D-4083-9D82-634DEB09D05D}" Directory_="bin_Dir" Attributes="256" KeyPath="readtags.exe"/>
+    <ROW Component="realpath.exe" ComponentId="{FD18BFBD-7532-48AC-A3B8-19BFF1E39979}" Directory_="bin_Dir" Attributes="256" KeyPath="realpath.exe"/>
+    <ROW Component="reset.exe" ComponentId="{F209FFF3-81B4-4C24-8C20-5F32A45AE4EE}" Directory_="bin_Dir" Attributes="256" KeyPath="reset.exe"/>
+    <ROW Component="rev.exe" ComponentId="{90EE34F1-A0CE-49B1-A1F8-A784727AF8AC}" Directory_="bin_Dir" Attributes="256" KeyPath="rev.exe"/>
+    <ROW Component="rm.exe" ComponentId="{4662C9E5-ED76-43CD-9645-C556FE5D20E7}" Directory_="bin_Dir" Attributes="256" KeyPath="rm.exe"/>
+    <ROW Component="rmdir.exe" ComponentId="{D41859AA-1475-40A9-A15A-0FEF035F20C7}" Directory_="bin_Dir" Attributes="256" KeyPath="rmdir.exe"/>
+    <ROW Component="sed.exe" ComponentId="{C8A5ED8F-D351-45B2-BB84-5F81F5B611C3}" Directory_="bin_Dir" Attributes="256" KeyPath="sed.exe"/>
+    <ROW Component="seq.exe" ComponentId="{FD8183C3-F401-4B57-8125-3AA12A53D68A}" Directory_="bin_Dir" Attributes="256" KeyPath="seq.exe"/>
+    <ROW Component="sh.exe" ComponentId="{0EE26722-48EA-4A97-B048-8D84D6A9794C}" Directory_="bin_Dir" Attributes="256" KeyPath="sh.exe"/>
+    <ROW Component="sha1sum.exe" ComponentId="{4BE520D0-600E-4DEE-B74F-57ECCD435599}" Directory_="bin_Dir" Attributes="256" KeyPath="sha1sum.exe"/>
+    <ROW Component="sha256sum.exe" ComponentId="{FE11F2FC-76CA-4F22-A85D-668E22D97F8C}" Directory_="bin_Dir" Attributes="256" KeyPath="sha256sum.exe"/>
+    <ROW Component="sha3sum.exe" ComponentId="{628240C2-04A4-4F6E-BB51-E1E3DA493942}" Directory_="bin_Dir" Attributes="256" KeyPath="sha3sum.exe"/>
+    <ROW Component="sha512sum.exe" ComponentId="{67F98910-FB96-4CC6-AA77-425B24F8CF93}" Directory_="bin_Dir" Attributes="256" KeyPath="sha512sum.exe"/>
+    <ROW Component="shellmenu.vim" ComponentId="{829CA026-4F57-453D-BB8D-88FADC8016E9}" Directory_="plugin_7_Dir" Attributes="0" KeyPath="shellmenu.vim_1" Type="0"/>
+    <ROW Component="shred.exe" ComponentId="{0A57E103-83E9-4528-8F36-2CE9A14E6281}" Directory_="bin_Dir" Attributes="256" KeyPath="shred.exe"/>
+    <ROW Component="shuf.exe" ComponentId="{F6E7C5F7-F6F5-42F7-9D1A-1A0F88D971B5}" Directory_="bin_Dir" Attributes="256" KeyPath="shuf.exe"/>
+    <ROW Component="size.exe" ComponentId="{1C069E89-FE1E-47DC-ACA9-C54BF360028B}" Directory_="bin_Dir" Attributes="256" KeyPath="size.exe"/>
+    <ROW Component="sleep.exe" ComponentId="{56EB08FB-A573-4D16-8CBA-D5E4D3EB9E77}" Directory_="bin_Dir" Attributes="256" KeyPath="sleep.exe"/>
+    <ROW Component="sort.exe" ComponentId="{9172FC69-2EAF-4F31-95B6-FA5E2DC3A983}" Directory_="bin_Dir" Attributes="256" KeyPath="sort.exe"/>
+    <ROW Component="split.exe" ComponentId="{DB3FF11B-97D8-438D-BAC1-37E654CE43EC}" Directory_="bin_Dir" Attributes="256" KeyPath="split.exe"/>
+    <ROW Component="ssl_client.exe" ComponentId="{300434AA-4CC4-4AC0-B827-813B688388B5}" Directory_="bin_Dir" Attributes="256" KeyPath="ssl_client.exe"/>
+    <ROW Component="ssp.h" ComponentId="{02BE362A-EF85-4FC5-AC5B-6F7B1B756917}" Directory_="ssp_Dir" Attributes="0" KeyPath="ssp.h" Type="0"/>
+    <ROW Component="stat.exe" ComponentId="{640B9B33-AA30-4153-956F-AC8EF9EFEF31}" Directory_="bin_Dir" Attributes="256" KeyPath="stat.exe"/>
+    <ROW Component="strings.exe" ComponentId="{FE72A387-5DAA-4608-A8B9-65C25DE4FA8B}" Directory_="bin_Dir" Attributes="256" KeyPath="strings.exe"/>
+    <ROW Component="strip.exe" ComponentId="{48B940F1-56F3-4BB4-9571-AA5B4444D137}" Directory_="bin_Dir" Attributes="256" KeyPath="strip.exe"/>
+    <ROW Component="strip.exe_1" ComponentId="{DF99DD72-9D78-4691-B5EE-84324F46DE04}" Directory_="bin_1_Dir" Attributes="256" KeyPath="strip.exe_1"/>
+    <ROW Component="su.exe" ComponentId="{0D2C10C1-E1B3-4901-BC31-C8BB4EC4D02C}" Directory_="bin_Dir" Attributes="256" KeyPath="su.exe"/>
+    <ROW Component="sum.exe" ComponentId="{ACD1BB31-A393-4D42-B534-FA4F8728E04D}" Directory_="bin_Dir" Attributes="256" KeyPath="sum.exe"/>
+    <ROW Component="swapmouse.vim" ComponentId="{92BDF74E-35CE-437D-840C-4C6F7130E418}" Directory_="plugin_8_Dir" Attributes="0" KeyPath="swapmouse.vim" Type="0"/>
+    <ROW Component="sync.exe" ComponentId="{F0774961-0376-4E9B-969F-7F7FE5AE2A6A}" Directory_="bin_Dir" Attributes="256" KeyPath="sync.exe"/>
+    <ROW Component="tac.exe" ComponentId="{DB18F767-A27C-4C1F-9BDA-9609FFA5CF74}" Directory_="bin_Dir" Attributes="256" KeyPath="tac.exe"/>
+    <ROW Component="tail.exe" ComponentId="{B159B915-305B-4235-BEAC-4CF124AA81E1}" Directory_="bin_Dir" Attributes="256" KeyPath="tail.exe"/>
+    <ROW Component="tar.exe" ComponentId="{601DE3D6-C611-4F1E-86CD-15C3165A1A6C}" Directory_="bin_Dir" Attributes="256" KeyPath="tar.exe"/>
+    <ROW Component="tee.exe" ComponentId="{28823DB7-CEFA-4393-8474-1376B369F5C6}" Directory_="bin_Dir" Attributes="256" KeyPath="tee.exe"/>
+    <ROW Component="termdebug.vim" ComponentId="{82FA488B-4C2E-4F53-B575-6DC0F5858D6D}" Directory_="plugin_9_Dir" Attributes="0" KeyPath="termdebug.vim" Type="0"/>
+    <ROW Component="test.exe" ComponentId="{8C74499F-016F-4CF5-B5B3-8A95FB0C7F8F}" Directory_="bin_Dir" Attributes="256" KeyPath="test.exe"/>
+    <ROW Component="th.vim" ComponentId="{F73273E4-FA31-4E7E-A0A5-97796A75F762}" Directory_="ftplugin_Dir" Attributes="0" KeyPath="th.vim" Type="0"/>
+    <ROW Component="time.exe" ComponentId="{17256192-B82C-4D98-948C-417B848AC506}" Directory_="bin_Dir" Attributes="256" KeyPath="time.exe"/>
+    <ROW Component="timeb_s.h" ComponentId="{701AA2E4-4651-490A-BDA5-428808E802B8}" Directory_="sys_Dir" Attributes="0" KeyPath="timeb_s.h" Type="0"/>
+    <ROW Component="timeout.exe" ComponentId="{7404BA4C-01CC-4007-B130-BA2F96CA41FD}" Directory_="bin_Dir" Attributes="256" KeyPath="timeout.exe"/>
+    <ROW Component="touch.exe" ComponentId="{93303013-8096-46E8-947B-845591DD486B}" Directory_="bin_Dir" Attributes="256" KeyPath="touch.exe"/>
+    <ROW Component="tr.exe" ComponentId="{1CD106B4-F05D-4B01-A01A-FD610EC98D4E}" Directory_="bin_Dir" Attributes="256" KeyPath="tr.exe"/>
+    <ROW Component="true.exe" ComponentId="{3A2500FF-44EF-41E4-8AC1-0F58A31E4789}" Directory_="bin_Dir" Attributes="256" KeyPath="true.exe"/>
+    <ROW Component="truncate.exe" ComponentId="{5DE6B120-BBC7-4A79-AA91-1BFADC235BB6}" Directory_="bin_Dir" Attributes="256" KeyPath="truncate.exe"/>
+    <ROW Component="ts.exe" ComponentId="{DFB2E37B-A6A1-47B6-94A1-F83E3F85A2FB}" Directory_="bin_Dir" Attributes="256" KeyPath="ts.exe"/>
+    <ROW Component="ttysize.exe" ComponentId="{244478E5-6B4E-45FB-9742-F18A9E0EE0D4}" Directory_="bin_Dir" Attributes="256" KeyPath="ttysize.exe"/>
+    <ROW Component="uname.exe" ComponentId="{BA923B14-7726-42C0-BC19-2815DFA31E02}" Directory_="bin_Dir" Attributes="256" KeyPath="uname.exe"/>
+    <ROW Component="uncompress.exe" ComponentId="{F7C895AB-81CA-413F-8225-F1A7566E7205}" Directory_="bin_Dir" Attributes="256" KeyPath="uncompress.exe"/>
+    <ROW Component="unexpand.exe" ComponentId="{EAA9AE04-DB85-4DF0-94F7-258BDF68EF24}" Directory_="bin_Dir" Attributes="256" KeyPath="unexpand.exe"/>
+    <ROW Component="uniq.exe" ComponentId="{88194DA1-9354-429D-9929-9A2EE026802F}" Directory_="bin_Dir" Attributes="256" KeyPath="uniq.exe"/>
+    <ROW Component="unix2dos.exe" ComponentId="{635AAEF2-21AC-4093-805E-29254378401C}" Directory_="bin_Dir" Attributes="256" KeyPath="unix2dos.exe"/>
+    <ROW Component="unlzma.exe" ComponentId="{3E711A03-262C-4E02-9F69-4FC8CB5EC850}" Directory_="bin_Dir" Attributes="256" KeyPath="unlzma.exe"/>
+    <ROW Component="unlzop.exe" ComponentId="{3CD8EE41-6D70-470B-9862-1AD702416F1F}" Directory_="bin_Dir" Attributes="256" KeyPath="unlzop.exe"/>
+    <ROW Component="unxz.exe" ComponentId="{31D396FF-FBB6-4738-A4F8-A8B1DD68F06C}" Directory_="bin_Dir" Attributes="256" KeyPath="unxz.exe"/>
+    <ROW Component="unzip.exe" ComponentId="{12E080F3-7634-4B96-81AE-C02BB45484C4}" Directory_="bin_Dir" Attributes="256" KeyPath="unzip.exe"/>
+    <ROW Component="uptime.exe" ComponentId="{DAFD25AB-5147-4457-BEEB-EE8B29A571E5}" Directory_="bin_Dir" Attributes="256" KeyPath="uptime.exe"/>
+    <ROW Component="usleep.exe" ComponentId="{093F6455-1887-4C9B-A5AB-849831F41C30}" Directory_="bin_Dir" Attributes="256" KeyPath="usleep.exe"/>
+    <ROW Component="utiltest.exe" ComponentId="{305210D4-DADC-4841-9BDE-DC87E74449EE}" Directory_="bin_Dir" Attributes="256" KeyPath="utiltest.exe"/>
+    <ROW Component="uudecode.exe" ComponentId="{CE55CC26-186C-4E87-81FB-7B8A935306B9}" Directory_="bin_Dir" Attributes="256" KeyPath="uudecode.exe"/>
+    <ROW Component="uuencode.exe" ComponentId="{BA32AFF7-8A10-435F-A424-B9317157E78F}" Directory_="bin_Dir" Attributes="256" KeyPath="uuencode.exe"/>
+    <ROW Component="vim.exe" ComponentId="{3D08536B-D1B8-4087-B9B8-30003338ED9C}" Directory_="vim_Dir" Attributes="256" KeyPath="vim.exe"/>
+    <ROW Component="vim.ico" ComponentId="{3ED0787E-7F21-41C4-9290-087985FEFBB6}" Directory_="bitmaps_Dir" Attributes="0" KeyPath="vim.ico" Type="0"/>
+    <ROW Component="vim64.dll" ComponentId="{E75D31BD-58AC-47A7-9B67-238F47942BA5}" Directory_="vim_Dir" Attributes="256" KeyPath="vim64.dll"/>
+    <ROW Component="vimhelp.vim" ComponentId="{82151746-61FD-407D-9428-0DC938DFF061}" Directory_="dist_1_Dir" Attributes="0" KeyPath="vimhelp.vim" Type="0"/>
+    <ROW Component="vimrun.exe" ComponentId="{92DB5DBE-240A-4F07-ABE3-4CE1BBEF330E}" Directory_="vim_Dir" Attributes="256" KeyPath="vimrun.exe"/>
+    <ROW Component="watch.exe" ComponentId="{A14FC169-4F85-4729-936B-8F86D1FFC96A}" Directory_="bin_Dir" Attributes="256" KeyPath="watch.exe"/>
+    <ROW Component="wc.exe" ComponentId="{FC7523C7-3DCE-4EBD-8513-BCD63D9D85D2}" Directory_="bin_Dir" Attributes="256" KeyPath="wc.exe"/>
+    <ROW Component="wget.exe" ComponentId="{26467653-1D7E-4711-8C99-C2B0CDF1140F}" Directory_="bin_Dir" Attributes="256" KeyPath="wget.exe"/>
+    <ROW Component="which.exe" ComponentId="{36FB6943-6909-4806-A770-2CEEB1AD8077}" Directory_="bin_Dir" Attributes="256" KeyPath="which.exe"/>
+    <ROW Component="whoami.exe" ComponentId="{2E2ACB5E-1F01-4560-893F-5FDF981D91BD}" Directory_="bin_Dir" Attributes="256" KeyPath="whoami.exe"/>
+    <ROW Component="whois.exe" ComponentId="{7C6292A0-1867-4735-8DBA-8B8DFE508975}" Directory_="bin_Dir" Attributes="256" KeyPath="whois.exe"/>
+    <ROW Component="windmc.exe" ComponentId="{DE0E6A8B-AAFD-43D4-ABE9-DE8B9B40E428}" Directory_="bin_Dir" Attributes="256" KeyPath="windmc.exe"/>
+    <ROW Component="windres.exe" ComponentId="{78A3B732-035A-48D3-9A92-DE258B815FE2}" Directory_="bin_Dir" Attributes="256" KeyPath="windres.exe"/>
+    <ROW Component="x86_64w64mingw32addr2line.exe" ComponentId="{99A206F9-26B4-4983-8E56-58F250675972}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32addr2line.exe"/>
+    <ROW Component="x86_64w64mingw32ar.exe" ComponentId="{ECB06A33-8ECF-4472-9EB8-2396A0F492A4}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32ar.exe"/>
+    <ROW Component="x86_64w64mingw32as.exe" ComponentId="{71DD2991-6F58-49EF-848B-DB0B48E8B277}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32as.exe"/>
+    <ROW Component="x86_64w64mingw32c.exe" ComponentId="{8401806A-1388-42E0-A73E-D53278E511EB}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32c.exe"/>
+    <ROW Component="x86_64w64mingw32cfilt.exe" ComponentId="{68B53A7D-8817-46F3-B6D5-4B26BF5C8CDE}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32cfilt.exe"/>
+    <ROW Component="x86_64w64mingw32cpp.exe" ComponentId="{6E8468FB-B6C3-46FF-8CA2-8CCA0490184C}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32cpp.exe"/>
+    <ROW Component="x86_64w64mingw32dlltool.exe" ComponentId="{5DAE2D97-0D77-4758-B34F-76D16109470E}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32dlltool.exe"/>
+    <ROW Component="x86_64w64mingw32dllwrap.exe" ComponentId="{E0C0603F-4DF3-45C2-A120-4D60C95C9206}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32dllwrap.exe"/>
+    <ROW Component="x86_64w64mingw32elfedit.exe" ComponentId="{6D5CB3A0-CCFD-440F-8409-0ABC85ED24EF}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32elfedit.exe"/>
+    <ROW Component="x86_64w64mingw32g.exe" ComponentId="{3D2C60DA-3296-4FB6-920A-EB8AB766C10C}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32g.exe"/>
+    <ROW Component="x86_64w64mingw32gcc.exe" ComponentId="{C2FE05AF-9BED-4432-9B50-7617EAC86386}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcc.exe"/>
+    <ROW Component="x86_64w64mingw32gcc13.2.0.exe" ComponentId="{8D134203-1571-427C-BBAA-A87248117C55}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcc13.2.0.exe"/>
+    <ROW Component="x86_64w64mingw32gccar.exe" ComponentId="{54563675-20AE-4BA4-A645-8CB862B04F27}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gccar.exe"/>
+    <ROW Component="x86_64w64mingw32gccnm.exe" ComponentId="{2D628C00-D3FD-4FC5-8D40-C6574A9377D6}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gccnm.exe"/>
+    <ROW Component="x86_64w64mingw32gccranlib.exe" ComponentId="{03C50851-064B-449A-943F-1B766F427CDA}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gccranlib.exe"/>
+    <ROW Component="x86_64w64mingw32gcov.exe" ComponentId="{DE49E1FC-81EB-406F-962C-926215B339CF}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcov.exe"/>
+    <ROW Component="x86_64w64mingw32gcovdump.exe" ComponentId="{200B0FB5-9525-4DAD-A637-29E44C26C8C8}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcovdump.exe"/>
+    <ROW Component="x86_64w64mingw32gcovtool.exe" ComponentId="{80E15E3F-C5F0-4580-9B31-A2CA7053D251}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32gcovtool.exe"/>
+    <ROW Component="x86_64w64mingw32ld.exe" ComponentId="{D4E6E3E6-0420-4652-86F6-87D7E7D28221}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32ld.exe"/>
+    <ROW Component="x86_64w64mingw32nm.exe" ComponentId="{1744F17C-4FBA-4D2D-96AD-22ADDD337729}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32nm.exe"/>
+    <ROW Component="x86_64w64mingw32objcopy.exe" ComponentId="{5F68484D-59E2-4989-BA3D-F47D98D282EB}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32objcopy.exe"/>
+    <ROW Component="x86_64w64mingw32objdump.exe" ComponentId="{01D90D47-B8F9-43C0-B07C-ED62AE2CC15E}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32objdump.exe"/>
+    <ROW Component="x86_64w64mingw32ranlib.exe" ComponentId="{1CED4A40-1549-43C4-BF70-0C5C88D3DCF8}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32ranlib.exe"/>
+    <ROW Component="x86_64w64mingw32readelf.exe" ComponentId="{B66F841F-C168-42B5-BF59-E881BE16EFE3}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32readelf.exe"/>
+    <ROW Component="x86_64w64mingw32size.exe" ComponentId="{8625F806-53CB-41B4-A773-5C71342559E4}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32size.exe"/>
+    <ROW Component="x86_64w64mingw32strings.exe" ComponentId="{AF2E54C3-8514-4B3C-B436-5C027607BC86}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32strings.exe"/>
+    <ROW Component="x86_64w64mingw32strip.exe" ComponentId="{52A895D1-2901-4A54-A550-38376161F370}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32strip.exe"/>
+    <ROW Component="x86_64w64mingw32windmc.exe" ComponentId="{80F1D963-075D-4735-986C-4B24DF2AFD02}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32windmc.exe"/>
+    <ROW Component="x86_64w64mingw32windres.exe" ComponentId="{A51CE55D-FDCA-4845-A9DE-657A1F027211}" Directory_="bin_Dir" Attributes="256" KeyPath="x86_64w64mingw32windres.exe"/>
+    <ROW Component="xargs.exe" ComponentId="{DFAA8382-0F9E-4D1B-87EC-608BE77E5B7B}" Directory_="bin_Dir" Attributes="256" KeyPath="xargs.exe"/>
+    <ROW Component="xmlwf.exe" ComponentId="{2BE6E26A-E1D5-453F-AB88-0A51F812E626}" Directory_="bin_Dir" Attributes="256" KeyPath="xmlwf.exe"/>
+    <ROW Component="xxd.exe" ComponentId="{75284195-5AA8-4DCD-A257-4DF2CF63E96E}" Directory_="bin_Dir" Attributes="256" KeyPath="xxd.exe"/>
+    <ROW Component="xz.exe" ComponentId="{61437782-D858-4C59-88DF-1611449ED646}" Directory_="bin_Dir" Attributes="256" KeyPath="xz.exe"/>
+    <ROW Component="xzcat.exe" ComponentId="{C1808DBB-BB5F-4201-91F7-3C5822494AE5}" Directory_="bin_Dir" Attributes="256" KeyPath="xzcat.exe"/>
+    <ROW Component="yes.exe" ComponentId="{9E1BAF64-0FB9-4A44-8B50-934CAE7F9F32}" Directory_="bin_Dir" Attributes="256" KeyPath="yes.exe"/>
+    <ROW Component="zcat.exe" ComponentId="{D7402BDF-271C-4933-8CDE-427EF6B80618}" Directory_="bin_Dir" Attributes="256" KeyPath="zcat.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
@@ -743,7 +743,6 @@
     <ROW File="date.exe" Component_="date.exe" FileName="date.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\date.exe" SelfReg="false" DigSign="true"/>
     <ROW File="dc.exe" Component_="dc.exe" FileName="dc.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\dc.exe" SelfReg="false" DigSign="true"/>
     <ROW File="dd.exe" Component_="dd.exe" FileName="dd.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\dd.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="debugbreak.exe" Component_="debugbreak.exe" FileName="DEBUGB~1.EXE|debugbreak.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\debugbreak.exe" SelfReg="false" DigSign="true"/>
     <ROW File="df.exe" Component_="df.exe" FileName="df.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\df.exe" SelfReg="false" DigSign="true"/>
     <ROW File="diff.exe" Component_="diff.exe" FileName="diff.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\diff.exe" SelfReg="false" DigSign="true"/>
     <ROW File="dirname.exe" Component_="dirname.exe" FileName="dirname.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\dirname.exe" SelfReg="false" DigSign="true"/>
@@ -824,12 +823,13 @@
     <ROW File="objcopy.exe" Component_="objcopy.exe" FileName="objcopy.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\objcopy.exe" SelfReg="false" DigSign="true"/>
     <ROW File="objdump.exe" Component_="objdump.exe" FileName="objdump.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\objdump.exe" SelfReg="false" DigSign="true"/>
     <ROW File="od.exe" Component_="od.exe" FileName="od.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\od.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="optscript.exe" Component_="optscript.exe" FileName="OPTSCR~1.EXE|optscript.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\optscript.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="packcc.exe" Component_="packcc.exe" FileName="packcc.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\packcc.exe" SelfReg="false" DigSign="true"/>
     <ROW File="paste.exe" Component_="paste.exe" FileName="paste.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\paste.exe" SelfReg="false" DigSign="true"/>
     <ROW File="patch.exe" Component_="patch.exe" FileName="patch.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\patch.exe" SelfReg="false" DigSign="true"/>
     <ROW File="pgrep.exe" Component_="pgrep.exe" FileName="pgrep.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\pgrep.exe" SelfReg="false" DigSign="true"/>
     <ROW File="pidof.exe" Component_="pidof.exe" FileName="pidof.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\pidof.exe" SelfReg="false" DigSign="true"/>
     <ROW File="pipe_progress.exe" Component_="pipe_progress.exe" FileName="PIPE_P~1.EXE|pipe_progress.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\pipe_progress.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="pkgconfig.exe" Component_="pkgconfig.exe" FileName="PKG-CO~1.EXE|pkg-config.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\pkg-config.exe" SelfReg="false" DigSign="true"/>
     <ROW File="pkill.exe" Component_="pkill.exe" FileName="pkill.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\pkill.exe" SelfReg="false" DigSign="true"/>
     <ROW File="printenv.exe" Component_="printenv.exe" FileName="printenv.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\printenv.exe" SelfReg="false" DigSign="true"/>
     <ROW File="printf.exe" Component_="printf.exe" FileName="printf.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\printf.exe" SelfReg="false" DigSign="true"/>
@@ -838,6 +838,7 @@
     <ROW File="ranlib.exe" Component_="ranlib.exe" FileName="ranlib.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\ranlib.exe" SelfReg="false" DigSign="true"/>
     <ROW File="readelf.exe" Component_="readelf.exe" FileName="readelf.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\readelf.exe" SelfReg="false" DigSign="true"/>
     <ROW File="readlink.exe" Component_="readlink.exe" FileName="readlink.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\readlink.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="readtags.exe" Component_="readtags.exe" FileName="readtags.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\readtags.exe" SelfReg="false" DigSign="true"/>
     <ROW File="realpath.exe" Component_="realpath.exe" FileName="realpath.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\realpath.exe" SelfReg="false" DigSign="true"/>
     <ROW File="reset.exe" Component_="reset.exe" FileName="reset.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\reset.exe" SelfReg="false" DigSign="true"/>
     <ROW File="rev.exe" Component_="rev.exe" FileName="rev.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\rev.exe" SelfReg="false" DigSign="true"/>
@@ -887,9 +888,9 @@
     <ROW File="unzip.exe" Component_="unzip.exe" FileName="unzip.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\unzip.exe" SelfReg="false" DigSign="true"/>
     <ROW File="uptime.exe" Component_="uptime.exe" FileName="uptime.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\uptime.exe" SelfReg="false" DigSign="true"/>
     <ROW File="usleep.exe" Component_="usleep.exe" FileName="usleep.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\usleep.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="utiltest.exe" Component_="utiltest.exe" FileName="utiltest.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\utiltest.exe" SelfReg="false" DigSign="true"/>
     <ROW File="uudecode.exe" Component_="uudecode.exe" FileName="uudecode.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\uudecode.exe" SelfReg="false" DigSign="true"/>
     <ROW File="uuencode.exe" Component_="uuencode.exe" FileName="uuencode.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\uuencode.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="vcfilt.exe" Component_="vcfilt.exe" FileName="VC__FI~1.EXE|vc++filt.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\vc++filt.exe" SelfReg="false" DigSign="true"/>
     <ROW File="vi.bat" Component_="gvim.bat" FileName="vi.bat" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\vi.bat" SelfReg="false"/>
     <ROW File="vim.bat" Component_="gvim.bat" FileName="vim.bat" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\vim.bat" SelfReg="false"/>
     <ROW File="vimtutor.bat" Component_="gvim.bat" FileName="vimtutor.bat" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\vimtutor.bat" SelfReg="false"/>
@@ -947,21 +948,20 @@
     <ROW File="x86_64w64mingw32objcopy.exe" Component_="x86_64w64mingw32objcopy.exe" FileName="X86_6~21.EXE|x86_64-w64-mingw32-objcopy.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-objcopy.exe" SelfReg="false" DigSign="true"/>
     <ROW File="x86_64w64mingw32objdump" Component_="gvim.bat" FileName="X86_6~22|x86_64-w64-mingw32-objdump" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-objdump" SelfReg="false"/>
     <ROW File="x86_64w64mingw32objdump.exe" Component_="x86_64w64mingw32objdump.exe" FileName="X86_6~22.EXE|x86_64-w64-mingw32-objdump.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-objdump.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="x86_64w64mingw32pkgconfig.exe" Component_="x86_64w64mingw32pkgconfig.exe" FileName="X86_6~23.EXE|x86_64-w64-mingw32-pkg-config.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-pkg-config.exe" SelfReg="false" DigSign="true"/>
     <ROW File="x86_64w64mingw32ranlib" Component_="gvim.bat" FileName="X86_6~23|x86_64-w64-mingw32-ranlib" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-ranlib" SelfReg="false"/>
-    <ROW File="x86_64w64mingw32ranlib.exe" Component_="x86_64w64mingw32ranlib.exe" FileName="X86_6~24.EXE|x86_64-w64-mingw32-ranlib.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-ranlib.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="x86_64w64mingw32ranlib.exe" Component_="x86_64w64mingw32ranlib.exe" FileName="X86_6~23.EXE|x86_64-w64-mingw32-ranlib.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-ranlib.exe" SelfReg="false" DigSign="true"/>
     <ROW File="x86_64w64mingw32readelf" Component_="gvim.bat" FileName="X86_6~24|x86_64-w64-mingw32-readelf" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-readelf" SelfReg="false"/>
-    <ROW File="x86_64w64mingw32readelf.exe" Component_="x86_64w64mingw32readelf.exe" FileName="X86_6~25.EXE|x86_64-w64-mingw32-readelf.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-readelf.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="x86_64w64mingw32readelf.exe" Component_="x86_64w64mingw32readelf.exe" FileName="X86_6~24.EXE|x86_64-w64-mingw32-readelf.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-readelf.exe" SelfReg="false" DigSign="true"/>
     <ROW File="x86_64w64mingw32size" Component_="gvim.bat" FileName="X86_6~25|x86_64-w64-mingw32-size" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-size" SelfReg="false"/>
-    <ROW File="x86_64w64mingw32size.exe" Component_="x86_64w64mingw32size.exe" FileName="X86_6~26.EXE|x86_64-w64-mingw32-size.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-size.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="x86_64w64mingw32size.exe" Component_="x86_64w64mingw32size.exe" FileName="X86_6~25.EXE|x86_64-w64-mingw32-size.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-size.exe" SelfReg="false" DigSign="true"/>
     <ROW File="x86_64w64mingw32strings" Component_="gvim.bat" FileName="X86_6~26|x86_64-w64-mingw32-strings" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-strings" SelfReg="false"/>
-    <ROW File="x86_64w64mingw32strings.exe" Component_="x86_64w64mingw32strings.exe" FileName="X86_6~27.EXE|x86_64-w64-mingw32-strings.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-strings.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="x86_64w64mingw32strings.exe" Component_="x86_64w64mingw32strings.exe" FileName="X86_6~26.EXE|x86_64-w64-mingw32-strings.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-strings.exe" SelfReg="false" DigSign="true"/>
     <ROW File="x86_64w64mingw32strip" Component_="gvim.bat" FileName="X86_6~27|x86_64-w64-mingw32-strip" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-strip" SelfReg="false"/>
-    <ROW File="x86_64w64mingw32strip.exe" Component_="x86_64w64mingw32strip.exe" FileName="X86_6~28.EXE|x86_64-w64-mingw32-strip.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-strip.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="x86_64w64mingw32strip.exe" Component_="x86_64w64mingw32strip.exe" FileName="X86_6~27.EXE|x86_64-w64-mingw32-strip.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-strip.exe" SelfReg="false" DigSign="true"/>
     <ROW File="x86_64w64mingw32windmc" Component_="gvim.bat" FileName="X86_6~28|x86_64-w64-mingw32-windmc" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-windmc" SelfReg="false"/>
-    <ROW File="x86_64w64mingw32windmc.exe" Component_="x86_64w64mingw32windmc.exe" FileName="X86_6~29.EXE|x86_64-w64-mingw32-windmc.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-windmc.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="x86_64w64mingw32windmc.exe" Component_="x86_64w64mingw32windmc.exe" FileName="X86_6~28.EXE|x86_64-w64-mingw32-windmc.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-windmc.exe" SelfReg="false" DigSign="true"/>
     <ROW File="x86_64w64mingw32windres" Component_="gvim.bat" FileName="X86_6~29|x86_64-w64-mingw32-windres" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-windres" SelfReg="false"/>
-    <ROW File="x86_64w64mingw32windres.exe" Component_="x86_64w64mingw32windres.exe" FileName="X86_6~30.EXE|x86_64-w64-mingw32-windres.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-windres.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="x86_64w64mingw32windres.exe" Component_="x86_64w64mingw32windres.exe" FileName="X86_6~29.EXE|x86_64-w64-mingw32-windres.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\x86_64-w64-mingw32-windres.exe" SelfReg="false" DigSign="true"/>
     <ROW File="xargs.exe" Component_="xargs.exe" FileName="xargs.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\xargs.exe" SelfReg="false" DigSign="true"/>
     <ROW File="xmlwf.exe" Component_="xmlwf.exe" FileName="xmlwf.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\xmlwf.exe" SelfReg="false" DigSign="true"/>
     <ROW File="xxd.exe" Component_="xxd.exe" FileName="xxd.exe" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\bin\xxd.exe" SelfReg="false" DigSign="true"/>
@@ -7271,9 +7271,7 @@
     <ROW File="libzoneoc.a" Component_="binmode.o" FileName="LIBZON~1.A|libzoneoc.a" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\x86_64-w64-mingw32\lib\libzoneoc.a" SelfReg="false"/>
     <ROW File="txtmode.o" Component_="binmode.o" FileName="txtmode.o" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\x86_64-w64-mingw32\lib\txtmode.o" SelfReg="false"/>
     <ROW File="gitkeep" Component_="gitkeep" FileName="GITKEE~1|.gitkeep" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\.gitkeep" SelfReg="false"/>
-    <ROW File="COPYING.MinGWw64runtime.txt" Component_="gitkeep" FileName="COPYIN~1.TXT|COPYING.MinGW-w64-runtime.txt" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\COPYING.MinGW-w64-runtime.txt" SelfReg="false"/>
     <ROW File="mingw" Component_="gitkeep" FileName="mingw" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\mingw" SelfReg="false"/>
-    <ROW File="VERSION.txt" Component_="gitkeep" FileName="VERSION.txt" Attributes="0" SourcePath="..\..\..\.bin\gnu-windows\bootstrap\VERSION.txt" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -7344,7 +7342,8 @@
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiEnvComponent">
-    <ROW Environment="OneDriveConsumer" Name="=-*Path" Value="[~];[bin_Dir]" Component_="main.aap_15"/>
+    <ROW Environment="Path" Name="=-*Path" Value="[~];[APPDIR]" Component_="APPDIR"/>
+    <ROW Environment="Path_1" Name="=-*Path" Value="[~];[bin_Dir]" Component_="APPDIR"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
     <ROW Feature_="MainFeature" Component_="APPDIR"/>
@@ -7387,7 +7386,6 @@
     <ROW Feature_="MainFeature" Component_="date.exe"/>
     <ROW Feature_="MainFeature" Component_="dc.exe"/>
     <ROW Feature_="MainFeature" Component_="dd.exe"/>
-    <ROW Feature_="MainFeature" Component_="debugbreak.exe"/>
     <ROW Feature_="MainFeature" Component_="df.exe"/>
     <ROW Feature_="MainFeature" Component_="diff.exe"/>
     <ROW Feature_="MainFeature" Component_="dirname.exe"/>
@@ -7468,12 +7466,13 @@
     <ROW Feature_="MainFeature" Component_="objcopy.exe"/>
     <ROW Feature_="MainFeature" Component_="objdump.exe"/>
     <ROW Feature_="MainFeature" Component_="od.exe"/>
+    <ROW Feature_="MainFeature" Component_="optscript.exe"/>
+    <ROW Feature_="MainFeature" Component_="packcc.exe"/>
     <ROW Feature_="MainFeature" Component_="paste.exe"/>
     <ROW Feature_="MainFeature" Component_="patch.exe"/>
     <ROW Feature_="MainFeature" Component_="pgrep.exe"/>
     <ROW Feature_="MainFeature" Component_="pidof.exe"/>
     <ROW Feature_="MainFeature" Component_="pipe_progress.exe"/>
-    <ROW Feature_="MainFeature" Component_="pkgconfig.exe"/>
     <ROW Feature_="MainFeature" Component_="pkill.exe"/>
     <ROW Feature_="MainFeature" Component_="printenv.exe"/>
     <ROW Feature_="MainFeature" Component_="printf.exe"/>
@@ -7482,6 +7481,7 @@
     <ROW Feature_="MainFeature" Component_="ranlib.exe"/>
     <ROW Feature_="MainFeature" Component_="readelf.exe"/>
     <ROW Feature_="MainFeature" Component_="readlink.exe"/>
+    <ROW Feature_="MainFeature" Component_="readtags.exe"/>
     <ROW Feature_="MainFeature" Component_="realpath.exe"/>
     <ROW Feature_="MainFeature" Component_="reset.exe"/>
     <ROW Feature_="MainFeature" Component_="rev.exe"/>
@@ -7531,9 +7531,9 @@
     <ROW Feature_="MainFeature" Component_="unzip.exe"/>
     <ROW Feature_="MainFeature" Component_="uptime.exe"/>
     <ROW Feature_="MainFeature" Component_="usleep.exe"/>
+    <ROW Feature_="MainFeature" Component_="utiltest.exe"/>
     <ROW Feature_="MainFeature" Component_="uudecode.exe"/>
     <ROW Feature_="MainFeature" Component_="uuencode.exe"/>
-    <ROW Feature_="MainFeature" Component_="vcfilt.exe"/>
     <ROW Feature_="MainFeature" Component_="watch.exe"/>
     <ROW Feature_="MainFeature" Component_="wc.exe"/>
     <ROW Feature_="MainFeature" Component_="wget.exe"/>
@@ -7564,7 +7564,6 @@
     <ROW Feature_="MainFeature" Component_="x86_64w64mingw32nm.exe"/>
     <ROW Feature_="MainFeature" Component_="x86_64w64mingw32objcopy.exe"/>
     <ROW Feature_="MainFeature" Component_="x86_64w64mingw32objdump.exe"/>
-    <ROW Feature_="MainFeature" Component_="x86_64w64mingw32pkgconfig.exe"/>
     <ROW Feature_="MainFeature" Component_="x86_64w64mingw32ranlib.exe"/>
     <ROW Feature_="MainFeature" Component_="x86_64w64mingw32readelf.exe"/>
     <ROW Feature_="MainFeature" Component_="x86_64w64mingw32size.exe"/>
@@ -7778,6 +7777,11 @@
     <ROW Feature_="MainFeature" Component_="accctrl.h"/>
     <ROW Feature_="MainFeature" Component_="acpiioct.h"/>
     <ROW Feature_="MainFeature" Component_="gdiplus.h"/>
+    <ROW Feature_="MainFeature" Component_="TheFlightSims"/>
+    <ROW Feature_="MainFeature" Component_="Path"/>
+    <ROW Feature_="MainFeature" Component_="Version"/>
+    <ROW Feature_="MainFeature" Component_="isExtendable"/>
+    <ROW Feature_="MainFeature" Component_="ProductID"/>
     <ROW Feature_="MainFeature" Component_="gl.h"/>
     <ROW Feature_="MainFeature" Component_="khrplatform.h"/>
     <ROW Feature_="MainFeature" Component_="intrinimpl.h"/>
@@ -7790,11 +7794,6 @@
     <ROW Feature_="MainFeature" Component_="binmode.o"/>
     <ROW Feature_="MainFeature" Component_="i386pe.x"/>
     <ROW Feature_="MainFeature" Component_="gitkeep"/>
-    <ROW Feature_="MainFeature" Component_="TheFlightSims"/>
-    <ROW Feature_="MainFeature" Component_="Path"/>
-    <ROW Feature_="MainFeature" Component_="Version"/>
-    <ROW Feature_="MainFeature" Component_="isExtendable"/>
-    <ROW Feature_="MainFeature" Component_="ProductID"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="gnuwindows.exe" SourcePath="..\src\gnu-windows.ico" Index="0"/>
