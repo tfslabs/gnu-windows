@@ -1,15 +1,15 @@
 ```text
 This directory contains various GNU tools for Windows, including 
-binutils , busybox, cppcheck, ctags, expat, gcc/g++, gdb, libiconv, 
+binutils, busybox, cppcheck, ctags, expat, gcc/g++, gdb, libiconv, 
 make, mingw-64, mpc, mpfr, nasm, PDCurses, vim.
 
 Each directory (except the one started with dot(.) - these folders 
-are main and admin folder) contains tools, with its own COPYRIGHT, 
-assigned with various developers. These folder must be reserved, 
-except in maintaince, for building the binaries.
+are the main and admin folders) contains tools, with their COPYRIGHT, 
+assigned to various developers. Except in maintenance, this folder
+must be reserved for building the binaries.
 
-See https://github.com/tfsmetadata/gnu-windows/issues for reporting 
-issues. Note please describe your issue as much detail as possible.
+See https://github.com/tfslabs/gnu-windows/issues for reporting 
+issues. Note please describe your issue in as much detail as possible.
 
 Copyright years on source files may be listed using range notation, 
 e.g., 1987-2012, indicating that every year in the range, inclusive, 
@@ -32,7 +32,7 @@ All exclusive documents, you can try to search for yourself over the Internet.
 
 #### Building within Docker
 
-You need to run the pre-defined Docker image, mount your cloned GitHub repo, and build from that.
+You must run the pre-defined Docker image, mount your cloned GitHub repo, and build from that.
 
 Replace `<your path>` with your real path to the local repo. Double-quote is needed if there are spaces in your path.
 
@@ -81,4 +81,4 @@ Read the instructions [here](https://github.com/tfslabs/gnu-windows/blob/master/
 
 This project is linked with GNU GPL 3.0 License. With no restriction on distribution and reuse.
 
-GNU Windows is made by team of TheFlightSims - Department of Research.
+GNU Windows is made by the team of TheFlightSims - Department of Research.
