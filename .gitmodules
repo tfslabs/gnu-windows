@@ -1,0 +1,45 @@
+[submodule "PDCurses"]
+	path = PDCurses
+	url = https://github.com/wmcbrine/PDCurses.git
+[submodule "binutils-gdb"]
+	path = binutils-gdb
+	url = https://sourceware.org/git/binutils-gdb.git
+[submodule "busybox-w32"]
+	path = busybox-w32
+	url = git://git.frippery.org/busybox-w32
+[submodule "cppcheck"]
+	path = cppcheck
+	url = https://github.com/danmar/cppcheck.git
+[submodule "ctags"]
+	path = ctags
+	url = https://github.com/universal-ctags/ctags.git
+[submodule "libexpat"]
+	path = libexpat
+	url = https://github.com/libexpat/libexpat.git
+[submodule "gcc]
+	path = gcc
+	url = https://gcc.gnu.org/git/gcc.git
+[submodule "gmp"]
+	path = gmp
+	url = https://github.com/gmp-mirror/gmp.git
+[submodule "libiconv"]
+	path = libiconv
+	url = https://git.savannah.gnu.org/git/libiconv.git
+[submodule "make"]
+	path = make
+	url = https://git.savannah.gnu.org/git/make.git
+[submodule "mingw-w64"]
+	path = mingw-w64
+	url = https://github.com/mingw-w64/mingw-w64.git
+[submodule "libmpc"]
+	path = libmpc
+	url = https://github.com/nicolapiccinelli/libmpc.git
+[submodule "mpfr"]
+	path = mpfr
+	url = https://gitlab.inria.fr/mpfr/mpfr.git
+[submodule "nasm"]
+	path = nasm
+	url = https://github.com/netwide-assembler/nasm.git
+[submodule "vim"]
+	path = vim
+	url = https://github.com/vim/vim.git
