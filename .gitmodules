@@ -16,7 +16,7 @@
 [submodule "libexpat"]
 	path = libexpat
 	url = https://github.com/libexpat/libexpat.git
-[submodule "gcc]
+[submodule "gcc"]
 	path = gcc
 	url = https://gcc.gnu.org/git/gcc.git
 [submodule "gmp"]
