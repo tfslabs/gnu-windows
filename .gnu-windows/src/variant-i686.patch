@@ -1,0 +1,43 @@
+--- a/Dockerfile
++++ b/Dockerfile
+@@ -65,3 +65,3 @@ COPY gnu-windows.c ../gnu-windows.ico \
+ 
+-ARG ARCH=x86_64-w64-mingw32
++ARG ARCH=i686-w64-mingw32
+ 
+@@ -93,2 +93,3 @@ RUN /mingw-w64-v$MINGW_VERSION/mingw-w64-headers/configure \
+         --with-default-msvcrt=msvcrt-os \
++        --with-default-win32-winnt=0x0501 \
+  && make -j$(nproc) \
+@@ -99,2 +100,5 @@ RUN ln -s $ARCH mingw
+ 
++# Disable UTF-8 manifest for Windows XP (#58)
++RUN echo >/gcc-$GCC_VERSION/gcc/config/i386/winnt-utf8.manifest
++
+ WORKDIR /x-gcc
+@@ -103,2 +107,3 @@ RUN /gcc-$GCC_VERSION/configure \
+         --with-sysroot=/bootstrap \
++        --with-arch=pentium4 \
+         --target=$ARCH \
+@@ -132,4 +137,4 @@ RUN /mingw-w64-v$MINGW_VERSION/mingw-w64-crt/configure \
+         --disable-dependency-tracking \
+-        --disable-lib32 \
+-        --enable-lib64 \
++        --enable-lib32 \
++        --disable-lib64 \
+         CFLAGS="-Os" \
+@@ -217,2 +222,3 @@ RUN /mingw-w64-v$MINGW_VERSION/mingw-w64-headers/configure \
+         --with-default-msvcrt=msvcrt-os \
++        --with-default-win32-winnt=0x0501 \
+  && make -j$(nproc) \
+@@ -227,4 +233,4 @@ RUN /mingw-w64-v$MINGW_VERSION/mingw-w64-crt/configure \
+         --disable-dependency-tracking \
+-        --disable-lib32 \
+-        --enable-lib64 \
++        --enable-lib32 \
++        --disable-lib64 \
+         CFLAGS="-Os" \
+@@ -251,2 +257,3 @@ RUN /gcc-$GCC_VERSION/configure \
+         --with-native-system-header-dir=/include \
++        --with-arch=pentium4 \
+         --target=$ARCH \
