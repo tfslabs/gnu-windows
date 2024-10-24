@@ -19,3 +19,6 @@
 [submodule "gcc"]
 	path = gcc
 	url = git://gcc.gnu.org/git/gcc.git
+[submodule "gmp"]
+	path = gmp
+	url = https://github.com/gmp-mirror/gmp-6.3.git
