@@ -1,0 +1,6 @@
+[submodule "gdb"]
+	path = gdb
+	url = https://sourceware.org/git/binutils-gdb.git
+[submodule "binutils"]
+	path = binutils
+	url = https://sourceware.org/git/binutils-gdb.git
