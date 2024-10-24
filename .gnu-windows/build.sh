@@ -27,26 +27,22 @@ $GNU_FOLDER/binutils/configure \
  && make -j$(nproc) MAKEINFO=true install
 
 cd $WORKDIR
-
-#sed -i /OpenThreadToken/d $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-crt/lib32/kernel32.def
-
 mkdir $MAKE_FOLDER/x-mingw-headers && cd "$_"
-chmod +x $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-headers/configure
-$GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-headers/configure \
+chmod +x $GNU_FOLDER/mingw-w64/mingw-w64-headers/configure
+$GNU_FOLDER/mingw-w64/mingw-w64-headers/configure \
         --prefix=$BOOTSTRAP/$ARCH \
         --host=$ARCH \
         --with-default-msvcrt=msvcrt-os \
- && make \
- && make install
+ && make -j$(nproc) \
+ && make -j$(nproc) install
 
 cd $BOOTSTRAP
 ln -s $ARCH mingw
 
 mkdir $MAKE_FOLDER/x-gcc && cd "$_"
 mkdir $BOOTSTRAP/src && cp $SOURCE_CODE/gcc-*.patch $BOOTSTRAP/src/
-#cat $BOOTSTRAP/src/gcc-*.patch | patch -d $GNU_FOLDER/gcc-$GCC_VERSION -p1
-chmod +x $GNU_FOLDER/gcc-$GCC_VERSION/configure
-$GNU_FOLDER/gcc-$GCC_VERSION/configure \
+chmod +x $GNU_FOLDER/gcc/configure
+$GNU_FOLDER/gcc/configure \
         --prefix=$BOOTSTRAP \
         --with-sysroot=$BOOTSTRAP \
         --target=$ARCH \
@@ -68,8 +64,8 @@ $GNU_FOLDER/gcc-$GCC_VERSION/configure \
         CFLAGS="-Os" \
         CXXFLAGS="-Os" \
         LDFLAGS="-s" \
- && make all-gcc \
- && make install-gcc
+ && make -j$(nproc) all-gcc \
+ && make -j$(nproc) install-gcc
 
 mkdir -p $BOOTSTRAP/$ARCH/lib \
  && chmod +x $BOOTSTRAP/bin/$ARCH-gcc \
@@ -77,8 +73,8 @@ mkdir -p $BOOTSTRAP/$ARCH/lib \
  && CC=$BOOTSTRAP/bin/$ARCH-gcc DESTDIR=$BOOTSTRAP/$ARCH/lib/ sh $SOURCE_CODE/libchkstk.S
 
 mkdir $MAKE_FOLDER/x-mingw-crt && cd "$_"
-chmod +x $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-crt/configure
-$GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-crt/configure \
+chmod +x $GNU_FOLDER/mingw-w64/mingw-w64-crt/configure
+$GNU_FOLDER/mingw-w64/mingw-w64-crt/configure \
         --prefix=$BOOTSTRAP/$ARCH \
         --with-sysroot=$BOOTSTRAP/$ARCH \
         --host=$ARCH \
@@ -88,12 +84,12 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-crt/configure \
         --enable-lib64 \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make \
- && make install
+ && make -j$(nproc) \
+ && make -j$(nproc) install
 
 mkdir $MAKE_FOLDER/x-winpthreads && cd "$_"
-chmod +x $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-libraries/winpthreads/configure
-$GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-libraries/winpthreads/configure \
+chmod +x $GNU_FOLDER/mingw-w64/mingw-w64-libraries/winpthreads/configure
+$GNU_FOLDER/mingw-w64/mingw-w64-libraries/winpthreads/configure \
         --prefix=$BOOTSTRAP/$ARCH \
         --with-sysroot=$BOOTSTRAP/$ARCH \
         --host=$ARCH \
@@ -101,31 +97,18 @@ $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-libraries/winpthreads/configure 
         --disable-shared \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make \
- && make install
+ && make -j$(nproc) \
+ && make -j$(nproc) install
 
 cd $MAKE_FOLDER/x-gcc
-make
-make install
+make -j$(nproc)
+make -j$(nproc) install
 
-# Cross-compile GCC
-
-mkdir $MAKE_FOLDER/binutils && cd "$_"
-$GNU_FOLDER/binutils-$BINUTILS_VERSION/configure \
-        --prefix=$BOOTSTRAP \
-        --with-sysroot=$BOOTSTRAP/$ARCH \
-        --host=$ARCH \
-        --target=$ARCH \
-        --disable-nls \
-        --with-static-standard-libraries \
-        CFLAGS="-Os" \
-        LDFLAGS="-s" \
- && make MAKEINFO=true \
- && make MAKEINFO=true install
+# Cross-compile GCC - Compile for Windows EXE
 
 mkdir $MAKE_FOLDER/gmp && cd "$_"
-chmod +x $GNU_FOLDER/gmp-$GMP_VERSION/configure
-$GNU_FOLDER/gmp-$GMP_VERSION/configure \
+chmod +x $GNU_FOLDER/gmp/configure
+$GNU_FOLDER/gmp/configure \
         --prefix=$BOOTSTRAP \
         --host=$ARCH \
         --enable-static \
@@ -133,8 +116,8 @@ $GNU_FOLDER/gmp-$GMP_VERSION/configure \
         CFLAGS="-Os" \
         CXXFLAGS="-Os" \
         LDFLAGS="-s" \
- && make \
- && make install
+ && make -j$(nproc) \
+ && make -j$(nproc) install
 
 mkdir $MAKE_FOLDER/mpfr && cd "$_"
 chmod +x $GNU_FOLDER/mpfr-$MPFR_VERSION/configure
@@ -165,6 +148,21 @@ $GNU_FOLDER/mpc-$MPC_VERSION/configure \
         LDFLAGS="-s" \
  && make \
  && make install
+
+mkdir $MAKE_FOLDER/binutils && cd "$_"
+$GNU_FOLDER/binutils/configure \
+        --prefix=$BOOTSTRAP \
+        --with-sysroot=$BOOTSTRAP/$ARCH \
+        --host=$ARCH \
+        --target=$ARCH \
+        --disable-nls \
+        --with-static-standard-libraries \
+        CFLAGS="-Os" \
+        LDFLAGS="-s" \
+        --with-gmp \
+        --with-mpfr \
+ && make -j$(nproc) MAKEINFO=true \
+ && make -j$(nproc) MAKEINFO=true install
 
 mkdir $MAKE_FOLDER/mingw-headers && cd "$_"
 chmod +x $GNU_FOLDER/mingw-w64-v$MINGW_VERSION/mingw-w64-headers/configure
