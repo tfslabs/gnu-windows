@@ -4,3 +4,6 @@
 [submodule "binutils"]
 	path = binutils
 	url = https://sourceware.org/git/binutils-gdb.git
+[submodule "busybox-w32"]
+	path = busybox-w32
+	url = https://github.com/rmyorston/busybox-w32.git
