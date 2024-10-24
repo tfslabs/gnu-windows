@@ -22,3 +22,6 @@
 [submodule "gmp"]
 	path = gmp
 	url = https://github.com/gmp-mirror/gmp-6.3.git
+[submodule "libiconv"]
+	path = libiconv
+	url = git://git.savannah.gnu.org/libiconv.git
