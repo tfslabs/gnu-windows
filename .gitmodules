@@ -34,3 +34,6 @@
 [submodule "mpc"]
 	path = mpc
 	url = https://gitlab.inria.fr/mpc/mpc.git
+[submodule "mpfr"]
+	path = mpfr
+	url = https://gitlab.inria.fr/mpfr/mpfr.git
