@@ -37,3 +37,6 @@
 [submodule "mpfr"]
 	path = mpfr
 	url = https://gitlab.inria.fr/mpfr/mpfr.git
+[submodule "nasm"]
+	path = nasm
+	url = https://github.com/netwide-assembler/nasm.git
