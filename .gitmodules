@@ -7,3 +7,6 @@
 [submodule "busybox-w32"]
 	path = busybox-w32
 	url = https://github.com/rmyorston/busybox-w32.git
+[submodule "cppcheck"]
+	path = cppcheck
+	url = https://github.com/danmar/cppcheck.git
