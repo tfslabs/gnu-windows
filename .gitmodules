@@ -1,12 +1,12 @@
-[submodule "PDCurses"]
-	path = PDCurses
-	url = https://github.com/wmcbrine/PDCurses.git
-[submodule "binutils-gdb"]
-	path = binutils-gdb
+[submodule "gdb"]
+	path = gdb
+	url = https://sourceware.org/git/binutils-gdb.git
+[submodule "binutils"]
+	path = binutils
 	url = https://sourceware.org/git/binutils-gdb.git
 [submodule "busybox-w32"]
 	path = busybox-w32
-	url = git://git.frippery.org/busybox-w32
+	url = https://github.com/rmyorston/busybox-w32.git
 [submodule "cppcheck"]
 	path = cppcheck
 	url = https://github.com/danmar/cppcheck.git
@@ -18,28 +18,31 @@
 	url = https://github.com/libexpat/libexpat.git
 [submodule "gcc"]
 	path = gcc
-	url = https://gcc.gnu.org/git/gcc.git
+	url = git://gcc.gnu.org/git/gcc.git
 [submodule "gmp"]
 	path = gmp
-	url = https://github.com/gmp-mirror/gmp.git
+	url = https://github.com/gmp-mirror/gmp-6.3.git
 [submodule "libiconv"]
 	path = libiconv
-	url = https://git.savannah.gnu.org/git/libiconv.git
+	url = git://git.savannah.gnu.org/libiconv.git
 [submodule "make"]
 	path = make
 	url = https://git.savannah.gnu.org/git/make.git
 [submodule "mingw-w64"]
 	path = mingw-w64
 	url = https://github.com/mingw-w64/mingw-w64.git
-[submodule "libmpc"]
-	path = libmpc
-	url = https://github.com/nicolapiccinelli/libmpc.git
+[submodule "mpc"]
+	path = mpc
+	url = https://gitlab.inria.fr/mpc/mpc.git
 [submodule "mpfr"]
 	path = mpfr
 	url = https://gitlab.inria.fr/mpfr/mpfr.git
 [submodule "nasm"]
 	path = nasm
 	url = https://github.com/netwide-assembler/nasm.git
+[submodule "PDCurses"]
+	path = PDCurses
+	url = https://github.com/wmcbrine/PDCurses.git
 [submodule "vim"]
 	path = vim
 	url = https://github.com/vim/vim.git

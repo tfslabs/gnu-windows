@@ -9,42 +9,22 @@ SOURCE_CODE="$WORKDIR/src"
 GNU_FOLDER="$WORKDIR/.."
 PATH="$BOOTSTRAP/bin:${PATH}"
 
-BINUTILS_VERSION=2.41
-BUSYBOX_VERSION=FRP-5236-g7dff7f376
-CPPCHECK_VERSION=2.10
-CTAGS_VERSION=6.0.0
-EXPAT_VERSION=2.5.0
-GCC_VERSION=13.2.0
-GDB_VERSION=13.1
-GMP_VERSION=6.3.0
-LIBICONV_VERSION=1.17
-MAKE_VERSION=4.4.1
-MINGW_VERSION=11.0.1
-MPC_VERSION=1.3.1
-MPFR_VERSION=4.2.1
-NASM_VERSION=2.15.05
-PDCURSES_VERSION=3.9
-VERSION=1.21.0
-VIM_VERSION=9.0
-
-cd $WORKDIR
+VERSION=1.0.0-hf1
 
 # Cross-build system
 
-#cd $GNU_FOLDER/binutils-$BINUTILS_VERSION
-#sed -ri 's/(static bool insert_timestamp = )/\1!/' ld/emultempl/pe*.em
-
+cd $WORKDIR
 mkdir $MAKE_FOLDER/x-binutils && cd "$_"
-chmod +x $GNU_FOLDER/binutils-$BINUTILS_VERSION/configure
-$GNU_FOLDER/binutils-$BINUTILS_VERSION/configure \
+chmod +x $GNU_FOLDER/binutils/configure
+$GNU_FOLDER/binutils/configure \
         --prefix=$BOOTSTRAP \
         --with-sysroot=$BOOTSTRAP/$ARCH \
         --target=$ARCH \
         --disable-nls \
         --with-static-standard-libraries \
         --disable-multilib \
- && make MAKEINFO=true \
- && make MAKEINFO=true install
+ && make -j$(nproc) MAKEINFO=true \
+ && make -j$(nproc) MAKEINFO=true install
 
 cd $WORKDIR
 
