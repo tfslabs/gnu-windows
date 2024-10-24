@@ -25,3 +25,6 @@
 [submodule "libiconv"]
 	path = libiconv
 	url = git://git.savannah.gnu.org/libiconv.git
+[submodule "make"]
+	path = make
+	url = https://git.savannah.gnu.org/git/make.git
