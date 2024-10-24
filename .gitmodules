@@ -28,3 +28,6 @@
 [submodule "make"]
 	path = make
 	url = https://git.savannah.gnu.org/git/make.git
+[submodule "mingw-w64"]
+	path = mingw-w64
+	url = https://github.com/mingw-w64/mingw-w64.git
