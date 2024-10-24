@@ -40,3 +40,6 @@
 [submodule "nasm"]
 	path = nasm
 	url = https://github.com/netwide-assembler/nasm.git
+[submodule "PDCurses"]
+	path = PDCurses
+	url = https://github.com/wmcbrine/PDCurses.git
