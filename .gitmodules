@@ -43,3 +43,6 @@
 [submodule "PDCurses"]
 	path = PDCurses
 	url = https://github.com/wmcbrine/PDCurses.git
+[submodule "vim"]
+	path = vim
+	url = https://github.com/vim/vim.git
