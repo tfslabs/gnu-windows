@@ -10,3 +10,6 @@
 [submodule "expat"]
 	path = expat
 	url = https://github.com/tfslabs/expat.git
+[submodule "gcc"]
+	path = gcc
+	url = https://github.com/tfslabs/gcc.git
