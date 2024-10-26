@@ -25,3 +25,6 @@
 [submodule "make"]
 	path = make
 	url = https://github.com/tfslabs/make.git
+[submodule "mingw-w64"]
+	path = mingw-w64
+	url = https://github.com/tfslabs/mingw-w64.git
