@@ -16,3 +16,6 @@
 [submodule "gdb"]
 	path = gdb
 	url = https://github.com/tfslabs/gdb.git
+[submodule "gmp"]
+	path = gmp
+	url = https://github.com/tfslabs/gmp.git
