@@ -37,3 +37,6 @@
 [submodule "pdcurses"]
 	path = pdcurses
 	url = https://github.com/tfslabs/pdcurses.git
+[submodule "vim"]
+	path = vim
+	url = https://github.com/tfslabs/vim.git
