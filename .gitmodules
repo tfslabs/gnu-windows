@@ -7,3 +7,6 @@
 [submodule "ctags"]
 	path = ctags
 	url = https://github.com/tfslabs/ctags.git
+[submodule "expat"]
+	path = expat
+	url = https://github.com/tfslabs/expat.git
