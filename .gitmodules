@@ -31,3 +31,6 @@
 [submodule "mpc"]
 	path = mpc
 	url = https://github.com/tfslabs/mpc.git
+[submodule "mpfr"]
+	path = mpfr
+	url = https://github.com/tfslabs/mpfr.git
