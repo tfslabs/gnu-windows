@@ -210,8 +210,8 @@ $GNU_FOLDER/mingw-w64/mingw-w64-libraries/winpthreads/configure \
  && make install
 
 mkdir $MAKE_FOLDER/gcc && cd "$_"
-chmod +x $GNU_FOLDER/gcc-$GCC_VERSION/configure
-$GNU_FOLDER/gcc-$GCC_VERSION/configure \
+chmod +x $GNU_FOLDER/gcc/configure
+$GNU_FOLDER/gcc/configure \
         --prefix=$BOOTSTRAP \
         --with-sysroot=$BOOTSTRAP/$ARCH \
         --with-native-system-header-dir=/include \
@@ -287,10 +287,11 @@ chmod +x $GNU_FOLDER/expat/configure
 $GNU_FOLDER/expat/configure \
         --prefix=$BOOTSTRAP \
         --host=$ARCH \
+        --disable-shared \
         CFLAGS="-Os" \
         LDFLAGS="-s" \
- && make -j$(nproc) \
- && make install
+ && make -k -j$(nproc) \
+ && make -k install
 
 cd $GNU_FOLDER/pdcurses
 make -j$(nproc) -C wincon CC=$BOOTSTRAP/bin/$ARCH-gcc AR=$ARCH-ar CFLAGS="-I.. -Os -DPDC_WIDE" pdcurses.a \
@@ -338,7 +339,7 @@ $GNU_FOLDER/make/configure \
 
 cd $GNU_FOLDER/busybox-w32
 cat $SOURCE_CODE/busybox-*.patch | patch -p1
-make mingw64_defconfig \
+make mingw64u_defconfig \
  && sed -ri 's/^(CONFIG_AR)=y/\1=n/' .config \
  && sed -ri 's/^(CONFIG_ASCII)=y/\1=n/' .config \
  && sed -ri 's/^(CONFIG_DPKG\w*)=y/\1=n/' .config \
@@ -376,7 +377,7 @@ $BOOTSTRAP/bin/$ARCH-gcc -Os -fno-asynchronous-unwind-tables -Wl,--gc-sections -
       wc wget which whoami whois xargs xz xzcat yes zcat \
     | xargs -I{} cp alias.exe $BOOTSTRAP/bin/{}.exe
 
-cd $GNU_FOLDER/vim90/src
+cd $GNU_FOLDER/vim/src
 ARCH= make -f Make_ming.mak \
         OPTIMIZE=SIZE STATIC_STDCPLUS=yes HAS_GCC_EH=no \
         UNDER_CYGWIN=yes CROSS=yes CROSS_COMPILE=$ARCH- \
@@ -396,15 +397,14 @@ ARCH= make -f Make_ming.mak \
         '$VIMRUNTIME/tutor/tutor' '%TMP%/tutor%RANDOM%' \
         >$BOOTSTRAP/bin/vimtutor.bat
 
-chmod +x $GNU_FOLDER/nasm/configure && chmod +x $GNU_FOLDER/nasm/autogen.sh
 cd $GNU_FOLDER/nasm/
+chmod +x $GNU_FOLDER/nasm/autogen.sh
 $GNU_FOLDER/nasm/autogen.sh
-mkdir $MAKE_FOLDER/nasm && cd "$_"
-$GNU_FOLDER/nasm-$NASM_VERSION/configure \
-        --host=$ARCH \
-		 CFLAGS="-Os" \
-        LDFLAGS="-s" \
- && mkdir include \
+$GNU_FOLDER/nasm/configure \
+		--prefix=$BOOTSTRAP \
+		--host=$ARCH \
+		CFLAGS="-Os" \
+		LDFLAGS="-s" \
  && make -j$(nproc) \
  && cp nasm.exe ndisasm.exe $BOOTSTRAP/bin
 
