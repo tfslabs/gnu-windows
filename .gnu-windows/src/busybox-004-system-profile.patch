@@ -1,0 +1,7 @@
+--- a/shell/ash.c
++++ b/shell/ash.c
+@@ -16349,3 +16349,3 @@
+ 
+-		hp = exe_relative_path("/etc/profile");
++		hp = exe_relative_path("../src/profile");
+ 		read_profile(hp);

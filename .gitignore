@@ -4,3 +4,4 @@
 .gnu-windows/ad-installer
 *.exe
 *.dll
+.gnu-windows/gnu-windows.rc

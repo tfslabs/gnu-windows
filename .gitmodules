@@ -1,45 +1,51 @@
-[submodule "PDCurses"]
-	path = PDCurses
-	url = https://github.com/wmcbrine/PDCurses.git
-[submodule "binutils-gdb"]
-	path = binutils-gdb
-	url = https://sourceware.org/git/binutils-gdb.git
+[submodule "binutils"]
+	path = binutils
+	url = https://github.com/tfslabs/binutils.git
 [submodule "busybox-w32"]
 	path = busybox-w32
-	url = git://git.frippery.org/busybox-w32
-[submodule "cppcheck"]
-	path = cppcheck
-	url = https://github.com/danmar/cppcheck.git
+	url = https://github.com/tfslabs/busybox-w32.git
 [submodule "ctags"]
 	path = ctags
-	url = https://github.com/universal-ctags/ctags.git
-[submodule "libexpat"]
-	path = libexpat
-	url = https://github.com/libexpat/libexpat.git
+	url = https://github.com/tfslabs/ctags.git
+[submodule "expat"]
+	path = expat
+	url = https://github.com/tfslabs/expat.git
 [submodule "gcc"]
 	path = gcc
-	url = https://gcc.gnu.org/git/gcc.git
+	url = https://github.com/tfslabs/gcc.git
+[submodule "gdb"]
+	path = gdb
+	url = https://github.com/tfslabs/gdb.git
 [submodule "gmp"]
 	path = gmp
-	url = https://github.com/gmp-mirror/gmp.git
+	url = https://github.com/tfslabs/gmp.git
 [submodule "libiconv"]
 	path = libiconv
-	url = https://git.savannah.gnu.org/git/libiconv.git
+	url = https://github.com/tfslabs/libiconv.git
 [submodule "make"]
 	path = make
-	url = https://git.savannah.gnu.org/git/make.git
+	url = https://github.com/tfslabs/make.git
 [submodule "mingw-w64"]
 	path = mingw-w64
-	url = https://github.com/mingw-w64/mingw-w64.git
-[submodule "libmpc"]
-	path = libmpc
-	url = https://github.com/nicolapiccinelli/libmpc.git
+	url = https://github.com/tfslabs/mingw-w64.git
+[submodule "mpc"]
+	path = mpc
+	url = https://github.com/tfslabs/mpc.git
 [submodule "mpfr"]
 	path = mpfr
-	url = https://gitlab.inria.fr/mpfr/mpfr.git
-[submodule "nasm"]
-	path = nasm
-	url = https://github.com/netwide-assembler/nasm.git
+	url = https://github.com/tfslabs/mpfr.git
+[submodule "pdcurses"]
+	path = pdcurses
+	url = https://github.com/tfslabs/pdcurses.git
 [submodule "vim"]
 	path = vim
-	url = https://github.com/vim/vim.git
+	url = https://github.com/tfslabs/vim.git
+[submodule "7z"]
+	path = 7z
+	url = https://github.com/tfslabs/7z.git
+[submodule "nasm"]
+	path = nasm
+	url = https://github.com/tfslabs/nasm.git
+[submodule "cppcheck"]
+	path = cppcheck
+	url = https://github.com/tfslabs/cppcheck.git

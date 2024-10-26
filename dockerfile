@@ -1,4 +1,4 @@
-# Use an official Ubuntu image as base
+# Use an official Debian image as base
 FROM debian:latest
 
 # Install git and any other dependencies needed for your build script
@@ -15,4 +15,4 @@ RUN apt update && \
  libx265-199 libxau6 libxcb1 libxdmcp6 libxml2 libxpm4 libyuv0 linux-libc-dev manpages-dev patch \
  publicsuffix rpcsvc-proto unzip autoconf automake bison build-essential cmake curl dpkg-dev flex \
  g++ gcc libfl-dev libgmp-dev libmpc-dev libmpfr-dev m4 make wget zip texinfo pkg-config python3 \
- python3-pip python3-venv file
+ python3-pip python3-venv python3-build file p7zip-full zstd tar mingw-w64 libtool
