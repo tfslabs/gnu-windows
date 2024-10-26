@@ -13,3 +13,6 @@
 [submodule "gcc"]
 	path = gcc
 	url = https://github.com/tfslabs/gcc.git
+[submodule "gdb"]
+	path = gdb
+	url = https://github.com/tfslabs/gdb.git
