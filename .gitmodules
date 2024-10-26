@@ -46,3 +46,6 @@
 [submodule "nasm"]
 	path = nasm
 	url = https://github.com/tfslabs/nasm.git
+[submodule "cppcheck"]
+	path = cppcheck
+	url = https://github.com/tfslabs/cppcheck.git
