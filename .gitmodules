@@ -40,3 +40,6 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/tfslabs/vim.git
+[submodule "7z"]
+	path = 7z
+	url = https://github.com/tfslabs/7z.git
