@@ -4,3 +4,6 @@
 [submodule "busybox-w32"]
 	path = busybox-w32
 	url = https://github.com/tfslabs/busybox-w32.git
+[submodule "ctags"]
+	path = ctags
+	url = https://github.com/tfslabs/ctags.git
