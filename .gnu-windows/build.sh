@@ -425,8 +425,7 @@ cat $SOURCE_CODE/cppcheck-*.patch | patch -p1 \
         -Os -fno-asynchronous-unwind-tables -Wl,--gc-sections -s -nostdlib \
         -o $BOOTSTRAP/bin/cppcheck.exe $SOURCE_CODE/alias.c -lkernel32
 
-
-#pack-up
+# Pack up new executables
 
 cd $WORKDIR
 
