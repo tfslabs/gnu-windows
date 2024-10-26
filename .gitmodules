@@ -28,3 +28,6 @@
 [submodule "mingw-w64"]
 	path = mingw-w64
 	url = https://github.com/tfslabs/mingw-w64.git
+[submodule "mpc"]
+	path = mpc
+	url = https://github.com/tfslabs/mpc.git
