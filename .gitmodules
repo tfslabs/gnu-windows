@@ -43,3 +43,6 @@
 [submodule "7z"]
 	path = 7z
 	url = https://github.com/tfslabs/7z.git
+[submodule "nasm"]
+	path = nasm
+	url = https://github.com/tfslabs/nasm.git
