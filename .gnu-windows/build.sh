@@ -396,31 +396,29 @@ ARCH= make -f Make_ming.mak \
         '$VIMRUNTIME/tutor/tutor' '%TMP%/tutor%RANDOM%' \
         >$BOOTSTRAP/bin/vimtutor.bat
 
-# NOTE: nasm's configure script is broken, so no out-of-source build
-chmod +x $GNU_FOLDER/nasm-$NASM_VERSION/configure && chmod +x $GNU_FOLDER/nasm-$NASM_VERSION/autogen.sh
-cd $GNU_FOLDER/nasm-$NASM_VERSION/
-$GNU_FOLDER/nasm-$NASM_VERSION/autogen.sh
-mkdir $MAKE_FOLDER/nasm-$NASM_VERSION && cd "$_"
+chmod +x $GNU_FOLDER/nasm/configure && chmod +x $GNU_FOLDER/nasm/autogen.sh
+cd $GNU_FOLDER/nasm/
+$GNU_FOLDER/nasm/autogen.sh
+mkdir $MAKE_FOLDER/nasm && cd "$_"
 $GNU_FOLDER/nasm-$NASM_VERSION/configure \
         --host=$ARCH \
 		 CFLAGS="-Os" \
         LDFLAGS="-s" \
  && mkdir include \
- && make \
+ && make -j$(nproc) \
  && cp nasm.exe ndisasm.exe $BOOTSTRAP/bin
 
-cd $GNU_FOLDER/ctags-$CTAGS_VERSION
-sed -i RT_MANIFEST/d win32/ctags.rc \
- && make -f mk_mingw.mak CC=gcc packcc.exe \
- && make -f mk_mingw.mak \
+cd $GNU_FOLDER/ctags
+sed -i /RT_MANIFEST/d win32/ctags.rc \
+ && make -j$(nproc) -f mk_mingw.mak CC=gcc packcc.exe \
+ && make -j$(nproc) -f mk_mingw.mak \
         CC=$BOOTSTRAP/bin/$ARCH-gcc WINDRES=$ARCH-windres \
         OPT= CFLAGS=-Os LDFLAGS=-s \
  && cp ctags.exe $BOOTSTRAP/bin/
 
-cd $GNU_FOLDER/cppcheck-$CPPCHECK_VERSION
-cp $SOURCE_CODE/cppcheck* $BOOTSTRAP/src/
-cat $BOOTSTRAP/src/cppcheck-*.patch | patch -p1 \
- && make -f $BOOTSTRAP/src/cppcheck.mak CXX=$ARCH-g++ \
+cd $GNU_FOLDER/cppcheck
+cat $SOURCE_CODE/cppcheck-*.patch | patch -p1 \
+ && make -f $SOURCE_CODE/cppcheck.mak CXX=$ARCH-g++ \
  && mkdir $BOOTSTRAP/share/cppcheck/ \
  && cp -r cppcheck.exe cfg/ $BOOTSTRAP/share/cppcheck \
  && $BOOTSTRAP/bin/$ARCH-gcc -DEXE=../share/cppcheck/cppcheck.exe -DCMD=cppcheck \
@@ -432,8 +430,7 @@ cat $BOOTSTRAP/src/cppcheck-*.patch | patch -p1 \
 
 cd $WORKDIR
 
-cp -r $SOURCE_CODE/* $BOOTSTRAP/src #??
-printf "id ICON \"$BOOTSTRAP/src/gnu-windows.ico\"" >gnu-windows.rc \
+printf "id ICON \"$SOURCE_CODE/gnu-windows.ico\"" > gnu-windows.rc \
  && $BOOTSTRAP/bin/$ARCH-windres -o gnu-windows.o gnu-windows.rc \
  && $BOOTSTRAP/bin/$ARCH-gcc \
         -Os -fno-asynchronous-unwind-tables \
@@ -461,6 +458,8 @@ printf "id ICON \"$BOOTSTRAP/src/gnu-windows.ico\"" >gnu-windows.rc \
 
 cd $WORKDIR
 
-cp $BOOTSTRAP/$ARCH/bin/libwinpthread-1.dll $BOOTSTRAP/bin/libwinpthread-1.dll
+# Copy all executable from $ARCH into the primary folder
+cp $BOOTSTRAP/$ARCH/bin/*.dll $BOOTSTRAP/bin
+cp $BOOTSTRAP/$ARCH/bin/*.exe $BOOTSTRAP/bin
 
 echo -e -n "Build sucessfully. Your GNU Windows is under path: $BOOTSTRAP"
