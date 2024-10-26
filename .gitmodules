@@ -34,3 +34,6 @@
 [submodule "mpfr"]
 	path = mpfr
 	url = https://github.com/tfslabs/mpfr.git
+[submodule "pdcurses"]
+	path = pdcurses
+	url = https://github.com/tfslabs/pdcurses.git
