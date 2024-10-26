@@ -22,3 +22,6 @@
 [submodule "libiconv"]
 	path = libiconv
 	url = https://github.com/tfslabs/libiconv.git
+[submodule "make"]
+	path = make
+	url = https://github.com/tfslabs/make.git
