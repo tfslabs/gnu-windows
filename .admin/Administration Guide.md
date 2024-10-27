@@ -8,10 +8,7 @@
 
 The versioning system of GNU Windows follows this guide:
 
-<p align="center">
-  <img src="./versioning.jpg" width="auto" height="auto />
-  <br>
-</p>
+![Guide for Admins](./versioning.jpg)
 
 > Note: In the same UCSP versioning family, the later of each "hf" or "exs" is, the newer of that release is.
 
