@@ -1,6 +1,6 @@
 > [Report issues here](https://github.com/tfslabs/gnu-windows/issues). Note please describe your issue in as much detail as possible.
 >
-> Please view [administration guide](./.admin/Administration%20Guide.md) if you ou have read-write access into the project.
+> Please view [administration guide](./.admin/Administration%20Guide.md) if you have read-write access into the project.
 >
 > Copyright years on source files may be listed using range notation, 
 e.g., 1987-2012, indicating that every year in the range, inclusive, 
