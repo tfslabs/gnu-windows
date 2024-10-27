@@ -35,17 +35,17 @@ The administrators must follow this path to perform an upgrade to the `master` b
 
 2. In the new branch, go to file `.github/workflows/core.yml` or `.github/workflows/blank.yml` and edit the workflow. You have to take note of these locations:
 
- a. `branches:` - you must remove `no-available-just-rename-in-case-you-want` and replace it with the name of the current branch
-
- b. `name: Obtain source code from` - you must define the host after that, and make sure the `wget` command under there can download the file with a proper name
-
- c. In `Extract Source Code into Root Directory`, make sure the `tar` command can extract the compressed file
-
- d. In `Commit Changes`, it is necessary to add commands of the downloaded compressed source code, `.github/workflows/*.yml`, and `.gitignore`. It is because the source code is already clean and shouldn't contain any builds or binaries
-
- e. Commit message should contain the `name` (you can copy it on the first line) and its version.
-
- f. If all are passed, it is good to commit that file and wait for GitHub Action to take an action and commit the source code from the compressed file.
+> + `branches:` - you must remove `no-available-just-rename-in-case-you-want` and replace it with the name of the current branch
+>
+> + `name: Obtain source code from` - you must define the host after that, and make sure the `wget` command under there can download the file with a proper name
+>
+> + In `Extract Source Code into Root Directory`, make sure the `tar` command can extract the compressed file
+>
+> + In `Commit Changes`, it is necessary to add commands of the downloaded compressed source code, `.github/workflows/*.yml`, and `.gitignore`. It is because the source code is already clean and shouldn't contain any builds or binaries
+>
+> + Commit message should contain the `name` (you can copy it on the first line) and its version.
+>
+> + If all are passed, it is good to commit that file and wait for GitHub Action to take an action and commit the source code from the compressed file.
 
 3. Once everything is done, check again the source code for missing files and violated file names.
 
