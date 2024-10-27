@@ -2,6 +2,13 @@
 .gnu-windows/bootstrap
 .gnu-windows/make
 .gnu-windows/ad-installer
+.gnu-windows/gnu-windows.rc
+
+# Compressed releases
+.gnu-windows/*.tar.gz
+.gnu-windows/*.wim
+.gnu-windows/*.zip
+.gnu-windows/*.7z
+
 *.exe
 *.dll
-.gnu-windows/gnu-windows.rc
