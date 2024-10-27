@@ -16,21 +16,29 @@ For in-repo layout and updating versions and tools, please run `.admin/run_admin
 
 Once it's done, make sure you move all extracted folders into the main repo, remove all compressed files, and also update versioning, paths, and build instructions in `.gnu-windows/build.sh`
 
+## Contribute new packages?
+
+Checkout the [Administration Guide](./.admin/Administration%20Guide.md) for further information.
+
+In case you are outside of organization, you can fork the repo and wait for Repo Admins or Organization Admins to submit your code.
+
 ## Building the repo
 
 > :warning: Warning
 >
 > Because an unknown error was detected in the Windows Subsystem for Linux while checking the suffix of binaries, we recommend you build the repo in Linux or use Docker Desktop within Hyper-V.
 
-### Building within Docker
-
-You need to run the pre-defined Docker image, mount your cloned GitHub repo, and build from that. Since GNU Windows use Git Submodules distribution system, it is recommended that you have to update all submodules
+Since this repo is submodule package distribution, it is recommended to update submodules before actual compiling.
 
 ```shell
 git clone https://github.com/tfslabs/gnu-windows.git
 cd gnu-windows
 git submodule update --init --recursive
 ```
+
+### Building within Docker
+
+You need to run the pre-defined Docker image, mount your cloned GitHub repo, and build from that. Since GNU Windows use Git Submodules distribution system, it is recommended that you have to update all submodules
 
 Replace `<your path>` with your real path to the local repo. Double-quote is needed if there are spaces in your path.
 
@@ -74,3 +82,9 @@ autotools-dev binutils binutils-x86-64-linux-gnu cmake-data cpp cpp-12 fakeroot 
 Just run the `<your path>/.gnu-windows/build.sh` directly, without changing the current console directory. Don't forget to use `chmod` command.
 
 In case you cannot configure any of above packages, try to find the alternative packages based on your distribution.
+
+Once it's done, you'll see your GNU application is building in folder `.gnu-windows\bootstrap`
+
+> If you've got an error of unable to execute of `configure`, or the `build.sh` itself, try deleting that GNU Windows repo, and cloning using a Linux distro. 
+>
+> WSL or Docker are good for that cloning task, but you cannot use WSL to build the binaries for you.
