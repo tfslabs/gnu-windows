@@ -3,3 +3,7 @@
 
 # Force all text files to have LF line endings on checkout and commit.
 * text eol=lf
+
+# See all infographic as binrary
+*.png binary
+*.jpg binary
