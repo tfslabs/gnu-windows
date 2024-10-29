@@ -1,10 +1,16 @@
-> [Report issues here](https://github.com/tfslabs/gnu-windows/issues). Note please describe your issue in as much detail as possible.
+> [Report issues here](https://github.com/tfslabs/gnu-windows/issues). Please describe your issue in as much detail as possible.
 >
-> Please view [administration guide](./.admin/Administration%20Guide.md) if you have read-write access into the project.
+> Please view [administration guide](./.admin/Administration%20Guide.md) if you want to contribute to the project.
 >
 > Copyright years on source files may be listed using range notation, 
 e.g., 1987-2012, indicating that every year in the range, inclusive, 
 is a copyrightable year that could otherwise be listed individually.
+
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/tfslabs/gnu-windows/total)
+![Docker Tracker](https://img.shields.io/docker/pulls/theflightsims/gnu-windows-build)
+![GitHub language count](https://img.shields.io/github/languages/count/tfslabs/gnu-windows)
+![GitHub repo size](https://img.shields.io/github/repo-size/tfslabs/gnu-windows)
+![GitHub Repo stars](https://img.shields.io/github/stars/tfslabs/gnu-windows)
 
 # GNU Windows
 
