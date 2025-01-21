@@ -20,7 +20,7 @@ For all exclusive documents, you can try to search for yourself over the Interne
 
 > :warning: Warning
 >
-> GNU Windows only supports the 64-bit Windows operating system. Run best on Windows 10 1903 and later.
+> GNU Windows only supports the 64-bit Windows operating system. Run best on Windows 10 1809 and later.
 
 ## Getting started
 
@@ -45,7 +45,7 @@ You need to run the pre-defined Docker image, mount your cloned GitHub repo, and
 Replace `<your path>` with your real path to the local repo. Double-quote is needed if there are spaces in your path.
 
 ```shell
-docker run -it -v <your path>:/root shiroinekotfs/gnu-windows:latest bash
+docker run -it -v <your path>:/root theflightsims/gnu-windows-build:latest bash
 ```
 
 Once you're in the `bash`, try this command:
@@ -101,6 +101,8 @@ Read the instructions [here](./CONTRIBUTING.md)
 
 ## License
 
-This project is linked with GNU GPL 3.0 License. With no restriction on distribution and reuse.
+This project is linked with GNU GPL 3.0 License. With no restriction on distribution and reuse. 
 
-GNU Windows is made by the team of TheFlightSims - Department of Research.
+All of the submodules have their own licenses.
+
+GNU Windows is made by the team of TheFlightSims Labs.
