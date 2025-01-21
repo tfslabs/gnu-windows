@@ -103,4 +103,57 @@ git commit -m "Update version <newer_version> for <submodule_name>"
 
 > :warning:
 >
-> Before actual PR is completed and everything has been verified carefully, the Project Managers, Repo Admins, or Organization Admins may ask you to submit the newer version of packages in [run_admin.sh](./run_admin.sh). It is for other developers can continue to work based on your work, without asking which version of the package you are just pushed into.
+> Before actual PR is completed and everything has been verified carefully, the Project Managers, Repo Admins, or Organization Admins may ask you to submit the newer version of packages in [run_admin.sh](./run_admin.sh). It is for other developers can continue to work based on your work, without asking which version of the package you are just pushed onto.
+
+## Updating GNU Windows extensions
+
+> Only [`curl`](https://github.com/tfslabs/curl-gnu-windows), [`zlib`](https://github.com/tfslabs/zlib-gnu-windows), [`openal`](https://github.com/tfslabs/openal-gnu-windows), [`vorbis`](https://github.com/tfslabs/vorbis-gnu-windows), [`ogg`](https://github.com/tfslabs/ogg-gnu-windows), and [`meson+ninja`](https://github.com/tfslabs/meson-ninja-gnu-windows) are the classic extensions, since these are available from the version 1.0.0.
+
+### Classic GNU Windows extensions
+
+Classic extensions use the `master`/`main` branches as the primary distribution source. Any release that will the fork of the primary branches.
+
+Take CURL for GNU Windows as an example. It only has a single stream, and even the release is the fork of the primary branch.
+
+#### Updating the classic extensions
+
+Most of the GNU Windows extensions that sources can be downloadable from [MSys2 repo](https://repo.msys2.org/mingw/sources). It is recommended that you have to create a fork and name it as the version of the package you want to commit.
+
+Once the download is completed, extract it into the clone repo. Make sure you delete the source, except these following files.
+
+* `README.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md` (Docs files)
+* `build.cmd` - Pre-defined and the automatic build script for GNU Windows.
+* Any files that in the `build.cmd` (like `.py`), since these files are essential part of building system, EXCEPT it is already available in the package
+
+After extracting, you must update all of the `.patch` file before building the package. It is because most of the packages are available in Linux, and may not be compatible with Windows.
+
+#### Release the package
+
+When your binaries are ready, you can put these in a container of `.7z`, `.zip`, and `.tar.gz`.
+
+The release tag must follow this pattern
+
+```txt
+<package-name>-<version of GNU Windows>-gnu-windows
+```
+
+#### Updating the modern extensions
+
+Most of the GNU Windows extensions that sources can be downloadable from [MSys2 repo](https://repo.msys2.org/mingw/sources). It is required that all of your sources before uploading onto the GitHub.
+
+Once the download is completed, extract it into the clone repo. Make sure you delete the source, except these following files.
+
+* `build.cmd` - Pre-defined and the automatic build script for GNU Windows.
+* Any files that in the `build.cmd` (like `.py`), since these files are essential part of building system, EXCEPT it is already available in the package
+
+After extracting, you must update all of the `.patch` file before building the package. It is because most of the packages are available in Linux, and may not be compatible with Windows.
+
+#### Release the package
+
+When your binaries are ready, you can put these in a container of `.7z`, `.zip`, and `.tar.gz`.
+
+The release tag must follow this pattern
+
+```txt
+<version of the package>-gnu-windows-<gnu windows version>
+```

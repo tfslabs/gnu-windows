@@ -1,10 +1,16 @@
-> [Report issues here](https://github.com/tfslabs/gnu-windows/issues). Note please describe your issue in as much detail as possible.
+> [Report issues here](https://github.com/tfslabs/gnu-windows/issues). Please describe your issue in as much detail as possible.
 >
-> Please view [administration guide](./.admin/Administration%20Guide.md) if you have read-write access into the project.
+> Please view [administration guide](./.admin/Administration%20Guide.md) if you want to contribute to the project.
 >
 > Copyright years on source files may be listed using range notation, 
 e.g., 1987-2012, indicating that every year in the range, inclusive, 
 is a copyrightable year that could otherwise be listed individually.
+
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/tfslabs/gnu-windows/total)
+![Docker Tracker](https://img.shields.io/docker/pulls/theflightsims/gnu-windows-build)
+![GitHub language count](https://img.shields.io/github/languages/count/tfslabs/gnu-windows)
+![GitHub repo size](https://img.shields.io/github/repo-size/tfslabs/gnu-windows)
+![GitHub Repo stars](https://img.shields.io/github/stars/tfslabs/gnu-windows)
 
 # GNU Windows
 
@@ -14,7 +20,7 @@ For all exclusive documents, you can try to search for yourself over the Interne
 
 > :warning: Warning
 >
-> GNU Windows only supports the 64-bit Windows operating system. Run best on Windows 10 1903 and later.
+> GNU Windows only supports the 64-bit Windows operating system. Run best on Windows 10 1809 and later.
 
 ## Getting started
 
@@ -39,7 +45,7 @@ You need to run the pre-defined Docker image, mount your cloned GitHub repo, and
 Replace `<your path>` with your real path to the local repo. Double-quote is needed if there are spaces in your path.
 
 ```shell
-docker run -it -v <your path>:/root shiroinekotfs/gnu-windows:latest bash
+docker run -it -v <your path>:/root theflightsims/gnu-windows-build:latest bash
 ```
 
 Once you're in the `bash`, try this command:
@@ -95,6 +101,8 @@ Read the instructions [here](./CONTRIBUTING.md)
 
 ## License
 
-This project is linked with GNU GPL 3.0 License. With no restriction on distribution and reuse.
+This project is linked with GNU GPL 3.0 License. With no restriction on distribution and reuse. 
 
-GNU Windows is made by the team of TheFlightSims - Department of Research.
+All of the submodules have their own licenses.
+
+GNU Windows is made by the team of TheFlightSims Labs.
