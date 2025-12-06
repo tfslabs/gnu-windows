@@ -13,7 +13,7 @@ BINUTILS_VERSION=2.42
 BUSYBOX_VERSION=FRP-5467-g9376eebd8
 CPPCHECK_VERSION=2.10
 CTAGS_VERSION=6.0.0
-EXPAT_VERSION=2.6.2
+EXPAT_VERSION=R_2_6_2
 GCC_VERSION=14.2.0
 GDB_VERSION=15.1
 GMP_VERSION=6.3.0
@@ -88,7 +88,7 @@ wget https://ftp.gnu.org/gnu/binutils/binutils-$BINUTILS_VERSION.tar.xz -O "$TEM
 wget https://frippery.org/files/busybox/busybox-w32-$BUSYBOX_VERSION.tgz -O "$TEMP_FOLDER/busybox-w32-$BUSYBOX_VERSION.tgz"
 wget https://github.com/danmar/cppcheck/archive/refs/tags/$CPPCHECK_VERSION.tar.gz -O "$TEMP_FOLDER/cppcheck-$CPPCHECK_VERSION.tar.gz"
 wget https://github.com/universal-ctags/ctags/archive/refs/tags/v$CTAGS_VERSION.tar.gz -O "$TEMP_FOLDER/ctags-v$CTAGS_VERSION.tar.gz"
-wget https://fossies.org/linux/www/expat-$EXPAT_VERSION.tar.xz -O "$TEMP_FOLDER/expat-$EXPAT_VERSION.tar.xz"
+wget https://github.com/libexpat/libexpat/archive/refs/tags/$EXPAT_VERSION.tar.gz -O "$TEMP_FOLDER/expat-$EXPAT_VERSION.tar.gz"
 wget https://ftp.gnu.org/gnu/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz -O "$TEMP_FOLDER/gcc-$GCC_VERSION.tar.xz"
 wget https://ftp.gnu.org/gnu/gdb/gdb-$GDB_VERSION.tar.xz -O "$TEMP_FOLDER/gdb-$GDB_VERSION.tar.xz"
 wget https://ftp.gnu.org/gnu/gmp/gmp-$GMP_VERSION.tar.xz -O "$TEMP_FOLDER/gmp-$GMP_VERSION.tar.xz"
@@ -106,7 +106,7 @@ tar --strip-components=1 -xf "$TEMP_FOLDER/binutils-$BINUTILS_VERSION.tar.xz" -C
 tar --strip-components=1 -xf "$TEMP_FOLDER/busybox-w32-$BUSYBOX_VERSION.tgz" -C "$GNU_FOLDER/busybox-w32/"
 tar --strip-components=1 -xf "$TEMP_FOLDER/cppcheck-$CPPCHECK_VERSION.tar.gz" -C "$GNU_FOLDER/cppcheck/" 
 tar --strip-components=1 -xf "$TEMP_FOLDER/ctags-v$CTAGS_VERSION.tar.gz" -C "$GNU_FOLDER/ctags/" 
-tar --strip-components=1 -xf "$TEMP_FOLDER/expat-$EXPAT_VERSION.tar.xz" -C "$GNU_FOLDER/expat/"
+tar --strip-components=1 -xf "$TEMP_FOLDER/expat-$EXPAT_VERSION.tar.gz" -C "$GNU_FOLDER/expat/"
 tar --strip-components=1 -xf "$TEMP_FOLDER/gcc-$GCC_VERSION.tar.xz" -C "$GNU_FOLDER/gcc/"
 tar --strip-components=1 -xf "$TEMP_FOLDER/gdb-$GDB_VERSION.tar.xz" -C "$GNU_FOLDER/gdb/"
 tar --strip-components=1 -xf "$TEMP_FOLDER/gmp-$GMP_VERSION.tar.xz" -C "$GNU_FOLDER/gmp/"
