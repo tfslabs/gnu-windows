@@ -1,50 +1,56 @@
-#/bin/sh
+#/bin/bash
+
+set -euo pipefail
+trap 'echo "Error occurred at line ${LINENO} of ${BASH_SOURCE[0]}. Exiting..."; exit 1' ERR
 
 ARCH=x86_64-w64-mingw32
+VERSION=1.1.1
 
 WORKDIR="$(cd "$(dirname "$0")" && pwd)"
+
+if [[ "$WORKDIR" == *" "* ]]; then
+       echo "Your directory contains spaces. This is not allowed"
+       exit 1
+fi
+
 BOOTSTRAP="$WORKDIR/bootstrap"
 MAKE_FOLDER="$WORKDIR/make"
 SOURCE_CODE="$WORKDIR/src"
 GNU_FOLDER="$WORKDIR/.."
 PATH="$BOOTSTRAP/bin:${PATH}"
 
-VERSION=1.1.0
-
-cd $WORKDIR
+cd "$WORKDIR"
 
 # Build cross-compiler
 
 cd $GNU_FOLDER/binutils
 sed -ri 's/(static bool insert_timestamp = )/\1!/' ld/emultempl/pe*.em \
- && sed -ri 's/(int pe_enable_stdcall_fixup = )/\1!!/' ld/emultempl/pe*.em \
- && cat $SOURCE_CODE/binutils-*.patch | patch -p1
+       && sed -ri 's/(int pe_enable_stdcall_fixup = )/\1!!/' ld/emultempl/pe*.em \
+       && cat $SOURCE_CODE/binutils-*.patch | patch -p1
 mkdir $MAKE_FOLDER/x-binutils && cd "$_"
 chmod +x $GNU_FOLDER/binutils/configure
 $GNU_FOLDER/binutils/configure \
-        --prefix=$BOOTSTRAP \
-        --with-sysroot=$BOOTSTRAP/$ARCH \
-        --target=$ARCH \
-        --disable-nls \
-        --with-static-standard-libraries \
-        --disable-multilib \
- && make MAKEINFO=true -j$(nproc) \
- && make MAKEINFO=true install
-
+              --prefix=$BOOTSTRAP \
+              --with-sysroot=$BOOTSTRAP/$ARCH \
+              --target=$ARCH \
+              --disable-nls \
+              --with-static-standard-libraries \
+              --disable-multilib \
+       && make MAKEINFO=true -j$(nproc) \
+       && make MAKEINFO=true install
 
 # Fixes i686 Windows XP regression
 # https://sourceforge.net/p/mingw-w64/bugs/821/
 sed -i /OpenThreadToken/d $GNU_FOLDER/mingw-w64/mingw-w64-crt/lib32/kernel32.def
 
-
 mkdir $MAKE_FOLDER/x-mingw-headers && cd "$_"
 chmod +x $GNU_FOLDER/mingw-w64/mingw-w64-headers/configure
 $GNU_FOLDER/mingw-w64/mingw-w64-headers/configure \
-        --prefix=$BOOTSTRAP/$ARCH \
-        --host=$ARCH \
-        --with-default-msvcrt=msvcrt-os \
- && make -j$(nproc) \
- && make install
+              --prefix=$BOOTSTRAP/$ARCH \
+              --host=$ARCH \
+              --with-default-msvcrt=msvcrt-os \
+       && make -j$(nproc) \
+       && make install
 
 cd $BOOTSTRAP && ln -s $ARCH mingw
 
@@ -52,67 +58,67 @@ mkdir $MAKE_FOLDER/x-gcc && cd "$_"
 cat $SOURCE_CODE/gcc-*.patch | patch -d $GNU_FOLDER/gcc -p1
 chmod +x $GNU_FOLDER/gcc/configure
 $GNU_FOLDER/gcc/configure \
-        --prefix=$BOOTSTRAP \
-        --with-sysroot=$BOOTSTRAP \
-        --target=$ARCH \
-        --enable-static \
-        --disable-shared \
-        --with-pic \
-        --with-gnu-ld \
-        --enable-languages=c,c++,fortran \
-        --enable-libgomp \
-        --enable-threads=posix \
-        --enable-version-specific-runtime-libs \
-        --disable-dependency-tracking \
-        --disable-nls \
-        --disable-lto \
-        --disable-multilib \
-        CFLAGS_FOR_TARGET="-Os" \
-        CXXFLAGS_FOR_TARGET="-Os" \
-        LDFLAGS_FOR_TARGET="-s" \
-        CFLAGS="-Os" \
-        CXXFLAGS="-Os" \
-        LDFLAGS="-s" \
- && make -j$(nproc) all-gcc \
- && make install-gcc
+              --prefix=$BOOTSTRAP \
+              --with-sysroot=$BOOTSTRAP \
+              --target=$ARCH \
+              --enable-static \
+              --disable-shared \
+              --with-pic \
+              --with-gnu-ld \
+              --enable-languages=c,c++,fortran \
+              --enable-libgomp \
+              --enable-threads=posix \
+              --enable-version-specific-runtime-libs \
+              --disable-dependency-tracking \
+              --disable-nls \
+              --disable-lto \
+              --disable-multilib \
+              CFLAGS_FOR_TARGET="-Os" \
+              CXXFLAGS_FOR_TARGET="-Os" \
+              LDFLAGS_FOR_TARGET="-s" \
+              CFLAGS="-Os" \
+              CXXFLAGS="-Os" \
+              LDFLAGS="-s" \
+       && make -j$(nproc) all-gcc \
+       && make install-gcc
 
 mkdir -p $BOOTSTRAP/$ARCH/lib \
- && CC=$ARCH-gcc DESTDIR=$BOOTSTRAP/$ARCH/lib/ sh $SOURCE_CODE/libmemory.c \
- && ln $BOOTSTRAP/$ARCH/lib/libmemory.a $BOOTSTRAP/$ARCH/lib/ \
- && CC=$ARCH-gcc DESTDIR=$BOOTSTRAP/$ARCH/lib/ sh $SOURCE_CODE/libchkstk.S \
- && ln $BOOTSTRAP/$ARCH/lib/libchkstk.a $BOOTSTRAP/$ARCH/lib/
+       && CC=$ARCH-gcc DESTDIR=$BOOTSTRAP/$ARCH/lib/ sh $SOURCE_CODE/libmemory.c \
+       && ln $BOOTSTRAP/$ARCH/lib/libmemory.a $BOOTSTRAP/$ARCH/lib/ \
+       && CC=$ARCH-gcc DESTDIR=$BOOTSTRAP/$ARCH/lib/ sh $SOURCE_CODE/libchkstk.S \
+       && ln $BOOTSTRAP/$ARCH/lib/libchkstk.a $BOOTSTRAP/$ARCH/lib/
 
 mkdir $MAKE_FOLDER/x-mingw-crt && cd "$_"
 chmod +x $GNU_FOLDER/mingw-w64/mingw-w64-crt/configure
 $GNU_FOLDER/mingw-w64/mingw-w64-crt/configure \
-        --prefix=$BOOTSTRAP/$ARCH \
-        --with-sysroot=$BOOTSTRAP/$ARCH \
-        --host=$ARCH \
-        --with-default-msvcrt=msvcrt-os \
-        --disable-dependency-tracking \
-        --disable-lib32 \
-        --enable-lib64 \
-        CFLAGS="-Os" \
-        LDFLAGS="-s" \
- && make -j$(nproc) \
- && make install
+              --prefix=$BOOTSTRAP/$ARCH \
+              --with-sysroot=$BOOTSTRAP/$ARCH \
+              --host=$ARCH \
+              --with-default-msvcrt=msvcrt-os \
+              --disable-dependency-tracking \
+              --disable-lib32 \
+              --enable-lib64 \
+              CFLAGS="-Os" \
+              LDFLAGS="-s" \
+       && make -j$(nproc) \
+       && make install
 
 mkdir $MAKE_FOLDER/x-winpthreads && cd "$_"
 chmod +x $GNU_FOLDER/mingw-w64/mingw-w64-libraries/winpthreads/configure
 $GNU_FOLDER/mingw-w64/mingw-w64-libraries/winpthreads/configure \
-        --prefix=$BOOTSTRAP/$ARCH \
-        --with-sysroot=$BOOTSTRAP/$ARCH \
-        --host=$ARCH \
-        --enable-static \
-        --disable-shared \
-        CFLAGS="-Os" \
-        LDFLAGS="-s" \
- && make -j$(nproc) \
- && make install
+              --prefix=$BOOTSTRAP/$ARCH \
+              --with-sysroot=$BOOTSTRAP/$ARCH \
+              --host=$ARCH \
+              --enable-static \
+              --disable-shared \
+              CFLAGS="-Os" \
+              LDFLAGS="-s" \
+       && make -j$(nproc) \
+       && make install
 
 cd $MAKE_FOLDER/x-gcc \
- && make -j$(nproc) \
- && make install
+       && make -j$(nproc) \
+       && make install
 
 # Cross-compile GCC
 
