@@ -42,7 +42,11 @@ if [[ "$(which tar)" == "" || "$(which curl)" == "" ]]; then
     exit 1
 fi
 
+# Preparing download resources
+rm -rf "$TEMP_FOLDER/" || true
 mkdir -p "$TEMP_FOLDER"
+
+# Switch context
 cd "$GNU_FOLDER"
 
 # Download packages
@@ -98,3 +102,6 @@ tar --strip-components=1 -xf -C "$GNU_FOLDER/mpfr" "$TEMP_FOLDER/mpfr-$MPFR_VERS
 tar --strip-components=1 -xf -C "$GNU_FOLDER/nasm" "$TEMP_FOLDER/nasm-$NASM_VERSION.tar.gz"
 tar --strip-components=1 -xf -C "$GNU_FOLDER/pdcurses" "$TEMP_FOLDER/PDCurses-$PDCURSES_VERSION.tar.gz"
 tar --strip-components=1 -xf -C "$GNU_FOLDER/vim" "$TEMP_FOLDER/vim-$VIM_VERSION.tar.bz2"
+
+# Clean-up resources
+rm -rf "$TEMP_FOLDER/" || true
