@@ -4,6 +4,9 @@
 .gnu-windows/ad-installer
 .gnu-windows/gnu-windows.rc
 
+# Temp download folder
+.gnu-windows/tmp
+
 # Compressed releases
 .gnu-windows/*.tar.gz
 .gnu-windows/*.wim
