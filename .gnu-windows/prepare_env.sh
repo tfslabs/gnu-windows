@@ -37,8 +37,8 @@ if [[ "$WORKDIR" == *" "* ]]; then
     exit 1
 fi
 
-if [[ "$(which tar)" == "" || "$(which curl)" == "" ]]; then
-    echo "Required packages are not installed (tar and curl)."
+if [[ "$(which tar)" == "" || "$(which wget)" == "" ]]; then
+    echo "Required packages are not installed (tar and wget)."
     exit 1
 fi
 
@@ -84,22 +84,22 @@ mkdir -p "$GNU_FOLDER/vim"
 cd "$GNU_FOLDER"
 
 # Download packages
-curl https://ftp.gnu.org/gnu/binutils/binutils-$BINUTILS_VERSION.tar.xz -o "$TEMP_FOLDER/binutils-$BINUTILS_VERSION.tar.xz"
-curl https://frippery.org/files/busybox/busybox-w32-$BUSYBOX_VERSION.tgz -o "$TEMP_FOLDER/busybox-w32-$BUSYBOX_VERSION.tgz"
-curl https://github.com/danmar/cppcheck/archive/refs/tags/$CPPCHECK_VERSION.tar.gz -o "$TEMP_FOLDER/cppcheck-$CPPCHECK_VERSION.tar.gz"
-curl https://github.com/universal-ctags/ctags/archive/refs/tags/v$CTAGS_VERSION.tar.gz -o "$TEMP_FOLDER/ctags-v$CTAGS_VERSION.tar.gz"
-curl https://fossies.org/linux/www/expat-$EXPAT_VERSION.tar.xz -o "$TEMP_FOLDER/expat-$EXPAT_VERSION.tar.xz"
-curl https://ftp.gnu.org/gnu/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz -o "$TEMP_FOLDER/gcc-$GCC_VERSION.tar.xz"
-curl https://ftp.gnu.org/gnu/gdb/gdb-$GDB_VERSION.tar.xz -o "$TEMP_FOLDER/gdb-$GDB_VERSION.tar.xz"
-curl https://ftp.gnu.org/gnu/gmp/gmp-$GMP_VERSION.tar.xz -o "$TEMP_FOLDER/gmp-$GMP_VERSION.tar.xz"
-curl https://ftp.gnu.org/gnu/libiconv/libiconv-$LIBICONV_VERSION.tar.gz -o "$TEMP_FOLDER/libiconv-$LIBICONV_VERSION.tar.gz"
-curl https://ftp.gnu.org/gnu/make/make-$MAKE_VERSION.tar.gz -o "$TEMP_FOLDER/make-$MAKE_VERSION.tar.gz"
-curl https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v$MINGW_VERSION.tar.bz2 -o "$TEMP_FOLDER/mingw-w64-v$MINGW_VERSION.tar.bz2"
-curl https://ftp.gnu.org/gnu/mpc/mpc-$MPC_VERSION.tar.gz -o "$TEMP_FOLDER/mpc-$MPC_VERSION.tar.gz"
-curl https://ftp.gnu.org/gnu/mpfr/mpfr-$MPFR_VERSION.tar.xz -o "$TEMP_FOLDER/mpfr-$MPFR_VERSION.tar.xz"
-curl https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-$NASM_VERSION.tar.gz -o "$TEMP_FOLDER/nasm-$NASM_VERSION.tar.gz"
-curl https://downloads.sourceforge.net/project/pdcurses/pdcurses/$PDCURSES_VERSION/PDCurses-$PDCURSES_VERSION.tar.gz -o "$TEMP_FOLDER/PDCurses-$PDCURSES_VERSION.tar.gz"
-curl https://github.com/vim/vim/archive/refs/tags/v$VIM_VERSION.tar.gz -o "$TEMP_FOLDER/vim-$VIM_VERSION.tar.bz2"
+wget https://ftp.gnu.org/gnu/binutils/binutils-$BINUTILS_VERSION.tar.xz -O "$TEMP_FOLDER/binutils-$BINUTILS_VERSION.tar.xz"
+wget https://frippery.org/files/busybox/busybox-w32-$BUSYBOX_VERSION.tgz -O "$TEMP_FOLDER/busybox-w32-$BUSYBOX_VERSION.tgz"
+wget https://github.com/danmar/cppcheck/archive/refs/tags/$CPPCHECK_VERSION.tar.gz -O "$TEMP_FOLDER/cppcheck-$CPPCHECK_VERSION.tar.gz"
+wget https://github.com/universal-ctags/ctags/archive/refs/tags/v$CTAGS_VERSION.tar.gz -O "$TEMP_FOLDER/ctags-v$CTAGS_VERSION.tar.gz"
+wget https://fossies.org/linux/www/expat-$EXPAT_VERSION.tar.xz -O "$TEMP_FOLDER/expat-$EXPAT_VERSION.tar.xz"
+wget https://ftp.gnu.org/gnu/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz -O "$TEMP_FOLDER/gcc-$GCC_VERSION.tar.xz"
+wget https://ftp.gnu.org/gnu/gdb/gdb-$GDB_VERSION.tar.xz -O "$TEMP_FOLDER/gdb-$GDB_VERSION.tar.xz"
+wget https://ftp.gnu.org/gnu/gmp/gmp-$GMP_VERSION.tar.xz -O "$TEMP_FOLDER/gmp-$GMP_VERSION.tar.xz"
+wget https://ftp.gnu.org/gnu/libiconv/libiconv-$LIBICONV_VERSION.tar.gz -O "$TEMP_FOLDER/libiconv-$LIBICONV_VERSION.tar.gz"
+wget https://ftp.gnu.org/gnu/make/make-$MAKE_VERSION.tar.gz -O "$TEMP_FOLDER/make-$MAKE_VERSION.tar.gz"
+wget https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v$MINGW_VERSION.tar.bz2 -O "$TEMP_FOLDER/mingw-w64-v$MINGW_VERSION.tar.bz2"
+wget https://ftp.gnu.org/gnu/mpc/mpc-$MPC_VERSION.tar.gz -O "$TEMP_FOLDER/mpc-$MPC_VERSION.tar.gz"
+wget https://ftp.gnu.org/gnu/mpfr/mpfr-$MPFR_VERSION.tar.xz -O "$TEMP_FOLDER/mpfr-$MPFR_VERSION.tar.xz"
+wget https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-$NASM_VERSION.tar.gz -O "$TEMP_FOLDER/nasm-$NASM_VERSION.tar.gz"
+wget https://downloads.sourceforge.net/project/pdcurses/pdcurses/$PDCURSES_VERSION/PDCurses-$PDCURSES_VERSION.tar.gz -O "$TEMP_FOLDER/PDCurses-$PDCURSES_VERSION.tar.gz"
+wget https://github.com/vim/vim/archive/refs/tags/v$VIM_VERSION.tar.gz -O "$TEMP_FOLDER/vim-$VIM_VERSION.tar.bz2"
 
 # Extract to folders
 tar --strip-components=1 -xf "$TEMP_FOLDER/binutils-$BINUTILS_VERSION.tar.xz" -C "$GNU_FOLDER/binutils/"
