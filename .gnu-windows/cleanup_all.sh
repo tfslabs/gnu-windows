@@ -23,7 +23,6 @@ rm -rf "$GNU_FOLDER/binutils" || true
 rm -rf "$GNU_FOLDER/busybox-w32" || true
 rm -rf "$GNU_FOLDER/cppcheck" || true
 rm -rf "$GNU_FOLDER/ctags" || true
-rm -rf "$GNU_FOLDER/expat" || true
 rm -rf "$GNU_FOLDER/gcc" || true
 rm -rf "$GNU_FOLDER/gdb" || true
 rm -rf "$GNU_FOLDER/gmp" || true

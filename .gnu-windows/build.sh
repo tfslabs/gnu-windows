@@ -288,23 +288,6 @@ $GNU_FOLDER/mingw-w64/mingw-w64-tools/gendef/configure \
        && make -j$(nproc) \
        && cp gendef.exe $BOOTSTRAP/bin/
 
-cd $GNU_FOLDER/expat/expat
-chmod +x $GNU_FOLDER/expat/expat/configure
-$GNU_FOLDER/expat/expat/configure \
-              --prefix=$BOOTSTRAP \
-              --host=$ARCH \
-              CPPFLAGS=-DXML_UNICODE \
-              --without-xmlwf \
-              --disable-shared \
-              --without-docbook \
-              --without-examples \
-              --without-tests \
-              --disable-xml-context  \
-              CFLAGS="-Os" \
-              LDFLAGS="-s" \
-       && make -j$(nproc) \
-       && make install
-
 cd $GNU_FOLDER/pdcurses
 make -j$(nproc) -C wincon CC=$BOOTSTRAP/bin/$ARCH-gcc AR=$ARCH-ar CFLAGS="-I.. -Os -DPDC_WIDE" pdcurses.a \
        && cp wincon/pdcurses.a $BOOTSTRAP/lib/libcurses.a \
@@ -466,11 +449,5 @@ printf "id ICON \"$SOURCE_CODE/gnu-windows.ico\"" > gnu-windows.rc \
        && printf "\n===========\nwinpthreads\n===========\n\n" \
               >>$BOOTSTRAP/COPYING.MinGW-w64-runtime.txt . \
        && echo $VERSION >$BOOTSTRAP/VERSION.txt
-
-cd $WORKDIR
-
-# Copy all executable from $ARCH into the primary folder
-cp $BOOTSTRAP/$ARCH/bin/*.dll $BOOTSTRAP/bin
-cp $BOOTSTRAP/$ARCH/bin/*.exe $BOOTSTRAP/bin
 
 echo -e -n "Build sucessfully. Your GNU Windows is under path: $BOOTSTRAP"
