@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # Global Failure handler
 set -euo pipefail
@@ -41,25 +41,6 @@ if [[ "$(which tar)" == "" || "$(which wget)" == "" ]]; then
     echo "Required packages are not installed (tar and wget)."
     exit 1
 fi
-
-# Preparing download resources
-rm -rf "$TEMP_FOLDER/" || true
-rm -rf "$GNU_FOLDER/binutils" || true
-rm -rf "$GNU_FOLDER/busybox-w32" || true
-rm -rf "$GNU_FOLDER/cppcheck" || true
-rm -rf "$GNU_FOLDER/ctags" || true
-rm -rf "$GNU_FOLDER/expat" || true
-rm -rf "$GNU_FOLDER/gcc" || true
-rm -rf "$GNU_FOLDER/gdb" || true
-rm -rf "$GNU_FOLDER/gmp" || true
-rm -rf "$GNU_FOLDER/libiconv" || true
-rm -rf "$GNU_FOLDER/make" || true
-rm -rf "$GNU_FOLDER/mingw-w64" || true
-rm -rf "$GNU_FOLDER/mpc" || true
-rm -rf "$GNU_FOLDER/mpfr" || true
-rm -rf "$GNU_FOLDER/nasm" || true
-rm -rf "$GNU_FOLDER/pdcurses" || true
-rm -rf "$GNU_FOLDER/vim" || true
 
 # Create folders
 mkdir -p "$TEMP_FOLDER"
