@@ -4,11 +4,33 @@
 .gnu-windows/ad-installer
 .gnu-windows/gnu-windows.rc
 
+# Temp download folder
+.gnu-windows/tmp
+
 # Compressed releases
 .gnu-windows/*.tar.gz
 .gnu-windows/*.wim
 .gnu-windows/*.zip
 .gnu-windows/*.7z
 
+# GNU folders
+binutils/
+busybox-w32/
+cppcheck/
+ctags/
+expat/
+gcc/
+gdb/
+gmp/
+libiconv/
+make/
+mingw-w64/
+mpc/
+mpfr/
+nasm/
+pdcurses/
+vim/
+
+# Windows executables
 *.exe
 *.dll
