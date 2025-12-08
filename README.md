@@ -1,6 +1,6 @@
 # GNU Windows
 
-> [Report issues here](https://github.com/tfslabs/gnu-windows/issues). Please describe your issue in as much detail as possible.
+> THIS PROJECT IS NO LONGER MAINTAINED. WE ENCOURAGE PEOPLE TO MOVE TO [MinGW](https://sourceforge.net/projects/mingw/) - which has better support
 >
 > Copyright years on source files may be listed using range notation,
 e.g., 1987-2012, indicating that every year in the range, inclusive,
@@ -10,7 +10,6 @@ is a copyrightable year that could otherwise be listed individually.
 ![GitHub language count](https://img.shields.io/github/languages/count/tfslabs/gnu-windows)
 ![GitHub repo size](https://img.shields.io/github/repo-size/tfslabs/gnu-windows)
 ![GitHub Repo stars](https://img.shields.io/github/stars/tfslabs/gnu-windows)
-
 
 GNU Windows is a suite of development kits for Windows, including the tools mentioned above. It is used to build [@TheFlightSims](https://github.com/TheFlightSims) application binaries from sources.
 
